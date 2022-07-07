@@ -30,3 +30,6 @@ The following **optional** features are implemented:
 * [x] 
 * [ ] 
 * [ ] 
+
+Gifs to show functionalities:
+![](https://github.com/hoonman/memoryandsoundgamecodepathsite/blob/main/memorygame1.gif)
