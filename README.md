@@ -11,7 +11,7 @@ Time spent: **x** hours spent in total
 
 The following **required** functionality is complete:
 
-* [x]
+* [x] This is a checkbox
 * [x] 
 * [x] 
 * [x] 
