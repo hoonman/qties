@@ -1,4 +1,3 @@
-# cs1c_groupproject
 # CS1C - *2D Graphics Modeler Inc.*
 
 **2D Graphics Modeler** is a (insert what it is).
