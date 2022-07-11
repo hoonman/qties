@@ -9,7 +9,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-XInplR\\clang-uiheader-vUmvnw",
+        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-sETgsk\\clang-uiheader-aLoHfh",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -66,10 +66,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\main.cpp"
+        "C:\\Users\\jh020\\OneDrive\\Desktop\\demo\\qties\\2DGraphicsModeler\\main.cpp"
     ],
     "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/main.cpp"
+    "file": "C:/Users/jh020/OneDrive/Desktop/demo/qties/2DGraphicsModeler/main.cpp"
 },
 {
     "arguments": [
@@ -81,7 +81,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-XInplR\\clang-uiheader-vUmvnw",
+        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-sETgsk\\clang-uiheader-aLoHfh",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -138,10 +138,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\mainwindow.cpp"
+        "C:\\Users\\jh020\\OneDrive\\Desktop\\demo\\qties\\2DGraphicsModeler\\mainwindow.cpp"
     ],
     "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/mainwindow.cpp"
+    "file": "C:/Users/jh020/OneDrive/Desktop/demo/qties/2DGraphicsModeler/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -153,7 +153,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-XInplR\\clang-uiheader-vUmvnw",
+        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-sETgsk\\clang-uiheader-aLoHfh",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -210,9 +210,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\mainwindow.h"
+        "C:\\Users\\jh020\\OneDrive\\Desktop\\demo\\qties\\2DGraphicsModeler\\mainwindow.h"
     ],
     "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/mainwindow.h"
+    "file": "C:/Users/jh020/OneDrive/Desktop/demo/qties/2DGraphicsModeler/mainwindow.h"
 }
 ]

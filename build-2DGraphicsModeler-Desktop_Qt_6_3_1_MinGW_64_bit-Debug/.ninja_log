@@ -1,0 +1,9 @@
+# ninja log v5
+1	859	6792146500009805	2DGraphicsModeler_autogen/timestamp	7403ef0cad57ecd8
+1	859	6792146500009805	2DGraphicsModeler_autogen/mocs_compilation.cpp	7403ef0cad57ecd8
+1	859	6792146500009805	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	7403ef0cad57ecd8
+1	859	6792146500009805	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	7403ef0cad57ecd8
+860	2987	6792146522761927	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	909fc3d4ae6bde3e
+862	3054	6792146523439283	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	bbfe0bd436f8873b
+864	3116	6792146524069272	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	c99e7b65c2ab7141
+3117	3374	6792146526603055	2DGraphicsModeler.exe	2ba4419ad2df10f5
