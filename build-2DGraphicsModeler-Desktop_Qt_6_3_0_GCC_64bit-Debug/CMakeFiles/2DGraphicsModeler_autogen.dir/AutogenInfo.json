@@ -1,0 +1,88 @@
+{
+	"BUILD_DIR" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/2DGraphicsModeler_autogen",
+	"CMAKE_BINARY_DIR" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/cs1c/Desktop/qt/qties/2DGraphicsModeler",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/cs1c/Desktop/qt/qties/2DGraphicsModeler",
+	"HEADERS" : 
+	[
+		[
+			"/home/cs1c/Desktop/qt/qties/2DGraphicsModeler/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/home/cs1c/Desktop/qt/qties/2DGraphicsModeler/modelerapp.h",
+			"MU",
+			"EWIEGA46WW/moc_modelerapp.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/2DGraphicsModeler_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug",
+		"/home/cs1c/Desktop/qt/qties/2DGraphicsModeler",
+		"/home/cs1c/Qt/6.3.0/gcc_64/include/QtCore",
+		"/home/cs1c/Qt/6.3.0/gcc_64/include",
+		"/home/cs1c/Qt/6.3.0/gcc_64/mkspecs/linux-g++",
+		"/home/cs1c/Qt/6.3.0/gcc_64/include/QtWidgets",
+		"/home/cs1c/Qt/6.3.0/gcc_64/include/QtGui",
+		"/usr/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/g++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/2DGraphicsModeler_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/cs1c/Qt/6.3.0/gcc_64/./libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/home/cs1c/Qt/6.3.0/gcc_64/./libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"SETTINGS_FILE" : "/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/2DGraphicsModeler_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/cs1c/Desktop/qt/qties/2DGraphicsModeler/main.cpp", "MU" ],
+		[ "/home/cs1c/Desktop/qt/qties/2DGraphicsModeler/mainwindow.cpp", "MU" ],
+		[ "/home/cs1c/Desktop/qt/qties/2DGraphicsModeler/modelerapp.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
