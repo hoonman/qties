@@ -44,6 +44,6 @@ The following **optional** features are implemented:
 * [ ] 
 * [ ] 
 
-##Gifs to show functionalities:
-#Login Screen
+## Gifs to show functionalities:
+# Login Screen
 ![](https://github.com/hoonman/qties/blob/main/gif_files/login_screen.gif)
