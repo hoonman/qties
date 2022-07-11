@@ -107,10 +107,14 @@
 <<<<<<< HEAD
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QMainWindow \
 =======
+<<<<<<< HEAD
+	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QMainWindow \
+=======
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QDialog \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qdialog.h \
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -203,6 +207,9 @@
 	C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
 	C:/Qt/6.3.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCXXInformation.cmake \
@@ -217,16 +224,22 @@
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake \
+<<<<<<< HEAD
+=======
 =======
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCXXInformation.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake \
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeGenericSystem.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake \
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeParseArguments.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake \
@@ -285,6 +298,8 @@
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
+<<<<<<< HEAD
+=======
 =======
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeParseArguments.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/CMakeRCInformation.cmake \
@@ -298,6 +313,7 @@
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Compiler/GNU.cmake \
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/FindPackageMessage.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/FindThreads.cmake \
@@ -310,7 +326,12 @@
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake \
 =======
+<<<<<<< HEAD
+	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake \
+	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake \
+=======
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake \
@@ -532,6 +553,17 @@
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
 <<<<<<< HEAD
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/CMakeLists.txt \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/main.cpp \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/mainwindow.cpp \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/mainwindow.h \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake \
+	C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/mainwindow.ui \
+=======
+<<<<<<< HEAD
 	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/CMakeLists.txt \
 	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/main.cpp \
 	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/mainwindow.cpp \
@@ -555,4 +587,5 @@
 	C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/mainwindow.ui \
 	C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/modelerapp.ui \
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -16,6 +16,11 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 =======
+<<<<<<< HEAD
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QStatusBar>
+=======
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -26,6 +31,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -34,6 +40,8 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
     QGroupBox *groupBox;
@@ -47,6 +55,7 @@ public:
     QLineEdit *lineEdit_Password;
     QPushButton *pushButton_Login;
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -57,6 +66,11 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+<<<<<<< HEAD
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+=======
 <<<<<<< HEAD
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -111,6 +125,7 @@ public:
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 800, 21));
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -126,11 +141,14 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Login Window", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Username", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         pushButton_Login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     } // retranslateUi
 
 };

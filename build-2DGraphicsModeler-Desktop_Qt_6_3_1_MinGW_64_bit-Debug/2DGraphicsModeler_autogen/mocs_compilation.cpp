@@ -2,5 +2,8 @@
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 #include "EWIEGA46WW/moc_modelerapp.cpp"
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95

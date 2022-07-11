@@ -26,19 +26,29 @@ struct qt_meta_stringdata_MainWindow_t {
     const uint offsetsAndSize[2];
     char stringdata0[11];
 =======
+<<<<<<< HEAD
+    const uint offsetsAndSize[2];
+    char stringdata0[11];
+=======
     const uint offsetsAndSize[6];
     char stringdata0[40];
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 QT_MOC_LITERAL(0, 10) // "MainWindow"
 
     },
     "MainWindow"
+<<<<<<< HEAD
+=======
 =======
 QT_MOC_LITERAL(0, 10), // "MainWindow"
 QT_MOC_LITERAL(11, 27), // "on_pushButton_Login_clicked"
@@ -48,6 +58,7 @@ QT_MOC_LITERAL(39, 0) // ""
     "MainWindow\0on_pushButton_Login_clicked\0"
     ""
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 };
 #undef QT_MOC_LITERAL
 
@@ -60,14 +71,20 @@ static const uint qt_meta_data_MainWindow[] = {
 <<<<<<< HEAD
        0,    0, // methods
 =======
+<<<<<<< HEAD
+       0,    0, // methods
+=======
        1,   14, // methods
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
@@ -77,11 +94,17 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
 
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
        0        // eod
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
+<<<<<<< HEAD
+    (void)_o;
+    (void)_id;
+    (void)_c;
+=======
 <<<<<<< HEAD
     (void)_o;
     (void)_id;
@@ -96,6 +119,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         }
     }
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     (void)_a;
 }
 
@@ -110,8 +134,12 @@ qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
 , QtPrivate::TypeAndForceComplete<void, std::false_type>
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 
 
 >,
@@ -137,6 +165,8 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QMainWindow::qt_metacall(_c, _id, _a);
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -149,6 +179,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     }
 >>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     return _id;
 }
 QT_WARNING_POP
