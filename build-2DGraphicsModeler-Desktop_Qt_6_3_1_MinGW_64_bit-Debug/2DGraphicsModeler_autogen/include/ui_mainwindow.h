@@ -11,9 +11,27 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+<<<<<<< HEAD
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+=======
+<<<<<<< HEAD
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QStatusBar>
+=======
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
+>>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +40,22 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    QGroupBox *groupBox;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *label;
+    QLineEdit *lineEdit_Username;
+    QHBoxLayout *horizontalLayout;
+    QLabel *label_2;
+    QLineEdit *lineEdit_Password;
+    QPushButton *pushButton_Login;
+>>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -32,9 +66,66 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+<<<<<<< HEAD
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
+=======
+<<<<<<< HEAD
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+=======
+        groupBox = new QGroupBox(centralwidget);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setGeometry(QRect(240, 90, 241, 191));
+        widget = new QWidget(groupBox);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(20, 60, 183, 90));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        horizontalLayout_2->addWidget(label);
+
+        lineEdit_Username = new QLineEdit(widget);
+        lineEdit_Username->setObjectName(QString::fromUtf8("lineEdit_Username"));
+
+        horizontalLayout_2->addWidget(lineEdit_Username);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        horizontalLayout->addWidget(label_2);
+
+        lineEdit_Password = new QLineEdit(widget);
+        lineEdit_Password->setObjectName(QString::fromUtf8("lineEdit_Password"));
+
+        horizontalLayout->addWidget(lineEdit_Password);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
+        pushButton_Login = new QPushButton(widget);
+        pushButton_Login->setObjectName(QString::fromUtf8("pushButton_Login"));
+
+        verticalLayout->addWidget(pushButton_Login);
+
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 800, 21));
+>>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -48,6 +139,16 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        groupBox->setTitle(QCoreApplication::translate("MainWindow", "Login Window", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Username", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
+        pushButton_Login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
+>>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
+>>>>>>> 5aa706d529ce831113ac62ab202b3fe17cc5de95
     } // retranslateUi
 
 };
