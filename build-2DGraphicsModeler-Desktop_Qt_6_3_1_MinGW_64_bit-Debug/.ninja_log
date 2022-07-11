@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 1	859	6792146500009805	2DGraphicsModeler_autogen/timestamp	7403ef0cad57ecd8
 1	859	6792146500009805	2DGraphicsModeler_autogen/mocs_compilation.cpp	7403ef0cad57ecd8
 1	859	6792146500009805	C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	7403ef0cad57ecd8
@@ -7,3 +8,37 @@
 862	3054	6792146523439283	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	bbfe0bd436f8873b
 864	3116	6792146524069272	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	c99e7b65c2ab7141
 3117	3374	6792146526603055	2DGraphicsModeler.exe	2ba4419ad2df10f5
+=======
+2	1201	6792180573617728	2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+2	1201	6792180573617728	2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+2	1201	6792180573617728	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+2	1201	6792180573617728	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+1201	3116	6792180595359576	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	858a54f3df47e466
+1206	3129	6792180595489519	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	ec5c073a58c5db8d
+1210	3328	6792180597484175	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	55ab12894e8ce825
+3329	3564	6792180599757799	2DGraphicsModeler.exe	2ba4419ad2df10f5
+14	2282	6792182365933595	2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+14	2282	6792182365933595	2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+14	2282	6792182365933595	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+14	2282	6792182365933595	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+2283	4895	6792182395973236	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	858a54f3df47e466
+2297	4927	6792182396322305	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	bacf75950404c0b3
+2289	5100	6792182398057958	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	55ab12894e8ce825
+5101	5355	6792182400511394	2DGraphicsModeler.exe	8728c279f6afaae
+19	2075	6792184542396295	2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+19	2075	6792184542396295	2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+19	2075	6792184542396295	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+19	2075	6792184542396295	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+2077	5181	6792184577406032	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	858a54f3df47e466
+2084	5190	6792184577515753	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	bacf75950404c0b3
+2098	5200	6792184577585568	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	ec5c073a58c5db8d
+2090	5432	6792184579935103	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	55ab12894e8ce825
+5432	5731	6792184582817108	2DGraphicsModeler.exe	8728c279f6afaae
+12	608	6792184938688519	2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+12	608	6792184938688519	2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+12	608	6792184938688519	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	3f68503eaf8ccb8
+12	608	6792184938688519	C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	3f68503eaf8ccb8
+645	3226	6792184964898420	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	bacf75950404c0b3
+638	3452	6792184967052658	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	55ab12894e8ce825
+3453	3764	6792184970154362	2DGraphicsModeler.exe	8728c279f6afaae
+>>>>>>> 67f821ff987ac8763a43d8b2f46fe94f695587c5
