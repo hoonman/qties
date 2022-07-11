@@ -1,0 +1,17 @@
+# ninja log v5
+6	779	6792199567166399	2DGraphicsModeler_autogen/timestamp	d9b6dbf1ff94a100
+6	779	6792199567166399	2DGraphicsModeler_autogen/mocs_compilation.cpp	d9b6dbf1ff94a100
+6	779	6792199567166399	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	d9b6dbf1ff94a100
+6	779	6792199567166399	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	d9b6dbf1ff94a100
+779	2873	6792199589544195	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	b34d42266a4f959a
+781	2923	6792199590052844	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	a6123014cd4e66c5
+2923	3188	6792199592655893	2DGraphicsModeler.exe	2ba4419ad2df10f5
+783	2891	6792199589743678	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	8a933bb78c85f93a
+6	790	6792202344164392	2DGraphicsModeler_autogen/timestamp	d9b6dbf1ff94a100
+6	790	6792202344164392	2DGraphicsModeler_autogen/mocs_compilation.cpp	d9b6dbf1ff94a100
+6	790	6792202344164392	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	d9b6dbf1ff94a100
+6	790	6792202344164392	C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	d9b6dbf1ff94a100
+793	2878	6792202366471578	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	8a933bb78c85f93a
+795	2906	6792202366760703	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	a6123014cd4e66c5
+791	2915	6792202366850471	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	b34d42266a4f959a
+2915	3152	6792202369184233	2DGraphicsModeler.exe	2ba4419ad2df10f5
