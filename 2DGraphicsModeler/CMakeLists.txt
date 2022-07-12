@@ -22,6 +22,7 @@ set(PROJECT_SOURCES
 	modelerapp.h 
 	modelerapp.cpp
  	modelerapp.ui
+        vector.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
