@@ -9,7 +9,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -30,11 +30,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -66,10 +66,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\main.cpp"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\main.cpp"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/main.cpp"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/main.cpp"
 },
 {
     "arguments": [
@@ -81,7 +81,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -102,11 +102,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -138,10 +138,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\mainwindow.cpp"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\mainwindow.cpp"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/mainwindow.cpp"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -153,7 +153,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -174,11 +174,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -210,10 +210,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\modelerapp.cpp"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\modelerapp.cpp"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/modelerapp.cpp"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/modelerapp.cpp"
 },
 {
     "arguments": [
@@ -225,7 +225,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -246,11 +246,83 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtWidgets",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtGui",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "C:\\Qt\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++",
+        "-Wno-unknown-pragmas",
+        "-Wno-unknown-warning-option",
+        "-Wno-documentation-unknown-command",
+        "-fno-delayed-template-parsing",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\parser.cpp"
+    ],
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/parser.cpp"
+},
+{
+    "arguments": [
+        "clang",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++17",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DQ_CREATOR_RUN",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_CORE_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQT_WIDGETS_LIB",
+        "-DUNICODE",
+        "-DWIN32",
+        "-DWIN64",
+        "-D_ENABLE_EXTENDED_ALIGNED_STORAGE",
+        "-D_UNICODE",
+        "-D_WIN64",
+        "-I",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -282,10 +354,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\mainwindow.h"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\mainwindow.h"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/mainwindow.h"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/mainwindow.h"
 },
 {
     "arguments": [
@@ -297,7 +369,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -318,11 +390,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -354,10 +426,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\modelerapp.h"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\modelerapp.h"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/modelerapp.h"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/modelerapp.h"
 },
 {
     "arguments": [
@@ -369,7 +441,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -390,11 +462,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -426,10 +498,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\vector.h"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\vector.h"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/vector.h"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/vector.h"
 },
 {
     "arguments": [
@@ -441,7 +513,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jh020\\AppData\\Local\\Temp\\QtCreator-nSExdv\\clang-uiheader-juhVgp",
+        "C:\\Users\\BoomerDestroyer\\AppData\\Local\\Temp\\QtCreator-IunWUN\\clang-uiheader-QaRNPr",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -462,11 +534,11 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler",
         "-I",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -498,9 +570,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jh020\\OneDrive\\Documents\\Qt_projects\\qties\\2DGraphicsModeler\\shape.h"
+        "C:\\Users\\BoomerDestroyer\\Documents\\GitHub\\qties\\2DGraphicsModeler\\Shape.h"
     ],
-    "directory": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler/shape.h"
+    "directory": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/Shape.h"
 }
 ]

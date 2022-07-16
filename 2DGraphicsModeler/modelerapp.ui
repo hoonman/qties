@@ -13,17 +13,14 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QGraphicsView" name="graphicsView">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>160</y>
-     <width>83</width>
-     <height>29</height>
+     <x>20</x>
+     <y>30</y>
+     <width>361</width>
+     <height>251</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
    </property>
   </widget>
  </widget>

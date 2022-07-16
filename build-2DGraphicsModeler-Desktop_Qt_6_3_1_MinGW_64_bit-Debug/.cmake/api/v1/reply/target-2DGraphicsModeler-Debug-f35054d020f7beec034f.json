@@ -50,7 +50,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 30,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -74,7 +74,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 52,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -317,14 +317,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
+					"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
 				},
 				{
-					"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/2DGraphicsModeler"
+					"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include"
+					"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include"
 				},
 				{
 					"backtrace" : 13,
@@ -367,18 +367,19 @@
 				0,
 				1,
 				2,
-				6
+				6,
+				10
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "2DGraphicsModeler_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "2DGraphicsModeler_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "2DGraphicsModeler_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "2DGraphicsModeler::@6890427a1f51a3e7e1df",
@@ -472,7 +473,8 @@
 				0,
 				1,
 				2,
-				6
+				6,
+				10
 			]
 		},
 		{
@@ -483,8 +485,8 @@
 				5,
 				8,
 				9,
-				10,
-				11
+				12,
+				13
 			]
 		},
 		{
@@ -493,14 +495,15 @@
 			[
 				4,
 				7,
-				12
+				11,
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13
+				15
 			]
 		}
 	],
@@ -510,7 +513,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp",
+			"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -558,31 +561,42 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "shape.h",
+			"path" : "Shape.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include/ui_mainwindow.h",
-			"sourceGroupIndex" : 1
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "parser.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include/ui_modelerapp.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp",
+			"backtrace" : 4,
+			"path" : "shapes.txt",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Documents/Qt_projects/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp.rule",
+			"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/include/ui_modelerapp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/BoomerDestroyer/Documents/GitHub/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],
