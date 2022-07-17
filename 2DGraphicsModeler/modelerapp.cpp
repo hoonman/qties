@@ -2,6 +2,7 @@
 #include "ui_modelerapp.h"
 #include "Shape.h"
 #include "line.h"
+#include "parser.h"
 
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
@@ -17,7 +18,8 @@ ModelerApp::~ModelerApp()
 
 void ModelerApp::on_pushButton_readParser_clicked()
 {
-    //openFile1();
+    parser hi;
+    hi.openFile1();
 }
 
 void ModelerApp::paintEvent(QPaintEvent *event)

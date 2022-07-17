@@ -1,20 +1,12 @@
-#include <iostream>
-#include <Qfile>
-#include <QTextStream>
-#include <QMessageBox>
+#include "parser.h"
 
-void readingFile1(QFile &file);
-void readLine();
-void readPolyline();
-void readPolygon();
-void readRectangle();
-void readSquare();
-void readElipse();
-void readCircle();
-void readText();
+parser::parser()
+{
+
+}
 
 // This opens the file, and we start reading the process of reading it
-void openFile1()
+void parser::openFile1()
 {
          // We open the shapes.txt file to read it
          QFile file("shapes.txt");
@@ -31,7 +23,7 @@ void openFile1()
 }
 
 
-void readingFile1(QFile &file)
+void parser::readingFile1(QFile &file)
 {
     //qInfo() << "Reading file...";
     QTextStream stream(&file);
@@ -100,11 +92,11 @@ void readingFile1(QFile &file)
     file.close();
 }
 
-void readLine(){}
-void readPolyline(){}
-void readPolygon(){}
-void readRectangle(){}
-void readSquare(){}
-void readElipse(){}
-void readCircle(){}
-void readText(){}
+void parser::readLine(){}
+void parser::readPolyline(){}
+void parser::readPolygon(){}
+void parser::readRectangle(){}
+void parser::readSquare(){}
+void parser::readElipse(){}
+void parser::readCircle(){}
+void parser::readText(){}
