@@ -17,8 +17,11 @@ void Polyline::draw(const int translate_x, const int translate_y)
 
     painter->setPen(getPen());
     painter->setBrush(getBrush());
-    painter->drawPolyline(points, pointAmount);
-
-
+//    painter->drawPolyline(points, pointAmount);
 
 }
+
+//implementation
+void Polyline::move(){}
+void Polyline::perimeter(){}
+void Polyline::area() {}

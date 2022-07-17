@@ -16,4 +16,7 @@ void Line::draw(const int translate_x, const int translate_y)
 
 }
 
-
+//needs implementation
+void Line::move(){}
+void Line::perimeter(){}
+void Line::area(){ }

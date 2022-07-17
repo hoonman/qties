@@ -19,7 +19,7 @@ class Polyline : public Shape
         void area() override;
 
     private:
-        QVector<QPoint> points;
+        vector<QPoint> points;
         int pointAmount;
 
 };
