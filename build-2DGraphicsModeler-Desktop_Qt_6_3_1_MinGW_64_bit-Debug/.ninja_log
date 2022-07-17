@@ -1,8 +1,14 @@
 # ninja log v5
-18	254	6794648282889466	2DGraphicsModeler_autogen/mocs_compilation.cpp	7403ef0cad57ecd8
-18	254	6794648282889466	2DGraphicsModeler_autogen/timestamp	7403ef0cad57ecd8
-900	3012	6793446839568094	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	909fc3d4ae6bde3e
-270	2463	6794648305010001	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	c99e7b65c2ab7141
-2463	3024	6794648310587208	2DGraphicsModeler.exe	8728c279f6afaae
-906	3055	6793446840000129	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	bbfe0bd436f8873b
-268	2455	6794648304929856	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	f1cd4290ea467b73
+8	866	6797106998191488	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+8	866	6797106998191488	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+867	2279	6797107013691480	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	56f6f1667a46e23b
+941	2509	6797107015979335	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+2509	2777	6797107018619377	2DGraphicsModeler.exe	de760311df870e96
+885	2295	6797107013841498	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	a418d42a3825147d
+908	2429	6797107015181484	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+8	866	6797106998191488	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+8	866	6797106998191488	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+970	1133	6797107002085516	CMakeFiles/2DGraphicsModeler.dir/parser.cpp.obj	426ae5fb744c7b17
+999	1167	6797107002501501	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+1026	1204	6797107002901481	CMakeFiles/2DGraphicsModeler.dir/line.cpp.obj	6e79267eace4422d
+1059	1223	6797107003131488	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9

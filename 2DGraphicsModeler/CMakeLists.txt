@@ -26,6 +26,18 @@ set(PROJECT_SOURCES
         shape.h
 	parser.cpp
 	shapes.txt
+        line.h
+        line.cpp
+        polyline.h
+        polyline.cpp
+        polygon.h
+        polygon.cpp
+        rectangle.h
+        rectangle.cpp
+        ellipse.h
+        ellipse.cpp
+        text.h
+        text.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
