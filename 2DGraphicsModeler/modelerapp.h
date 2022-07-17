@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::ModelerApp *ui;
+    void paintEvent(QPaintEvent *event);
 };
 
 #endif // MODELERAPP_H

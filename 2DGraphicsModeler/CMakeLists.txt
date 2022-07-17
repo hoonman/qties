@@ -23,7 +23,19 @@ set(PROJECT_SOURCES
 	modelerapp.cpp
  	modelerapp.ui
         vector.h
-        shape.h
+        line.cpp
+        line.h
+        ellipse.cpp
+        ellipse.h
+        parser.cpp
+        polygon.cpp
+        polygon.h
+        polyline.cpp
+        polyline.h
+        rectangle.cpp
+        rectangle.h
+        Shape.h
+        text.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
