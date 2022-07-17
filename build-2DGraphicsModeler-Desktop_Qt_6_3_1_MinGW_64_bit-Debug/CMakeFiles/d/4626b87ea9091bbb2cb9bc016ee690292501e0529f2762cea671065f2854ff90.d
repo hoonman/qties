@@ -506,12 +506,24 @@
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/CMakeLists.txt \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/Shape.h \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/ellipse.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/ellipse.h \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/line.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/line.h \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/main.cpp \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/mainwindow.cpp \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/mainwindow.h \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/modelerapp.cpp \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/modelerapp.h \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/parser.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/polygon.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/polygon.h \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/polyline.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/polyline.h \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/rectangle.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/rectangle.h \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/text.cpp \
+  C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/text.h \
   C:/Users/BoomerDestroyer/Documents/GitHub/qties/2DGraphicsModeler/vector.h \
   2DGraphicsModeler_autogen/moc_predefs.h \
   CMakeFiles/3.23.2/CMakeCXXCompiler.cmake \

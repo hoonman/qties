@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -20,6 +21,7 @@ class Ui_ModelerApp
 {
 public:
     QGraphicsView *graphicsView;
+    QPushButton *pushButton_readParser;
 
     void setupUi(QDialog *ModelerApp)
     {
@@ -29,6 +31,9 @@ public:
         graphicsView = new QGraphicsView(ModelerApp);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setGeometry(QRect(20, 30, 361, 251));
+        pushButton_readParser = new QPushButton(ModelerApp);
+        pushButton_readParser->setObjectName(QString::fromUtf8("pushButton_readParser"));
+        pushButton_readParser->setGeometry(QRect(310, 0, 80, 24));
 
         retranslateUi(ModelerApp);
 
@@ -38,6 +43,7 @@ public:
     void retranslateUi(QDialog *ModelerApp)
     {
         ModelerApp->setWindowTitle(QCoreApplication::translate("ModelerApp", "Dialog", nullptr));
+        pushButton_readParser->setText(QCoreApplication::translate("ModelerApp", "Read Parser", nullptr));
     } // retranslateUi
 
 };

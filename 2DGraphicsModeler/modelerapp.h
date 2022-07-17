@@ -15,6 +15,9 @@ public:
     explicit ModelerApp(QWidget *parent = nullptr);
     ~ModelerApp();
 
+private slots:
+    void on_pushButton_readParser_clicked();
+
 private:
     Ui::ModelerApp *ui;
 };
