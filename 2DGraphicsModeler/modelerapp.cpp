@@ -15,6 +15,11 @@ ModelerApp::~ModelerApp()
     delete ui;
 }
 
+void ModelerApp::on_pushButton_readParser_clicked()
+{
+    //openFile1();
+}
+
 void ModelerApp::paintEvent(QPaintEvent *event)
 {
     Shape* shape = new Line;

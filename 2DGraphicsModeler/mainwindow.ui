@@ -26,13 +26,13 @@
     <property name="title">
      <string>Login Window</string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>60</y>
        <width>183</width>
-       <height>90</height>
+       <height>105</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -81,7 +81,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
