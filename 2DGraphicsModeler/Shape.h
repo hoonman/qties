@@ -2,6 +2,9 @@
 #define SHAPE_H
 
 #include <QPainter>
+#include <QColor>
+#include <QPoint>
+#include "vector.h"
 
 class Shape
 {
@@ -16,15 +19,27 @@ public:
     virtual ~Shape() {}
     //add copy operations here
 
-    ShapeType getShape() const;
-    const QPen& getPen() const;
-    const QBrush& getBrush() const;
+    ShapeType getShape() const{return shape;}
+    const QPen& getPen() const{return pen;}
+    const QBrush& getBrush() const{return brush;}
 
-    void setShape(ShapeType shape);
-    void setPen(Qt::GlobalColor, int width, Qt::PenStyle,
-                Qt::PenCapStyle, Qt::PenJoinStyle);
-    void setPen(Qt::GlobalColor);
-    void setBrush(Qt::GlobalColor, Qt::BrushStyle);
+    void setShape(ShapeType shape){this->shape = shape;}
+    void setPen(QColor &color, int width, Qt::PenStyle p, Qt::PenCapStyle pc, Qt::PenJoinStyle pj)
+    {
+        //QColor color is an object of type Color - QColor(Qt::GlobalColor color)
+        pen.setColor(color); //requires an object of Qcolor passed //sets object pen
+        pen.setWidth(width); //sets object width
+        pen.setStyle(p);     //requires p variable of the enum type PenStyle
+        pen.setCapStyle(pc); //pc variable of the enum type PenCapStyle
+        pen.setJoinStyle(pj);//pj variable of the enum type PenJoinStyle
+    }
+
+
+    void setBrush(QColor &color, Qt::BrushStyle bs)
+    {
+        brush.setColor(color);
+        brush.setStyle(bs);
+    }
 
     void defaultStyle();
     void drawRect(int width, int height);
@@ -34,8 +49,10 @@ public:
     virtual void perimeter() = 0;
     virtual void area() = 0;
 
-private:
+protected:
     QPainter* painter;
+private:
+
     int id;
     ShapeType shape;
     QPen pen;
