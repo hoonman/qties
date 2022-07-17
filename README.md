@@ -34,7 +34,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [x] 
+* [x] User Interface Implementation
 * [x] 
 * [x] 
 * [x] 
