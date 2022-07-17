@@ -19,7 +19,7 @@ ModelerApp::~ModelerApp()
 void ModelerApp::on_pushButton_readParser_clicked()
 {
     parser hi;
-    hi.openFile1();
+    hi.openFile();
 }
 
 void ModelerApp::paintEvent(QPaintEvent *event)

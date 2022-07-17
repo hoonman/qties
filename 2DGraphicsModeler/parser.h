@@ -11,16 +11,26 @@ class parser
 {
 public:
     parser();
-    void openFile1();
-    void readingFile1(QFile &file);
-    void readLine();
-    void readPolyline();
-    void readPolygon();
-    void readRectangle();
-    void readSquare();
-    void readElipse();
-    void readCircle();
-    void readText();
+    void openFile();
+    void readingFile(QFile &file);
+private:
+QString ShapeType;
+QString ShapeDimensions;
+QString PenColor;
+QString PenWidth;
+QString PenStyle;
+QString PenCapStyle;
+QString PenJoinStyle;
+QString BrushColor;
+QString BrushStyle;
+QString TextString;
+QString TextColor;
+QString TextAlignment;
+QString TextPointSize;
+QString TextFontFamily;
+QString TextFontStyle;
+QString TextFontWeight;
+
 };
 
 #endif // PARSER_H

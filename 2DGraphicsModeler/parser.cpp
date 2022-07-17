@@ -6,7 +6,7 @@ parser::parser()
 }
 
 // This opens the file, and we start reading the process of reading it
-void parser::openFile1()
+void parser::openFile()
 {
          // We open the shapes.txt file to read it
          QFile file("C:/Users/BoomerDestroyer/Documents/GitHub/qties2/2DGraphicsModeler/shapes.txt");
@@ -19,11 +19,11 @@ void parser::openFile1()
          }
 
         // Reading file function...
-        readingFile1(file);
+        readingFile(file);
 }
 
 
-void parser::readingFile1(QFile &file)
+void parser::readingFile(QFile &file)
 {
     qCritical() << "YOU MADE IT!";
 
@@ -50,36 +50,36 @@ void parser::readingFile1(QFile &file)
         // if ID is 1, then go to function that will read the Line characteristics, ect...
         if(ID == "1")
         {
-            qCritical() << "Read Line!";
-            readLine();
+
+            //readLine();
         }
         else if(ID == "2")
         {
-            readPolyline();
+            //readPolyline();
         }
         else if(ID == "3")
         {
-            readPolygon();
+            //readPolygon();
         }
         else if(ID == "4")
         {
-            readRectangle();
+            //readRectangle();
         }
         else if(ID == "5")
         {
-            readSquare();
+            //readSquare();
         }
         else if(ID == "6")
         {
-            readElipse();
+            //readElipse();
         }
         else if(ID == "7")
         {
-            readCircle();
+            //readCircle();
         }
         else if(ID == "8")
         {
-            readText();
+            //readText();
         }
         else
         {
@@ -98,11 +98,4 @@ void parser::readingFile1(QFile &file)
     file.close();
 }
 
-void parser::readLine(){}
-void parser::readPolyline(){}
-void parser::readPolygon(){}
-void parser::readRectangle(){}
-void parser::readSquare(){}
-void parser::readElipse(){}
-void parser::readCircle(){}
-void parser::readText(){}
+
