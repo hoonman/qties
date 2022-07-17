@@ -1,4 +1,0 @@
-/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
-/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
-/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/2DGraphicsModeler.dir
-/home/cs1c/Desktop/qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_0_GCC_64bit-Debug/CMakeFiles/2DGraphicsModeler_autogen.dir
