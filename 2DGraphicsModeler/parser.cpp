@@ -9,7 +9,7 @@ parser::parser()
 void parser::openFile1()
 {
          // We open the shapes.txt file to read it
-         QFile file("shapes.txt");
+         QFile file("C:/Users/BoomerDestroyer/Documents/GitHub/qties2/2DGraphicsModeler/shapes.txt");
          // If there is an error with the file this will tell us
          if(!file.open(QIODevice::OpenModeFlag::ReadOnly))
          {
@@ -25,6 +25,9 @@ void parser::openFile1()
 
 void parser::readingFile1(QFile &file)
 {
+    qCritical() << "YOU MADE IT!";
+
+
     //qInfo() << "Reading file...";
     QTextStream stream(&file);
 
@@ -36,15 +39,18 @@ void parser::readingFile1(QFile &file)
     QString ID = "";
 
     // The file while be read as long as we are not at the end of the file
-    while(isAtEnd)
+    while(!isAtEnd)
     {
+        qCritical() << "Read Something?!";
         // Reading input from file
         stream >> shapeIDText;
         stream >> ID;
 
+
         // if ID is 1, then go to function that will read the Line characteristics, ect...
         if(ID == "1")
         {
+            qCritical() << "Read Line!";
             readLine();
         }
         else if(ID == "2")
