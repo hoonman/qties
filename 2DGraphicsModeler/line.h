@@ -22,8 +22,6 @@ class Line : public Shape
     void perimeter() override;
     void area() override;
 
-
-
     private:
         QPoint Point1;
         QPoint Point2;
