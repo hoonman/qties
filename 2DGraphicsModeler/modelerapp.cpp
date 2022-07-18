@@ -79,4 +79,11 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     ellip->setBrush(Qt::white, Qt::NoBrush);
     ellip->draw(this);
+
+    Shape* square = new Rectangle;
+    square->setPoints(QPoint(800, 150), QPoint(200, 200));
+    square->setPen(Qt::red, 5, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
+    square->setBrush(Qt::blue, Qt::HorPattern);
+    //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    square->draw(this);
 }
