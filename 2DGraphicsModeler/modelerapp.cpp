@@ -67,6 +67,10 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     polyG->setBrush(Qt::yellow, Qt::SolidPattern);
     polyG->draw(this);
 
-
-
+    //Made a different set function for ellipse dimensions
+    Shape* ellip = new Ellipse;
+    dynamic_cast<Ellipse*>(ellip)->setEllipse(QPoint(520,200), 170, 100);
+    ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    ellip->setBrush(Qt::white, Qt::NoBrush);
+    ellip->draw(this);
 }

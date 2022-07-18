@@ -10,7 +10,7 @@ class Ellipse : public Shape
         Ellipse(QPaintDevice* device = nullptr, int id = -1,
                 ShapeType shape = ShapeType::Ellipse) : Shape{device, id, shape} {}
         ~Ellipse() override {}
-
+        void setEllipse(const QPoint &p1, int x, int y);
         //Override from the base class
         void draw(ModelerApp *model) override;
         void move() override;
@@ -19,7 +19,9 @@ class Ellipse : public Shape
         void setPoints(const QPoint &p1, const QPoint &p2) override;
 
     private:
-
+        QPoint point1;
+        int xAxis;
+        int yAxis;
 
 
 };
