@@ -3,6 +3,8 @@
 #include "Shape.h"
 #include "line.h"
 #include "parser.h"
+#include "rectangle.h"
+
 
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
@@ -24,10 +26,16 @@ void ModelerApp::on_pushButton_readParser_clicked()
 
 void ModelerApp::paintEvent(QPaintEvent *event)
 {
-    Shape* shape = new Line;
+    Shape* line = new Line;
     QPoint point(10, 10);
     QPoint point2(22, 22);
-    shape->setPoints(point, point2);
-    shape->setPen(Qt::blue, 4, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
-    shape->draw(this);
+    line->setPoints(point, point2);
+    line->setPen(Qt::blue, 4, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    line->draw(this);
+
+    Shape* rect = new Rectangle;
+    rect->setPoints(QPoint(10,10), QPoint(200, 200));
+    rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    rect->draw(this);
+
 }
