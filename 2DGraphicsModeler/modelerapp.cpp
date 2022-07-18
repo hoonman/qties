@@ -86,4 +86,10 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     square->setBrush(Qt::blue, Qt::HorPattern);
     //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     square->draw(this);
+
+    Shape* circle = new Ellipse;
+    dynamic_cast<Ellipse*>(circle)->setEllipse(QPoint(120,450), 100, 100);
+    circle->setPen(Qt::black, 12, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    circle->setBrush(Qt::magenta, Qt::SolidPattern);
+    circle->draw(this);
 }
