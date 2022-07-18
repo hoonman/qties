@@ -17,7 +17,7 @@ class Line : public Shape
     void setPoints(const QPoint &p1, const QPoint &p2) override;
 
     //Override from the base class
-    void draw(ModelerApp *test) override;
+    void draw(ModelerApp *model) override;
     void move() override;
     void perimeter() override;
     void area() override;

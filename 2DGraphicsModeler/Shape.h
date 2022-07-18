@@ -36,13 +36,14 @@ public:
     }
 
 
-    void setBrush(QColor &color, Qt::BrushStyle bs)
+    void setBrush(Qt::GlobalColor color, Qt::BrushStyle bs)
     {
         brush.setColor(color);
         brush.setStyle(bs);
     }
+
     virtual void setPoints(const QPoint &p1, const QPoint &p2) = 0;
-    virtual void draw(ModelerApp *test) = 0;
+    virtual void draw(ModelerApp *mainPaint) = 0;
     virtual void move() = 0;
     virtual void perimeter() = 0;
     virtual void area() = 0;

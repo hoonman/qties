@@ -8,10 +8,10 @@ void Line::setPoints(const QPoint &p1, const QPoint &p2)
     Point2 = p2;
 }
 
-void Line::draw(ModelerApp *test)
+void Line::draw(ModelerApp *model)
 {
     painter = new QPainter;
-    painter->begin(test);
+    painter->begin(model);
     painter->setPen(getPen());
     painter->drawLine(Point1, Point2);
     painter->end();
