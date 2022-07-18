@@ -681,3 +681,4 @@ C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.cpp
  uic:ui_modelerapp.h
 C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polygon.cpp
 C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/rectangle.cpp
+C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/text.cpp

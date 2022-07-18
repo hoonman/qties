@@ -27,7 +27,7 @@ public:
     {
         if (ModelerApp->objectName().isEmpty())
             ModelerApp->setObjectName(QString::fromUtf8("ModelerApp"));
-        ModelerApp->resize(1313, 678);
+        ModelerApp->resize(1313, 672);
         graphicsView = new QGraphicsView(ModelerApp);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setGeometry(QRect(0, 590, 401, 81));

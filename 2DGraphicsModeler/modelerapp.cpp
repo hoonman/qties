@@ -7,6 +7,7 @@
 #include "polyline.h"
 #include "polygon.h"
 #include "ellipse.h"
+#include "text.h"
 
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
@@ -73,4 +74,10 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     ellip->setBrush(Qt::white, Qt::NoBrush);
     ellip->draw(this);
+
+    Shape* text = new Text;
+    //void setText(int x, int y, int length, int width, QString text);
+    dynamic_cast<Text*>(text)->setText(250, 425, 500, 50, Qt::AlignCenter, "Class Project - 2D Graphics Modeler");
+    text->setFont(Qt::blue, 10, "Comic Sans MS", QFont::StyleItalic, QFont::Normal);
+    text->draw(this);
 }

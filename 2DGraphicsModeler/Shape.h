@@ -6,6 +6,8 @@
 #include <QPoint>
 #include "vector.h"
 #include "modelerapp.h"
+#include <QFont>
+
 class Shape
 {
 public:
@@ -23,6 +25,7 @@ public:
     ShapeType getShape() const{return shape;}
     const QPen& getPen() const{return pen;}
     const QBrush& getBrush() const{return brush;}
+    const QFont& getFont() const{return font;}
 
     void setShape(ShapeType shape){this->shape = shape;}
     void setPen(Qt::GlobalColor color, int width, Qt::PenStyle p, Qt::PenCapStyle pc, Qt::PenJoinStyle pj)
@@ -42,6 +45,15 @@ public:
         brush.setStyle(bs);
     }
 
+    void setFont(Qt::GlobalColor color, int pointSize, QString family, QFont::Style style, QFont::Weight weight)
+    {
+        pen.setColor(color);
+        font.setPointSize(pointSize);
+        font.setFamily(family);
+        font.setStyle(style);
+        font.setWeight(weight);
+    }
+
     virtual void setPoints(const QPoint &p1, const QPoint &p2) = 0;
     virtual void draw(ModelerApp *mainPaint) = 0;
     virtual void move() = 0;
@@ -50,11 +62,12 @@ public:
 protected:
     QPainter* painter;
 private:
-
+    QFont font;
     int id;
     ShapeType shape;
     QPen pen;
     QBrush brush;
+
 protected:
     QPainter& getQPainter();
 };
