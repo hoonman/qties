@@ -4,8 +4,6 @@
 #include "line.h"
 #include "parser.h"
 #include "rectangle.h"
-
-
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ModelerApp)
@@ -26,6 +24,15 @@ void ModelerApp::on_pushButton_readParser_clicked()
 
 void ModelerApp::paintEvent(QPaintEvent *event)
 {
+    QString color;
+    Qt::GlobalColor gColor;
+    parser parse;
+    parse.setPenColor();
+    color = parse.getPenColor();
+
+    gColor = Qt::cyan;
+
+
     Shape* line = new Line;
     QPoint point(10, 10);
     QPoint point2(22, 22);
@@ -35,7 +42,8 @@ void ModelerApp::paintEvent(QPaintEvent *event)
 
     Shape* rect = new Rectangle;
     rect->setPoints(QPoint(10,10), QPoint(200, 200));
-    rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    rect->setPen(gColor, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     rect->draw(this);
 
 }

@@ -13,6 +13,9 @@ public:
     parser();
     void openFile();
     void readingFile(QFile &file);
+    void setPenColor() {ShapeType = "cyan";}
+    QString& getShapeType() {return ShapeType;}
+    QString& getPenColor() {return PenColor;}
 private:
 QString ShapeType;
 QString ShapeDimensions;

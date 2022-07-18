@@ -5,9 +5,11 @@
 
 class Polygon : public Shape
 {
-    public:
-        Polygon(QPaintDevice* device = nullptr, int id = -1,
+public:
+    Polygon(QPaintDevice* device = nullptr, int id = -1,
         ShapeType shape = ShapeType::Polygon) : Shape{device, id, shape} {}
+    ~Polygon() override {}
+
 };
 
 #endif // POLYGON_H

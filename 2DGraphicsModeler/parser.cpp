@@ -1,5 +1,5 @@
 #include "parser.h"
-
+using namespace std;
 parser::parser()
 {
 
@@ -9,7 +9,11 @@ parser::parser()
 void parser::openFile()
 {
          // We open the shapes.txt file to read it
-         QFile file("C:/Users/BoomerDestroyer/Documents/GitHub/qties2/2DGraphicsModeler/shapes.txt");
+         QFile file("shapes.txt");
+         if (!file.exists())
+         {
+             qCritical() << "File does not exist";
+         }
          // If there is an error with the file this will tell us
          if(!file.open(QIODevice::OpenModeFlag::ReadOnly))
          {
@@ -50,7 +54,6 @@ void parser::readingFile(QFile &file)
         // if ID is 1, then go to function that will read the Line characteristics, ect...
         if(ID == "1")
         {
-
             //readLine();
         }
         else if(ID == "2")
