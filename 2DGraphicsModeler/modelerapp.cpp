@@ -2,12 +2,11 @@
 #include "ui_modelerapp.h"
 #include "Shape.h"
 #include "line.h"
-#include "parser.h"
 #include "rectangle.h"
 #include "polyline.h"
 #include "polygon.h"
 #include "ellipse.h"
-#include "text.h"
+#include "parser2.h"
 
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
@@ -23,17 +22,23 @@ ModelerApp::~ModelerApp()
 
 void ModelerApp::on_pushButton_readParser_clicked()
 {
-    parser hi;
-    hi.openFile();
+//    parser hi;
+//    hi.openFile();
+    int something;
+    parser2 fileName;
+    fileName.openAndDraw();
+    something = fileName.getID();
+    std::cout << "somethign: "<< something << std::endl;
+
 }
 
 void ModelerApp::paintEvent(QPaintEvent *event)
 {
     QString color;
     Qt::GlobalColor gColor;
-    parser parse;
-    parse.setPenColor();
-    color = parse.getPenColor();
+//    parser parse;
+//    parse.setPenColor();
+//    color = parse.getPenColor();
 
     gColor = Qt::cyan;
 
@@ -74,10 +79,4 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     ellip->setBrush(Qt::white, Qt::NoBrush);
     ellip->draw(this);
-
-    Shape* text = new Text;
-    //void setText(int x, int y, int length, int width, QString text);
-    dynamic_cast<Text*>(text)->setText(250, 425, 500, 50, Qt::AlignCenter, "Class Project - 2D Graphics Modeler");
-    text->setFont(Qt::blue, 10, "Comic Sans MS", QFont::StyleItalic, QFont::Normal);
-    text->draw(this);
 }

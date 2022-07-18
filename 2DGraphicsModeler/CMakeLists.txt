@@ -37,8 +37,9 @@ set(PROJECT_SOURCES
         rectangle.h
         Shape.h
         text.h
-        text.cpp
 	shapes.txt
+        parser2.cpp
+        parser2.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
