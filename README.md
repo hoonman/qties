@@ -2,7 +2,7 @@
 
 **2D Graphics Modeler** is a (insert what it is).
 
-Submitted by: **Team (insert team name)**
+Submitted by: **Team Qties**
 
 Time spent: **x** hours spent in total
 ## Description
