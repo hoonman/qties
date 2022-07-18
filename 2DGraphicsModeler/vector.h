@@ -39,6 +39,12 @@ public:
         return currentSize;
     }
 
+    size_t begin() const
+    {
+        if (currentSize == 0)
+            return 0;
+        return &arr[0];
+    }
     OBJECT_TYPE operator[](const size_t index) const
     {
         return arr[index];

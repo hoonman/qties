@@ -11,7 +11,6 @@ class Polyline : public Shape
                 ShapeType shape = ShapeType::Polyline) : Shape{device, id, shape} {}
         void setPoints(vector<QPoint> pointVector, int pointAmount);
 
-
         //Override from the base class
         void draw(ModelerApp *test) override;
         void move() override;
