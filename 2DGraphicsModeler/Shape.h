@@ -37,8 +37,6 @@ public:
         pen.setCapStyle(pc); //pc variable of the enum type PenCapStyle
         pen.setJoinStyle(pj);//pj variable of the enum type PenJoinStyle
     }
-
-
     void setBrush(Qt::GlobalColor color, Qt::BrushStyle bs)
     {
         brush.setColor(color);

@@ -16,7 +16,7 @@ public:
     ~ModelerApp();
 
 private slots:
-    void on_pushButton_readParser_clicked();
+    void on_pushButton_readParser_clicked(QPaintEvent *event);
 
 private:
     Ui::ModelerApp *ui;

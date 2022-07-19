@@ -20,7 +20,7 @@ ModelerApp::~ModelerApp()
     delete ui;
 }
 
-void ModelerApp::on_pushButton_readParser_clicked()
+void ModelerApp::on_pushButton_readParser_clicked(QPaintEvent *event)
 {
 //    parser hi;
 //    hi.openFile();
@@ -29,6 +29,12 @@ void ModelerApp::on_pushButton_readParser_clicked()
     fileName.openAndDraw();
     something = fileName.getID();
     std::cout << "somethign: "<< something << std::endl;
+//    Shape* line = new Line;
+//    QPoint point(20, 90);
+//    QPoint point2(100, 20);
+//    line->setPoints(point, point2);
+//    line->setPen(Qt::blue, 4, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+//    line->draw(this);
 
 }
 
@@ -36,12 +42,12 @@ void ModelerApp::paintEvent(QPaintEvent *event)
 {
     QString color;
     Qt::GlobalColor gColor;
+
 //    parser parse;
 //    parse.setPenColor();
 //    color = parse.getPenColor();
 
     gColor = Qt::cyan;
-
 
     Shape* line = new Line;
     QPoint point(20, 90);
