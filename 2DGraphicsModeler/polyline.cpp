@@ -1,6 +1,10 @@
+// ========================================================================
+// polyline.cpp
+// ========================================================================
+
 #include "polyline.h"
 
-
+// setPoints Function
 void Polyline::setPoints(const QPoint &p1, const QPoint &p2)
 {
     points.push_back(p1);
@@ -8,6 +12,7 @@ void Polyline::setPoints(const QPoint &p1, const QPoint &p2)
 
 }
 
+// draw Function
 void Polyline::draw(ModelerApp *model)
 {
     QPoint *start = points.begin();

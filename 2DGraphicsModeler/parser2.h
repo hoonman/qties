@@ -1,3 +1,7 @@
+// ========================================================================
+// parser2.h
+// ========================================================================
+
 #ifndef PARSER_H
 #define PARSER_H
 
@@ -27,6 +31,7 @@ public:
     void getPenWidth();
     void getCapStyle();
     void getPenJoinStyle();
+
 private:
     int id;
     std::string line;

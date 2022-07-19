@@ -1,3 +1,7 @@
+// ========================================================================
+// Shape.h
+// ========================================================================
+
 #ifndef SHAPE_H
 #define SHAPE_H
 
@@ -11,63 +15,83 @@
 class Shape
 {
 public:
-    enum class ShapeType {Initial, Line, Polyline, Polygon,
-                          Rectangle, Ellipse, Text};
-    //QPaintDevice constructs a painter begins drawing the paint
-    //device immediately. constructor calls begin() and
-    //QPainter destructor automatically calls end().
-    Shape(QPaintDevice* device = nullptr, int id = -1,
-          ShapeType shape = ShapeType::Initial) {};
+
+    enum class ShapeType {Initial, Line, Polyline, Polygon, Rectangle, Ellipse, Text};
+
+    // Constructor
+    Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Initial){};
+
+
+    // Destructor
     virtual ~Shape() {}
 
     //add copy operations here
 
+
+    // Getter Functions
+
+    // getShape Function
     ShapeType getShape() const{return shape;}
+
+
+    // getPen Function
     const QPen& getPen() const{return pen;}
+
+
+    // getBrush Function
     const QBrush& getBrush() const{return brush;}
+
+
+    // getFont Function
     const QFont& getFont() const{return font;}
 
+
+    // Setter Functions
+
+    // setShape Function
     void setShape(ShapeType shape){this->shape = shape;}
-    void setPen(Qt::GlobalColor color, int width, Qt::PenStyle p, Qt::PenCapStyle pc, Qt::PenJoinStyle pj)
-    {
-        //QColor color is an object of type Color - QColor(Qt::GlobalColor color)
-        pen.setColor(color); //requires an object of Qcolor passed //sets object pen
-        pen.setWidth(width); //sets object width
-        pen.setStyle(p);     //requires p variable of the enum type PenStyle
-        pen.setCapStyle(pc); //pc variable of the enum type PenCapStyle
-        pen.setJoinStyle(pj);//pj variable of the enum type PenJoinStyle
-    }
-    void setBrush(Qt::GlobalColor color, Qt::BrushStyle bs)
-    {
-        brush.setColor(color);
-        brush.setStyle(bs);
-    }
 
-    void setFont(Qt::GlobalColor color, int pointSize, QString family, QFont::Style style, QFont::Weight weight)
-    {
-        pen.setColor(color);
-        font.setPointSize(pointSize);
-        font.setFamily(family);
-        font.setStyle(style);
-        font.setWeight(weight);
-    }
 
+    // setPen Function
+    void setPen(Qt::GlobalColor color, int width, Qt::PenStyle p, Qt::PenCapStyle pc, Qt::PenJoinStyle pj);
+
+
+    // setBrush Function
+    void setBrush(Qt::GlobalColor color, Qt::BrushStyle bs);
+
+
+    // setFont Function
+    void setFont(Qt::GlobalColor color, int pointSize, QString family, QFont::Style style, QFont::Weight weight);
+
+
+    // Virtual Functions
+
+    // setPoints Function
     virtual void setPoints(const QPoint &p1, const QPoint &p2) = 0;
+
+    // draw Function
     virtual void draw(ModelerApp *mainPaint) = 0;
+
+    // move Function
     virtual void move() = 0;
+
+    // perimeter Function
     virtual void perimeter() = 0;
+
+    // area Function
     virtual void area() = 0;
+
 protected:
     QPainter* painter;
+    QPainter& getQPainter();
+
 private:
     QFont font;
     int id;
     ShapeType shape;
     QPen pen;
     QBrush brush;
-
-protected:
-    QPainter& getQPainter();
 };
 
 #endif // SHAPE_H
+

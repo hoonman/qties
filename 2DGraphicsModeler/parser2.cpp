@@ -1,9 +1,13 @@
+// ========================================================================
+// parser2.cpp
+// ========================================================================
+
 #include "parser2.h"
-parser2::parser2()
-{
 
-}
+// Constructor
+parser2::parser2(){}
 
+// openFile Function
 void parser2::openFile()
 {
     infile.open("C:/Users/jh020/OneDrive/Desktop/demo2/qties/2DGraphicsModeler/shapes.txt");

@@ -1,5 +1,10 @@
+// ========================================================================
+// rectangle.h
+// ========================================================================
+
 #include "rectangle.h"
 
+// setPoints Function
 void Rectangle::setPoints(const QPoint &point1, const QPoint &point2)
 {
     x = point1.x();
@@ -8,6 +13,7 @@ void Rectangle::setPoints(const QPoint &point1, const QPoint &point2)
     height = point2.y();
 }
 
+// setDimension Function
 //void Rectangle::setDimension(int x, int y, int width, int height)
 //{
 //    this->x = x;
@@ -16,6 +22,7 @@ void Rectangle::setPoints(const QPoint &point1, const QPoint &point2)
 //    this->height = height;
 //}
 
+// draw Function
 void Rectangle::draw(ModelerApp *model)
 {
     painter = new QPainter;
@@ -25,6 +32,11 @@ void Rectangle::draw(ModelerApp *model)
     painter->end();
 }
 
+// move Function
 void Rectangle::move(){}
+
+// perimeter Function
 void Rectangle::perimeter(){}
+
+// area Function
 void Rectangle::area(){ }

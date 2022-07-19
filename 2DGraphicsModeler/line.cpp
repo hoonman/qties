@@ -1,6 +1,10 @@
+// ========================================================================
+// line.cpp
+// ========================================================================
 
 #include "line.h"
 
+// setPoints Function
 void Line::setPoints(const QPoint &p1, const QPoint &p2)
 {
     //Instantiate Line mmembers
@@ -8,6 +12,7 @@ void Line::setPoints(const QPoint &p1, const QPoint &p2)
     Point2 = p2;
 }
 
+// draw Function
 void Line::draw(ModelerApp *model)
 {
     painter = new QPainter;

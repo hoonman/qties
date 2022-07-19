@@ -1,20 +1,25 @@
+// ========================================================================
+// parser.cpp
+// ========================================================================
+
 #include "parser.h"
 using namespace std;
-parser::parser()
-{
 
-}
+// Constructor
+Parser::Parser(){}
 
-// This opens the file, and we start reading the process of reading it
-void parser::openFile()
+// openFile Function
+void Parser::openFile()
 {
-         // We open the shapes.txt file to read it
+         // Opens shapes.txt file
          QFile file("shapes.txt");
+
          if (!file.exists())
          {
              qCritical() << "File does not exist";
          }
-         // If there is an error with the file this will tell us
+
+         // Checks for errors
          if(!file.open(QIODevice::OpenModeFlag::ReadOnly))
          {
              qCritical() << "Could not open file!";
@@ -22,12 +27,12 @@ void parser::openFile()
              return;
          }
 
-        // Reading file function...
+        // Reads the file
         readingFile(file);
 }
 
-
-void parser::readingFile(QFile &file)
+// readingFile Function
+void Parser::readingFile(QFile &file)
 {
     qCritical() << "YOU MADE IT!";
 
@@ -37,8 +42,10 @@ void parser::readingFile(QFile &file)
 
     // boolean to help us determine if we are at the end of the file
     bool isAtEnd = false;
+
     // This variable holds irrelevant text
     QString shapeIDText = "";
+
     // this variable holds IMPORTANT text
     QString ID = "";
 
@@ -50,8 +57,6 @@ void parser::readingFile(QFile &file)
         stream >> shapeIDText;
         stream >> ID;
 
-
-        // if ID is 1, then go to function that will read the Line characteristics, ect...
         if(ID == "1")
         {
             //readLine();
@@ -89,15 +94,14 @@ void parser::readingFile(QFile &file)
             qCritical() << "Cannot find the correct place for file input:parser";
         }
 
-
-        // If we have reached the end of the file, flip boolean
+        // Flips if end of the file
         if(file.atEnd())
         {
             isAtEnd = true;
         }
     }
 
-    // file is closed if everything has been read
+    // Closes the file
     file.close();
 }
 

@@ -1,3 +1,7 @@
+// ========================================================================
+// vector.h
+// ========================================================================
+
 #ifndef VECTOR_H
 #define VECTOR_H
 
@@ -11,7 +15,8 @@ public:
     vector() : currentSize(0), allocatedSize(1), arr(new OBJECT_TYPE[1]){};
     //alternative depends on size
     vector(size_t s) : currentSize{s}, allocatedSize(1), arr{new OBJECT_TYPE[1]}{};
-    // copy constructor
+
+    // Copy Constructor
     vector(const vector &obj)
     {
         currentSize = obj.currentSize;
@@ -24,7 +29,8 @@ public:
         arr = temp;
         temp = nullptr;
     }
-    //move constructor
+
+    // Move Constructor
     vector(vector&& obj) noexcept
     {
         currentSize = 0;
@@ -32,7 +38,8 @@ public:
         arr = nullptr;
         *this = std::move(obj);
     }
-    // copy assignment
+
+    // Copy Assignment
     vector& operator=(const vector& obj)
     {
         if(this != &obj)
@@ -49,7 +56,8 @@ public:
         }
         return *this;
     }
-    //move assignemnt
+
+    // Move assignemnt
     vector& operator=(vector&& obj) noexcept
     {
         if(this != & obj)
@@ -116,7 +124,6 @@ public:
         return &arr[allocatedSize];
 
     }
-
 
 private:
     size_t currentSize;
