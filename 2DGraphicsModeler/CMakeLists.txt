@@ -40,6 +40,7 @@ set(PROJECT_SOURCES
 	shapes.txt
         parser2.cpp
         parser2.h
+        Shape.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

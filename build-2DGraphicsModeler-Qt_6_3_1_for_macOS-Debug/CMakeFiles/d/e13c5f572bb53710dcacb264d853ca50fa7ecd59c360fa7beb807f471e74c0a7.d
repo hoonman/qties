@@ -503,78 +503,24 @@
   /Users/remorulloda/Qt/6.3.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /Users/remorulloda/Qt/6.3.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
   /Users/remorulloda/Qt/Qt\ Creator.app/Contents/Resources/package-manager/auto-setup.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXInformation.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeGenericSystem.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseArguments.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystem.cmake.in \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cxx.in \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckLibraryExists.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindOpenGL.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageMessage.cmake \
@@ -583,16 +529,15 @@
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/MacroAddFileDependencies.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake \
-  /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake \
   /Users/remorulloda/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake \
   /Users/remorulloda/qties/2DGraphicsModeler/CMakeLists.txt \
+  /Users/remorulloda/qties/2DGraphicsModeler/Shape.cpp \
   /Users/remorulloda/qties/2DGraphicsModeler/Shape.h \
   /Users/remorulloda/qties/2DGraphicsModeler/ellipse.cpp \
   /Users/remorulloda/qties/2DGraphicsModeler/ellipse.h \
