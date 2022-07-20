@@ -81,6 +81,7 @@ public:
 
         lineEdit_Password = new QLineEdit(layoutWidget);
         lineEdit_Password->setObjectName(QString::fromUtf8("lineEdit_Password"));
+        lineEdit_Password->setEchoMode(QLineEdit::Password);
 
         horizontalLayout->addWidget(lineEdit_Password);
 
@@ -95,7 +96,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

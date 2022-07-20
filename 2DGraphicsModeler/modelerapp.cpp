@@ -12,12 +12,44 @@
 #include "ellipse.h"
 #include "parser2.h"
 
+
 ModelerApp::ModelerApp(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ModelerApp)
 {
     ui->setupUi(this);
-}
+
+      statusBar = new QStatusBar(this);
+      menuBar = new QMenuBar(this);
+
+      act[0] = new QAction("Open",this);
+      act[0]->setShortcut(Qt::CTRL | Qt::Key_O );
+
+      menu[0] = new QMenu("File");
+     // menu[0]->addSeparator(); //add a dividing line
+      menu[0]->addAction("New");
+      menu[0]->addAction("Print");
+      menu[0]->addAction("Save");
+
+
+      menu[1] = new QMenu("Edit");
+      menu[1]->addAction("Copy");
+      menu[1]->addAction("Cut");
+      menu[1]->addAction("Paste");
+
+      menu[2] = new QMenu("Help");
+      menu[2]->addAction("Contact us");
+
+      menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
+                                                    //set the width, height;
+                                                    //set the menu bar position
+      menuBar->addMenu(menu[0]);
+      menuBar->addMenu(menu[1]);
+      menuBar->addMenu(menu[2]);
+
+  }
+
+
 
 ModelerApp::~ModelerApp()
 {

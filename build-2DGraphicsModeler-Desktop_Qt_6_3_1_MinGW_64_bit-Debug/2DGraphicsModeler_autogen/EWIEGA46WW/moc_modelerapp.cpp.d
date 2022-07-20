@@ -1,5 +1,5 @@
-C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/EWIEGA46WW/moc_modelerapp.cpp: C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.h \
-  C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
+C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/EWIEGA46WW/moc_modelerapp.cpp: C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/modelerapp.h \
+  C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qarraydata.h \
@@ -80,6 +80,7 @@ C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-De
   C:/Qt/6.3.1/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qversiontagging.h \
+  C:/Qt/6.3.1/mingw_64/include/QtGui/QAction \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qbrush.h \
@@ -106,8 +107,14 @@ C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-De
   C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QMenu \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QMenuBar \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/QStatusBar \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qmenu.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qmenubar.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.3.1/mingw_64/include/QtWidgets/qstatusbar.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.3.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

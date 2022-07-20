@@ -6,6 +6,11 @@
 #define MODELERAPP_H
 
 #include <QDialog>
+#include <QMenuBar>
+#include <QMenu>
+#include <QAction>
+#include <QStatusBar>
+
 
 namespace Ui
 {
@@ -19,6 +24,10 @@ class ModelerApp : public QDialog
 public:
 
     explicit ModelerApp(QWidget *parent = nullptr);
+    QMenu* menu[10];
+    QAction* act[10];
+    QMenuBar* menuBar ;
+    QStatusBar* statusBar;
 
     // Destructor
     ~ModelerApp();

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ModelerApp_t {
-    const uint offsetsAndSize[6];
-    char stringdata0[45];
+    const uint offsetsAndSize[10];
+    char stringdata0[64];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_ModelerApp_t, stringdata0) + ofs), len 
@@ -31,11 +31,13 @@ static const qt_meta_stringdata_ModelerApp_t qt_meta_stringdata_ModelerApp = {
     {
 QT_MOC_LITERAL(0, 10), // "ModelerApp"
 QT_MOC_LITERAL(11, 32), // "on_pushButton_readParser_clicked"
-QT_MOC_LITERAL(44, 0) // ""
+QT_MOC_LITERAL(44, 0), // ""
+QT_MOC_LITERAL(45, 12), // "QPaintEvent*"
+QT_MOC_LITERAL(58, 5) // "event"
 
     },
     "ModelerApp\0on_pushButton_readParser_clicked\0"
-    ""
+    "\0QPaintEvent*\0event"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,10 +55,10 @@ static const uint qt_meta_data_ModelerApp[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   20,    2, 0x08,    1 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 3,    4,
 
        0        // eod
 };
@@ -67,11 +69,10 @@ void ModelerApp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<ModelerApp *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_readParser_clicked(); break;
+        case 0: _t->on_pushButton_readParser_clicked((*reinterpret_cast< std::add_pointer_t<QPaintEvent*>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject ModelerApp::staticMetaObject = { {
@@ -82,7 +83,7 @@ const QMetaObject ModelerApp::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_ModelerApp_t
 , QtPrivate::TypeAndForceComplete<ModelerApp, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QPaintEvent *, std::false_type>
 
 
 >,
