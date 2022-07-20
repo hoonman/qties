@@ -66,8 +66,7 @@ public:
 
     // Virtual Functions
 
-    // setPoints Function
-    virtual void setPoints(const QPoint &p1, const QPoint &p2) = 0;
+
 
     // draw Function
     virtual void draw(ModelerApp *mainPaint) = 0;

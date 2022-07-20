@@ -17,6 +17,9 @@ public:
     // Destructor
     ~Polygon() override {}
 
+
+    // setPolygon Function
+    void setPolygon(const QPoint &p1, const QPoint &p2);
     //Override from the base class
 
     // draw function
@@ -31,8 +34,6 @@ public:
     // area Function
     void area() override;
 
-    // setPoints Function
-    void setPoints(const QPoint &p1, const QPoint &p2) override;
 
 private:
     vector<QPoint> points;

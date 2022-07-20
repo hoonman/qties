@@ -5,7 +5,7 @@
 #include "polygon.h"
 
 // setPoints Function
-void Polygon::setPoints(const QPoint &p1, const QPoint &p2)
+void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 {
     points.push_back(p1);
     points.push_back(p2);

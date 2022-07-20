@@ -5,7 +5,7 @@
 #include "line.h"
 
 // setPoints Function
-void Line::setPoints(const QPoint &p1, const QPoint &p2)
+void Line::setLine(const QPoint &p1, const QPoint &p2)
 {
     //Instantiate Line mmembers
     Point1 = p1;

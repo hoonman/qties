@@ -5,7 +5,7 @@
 #include "rectangle.h"
 
 // setPoints Function
-void Rectangle::setPoints(const QPoint &point1, const QPoint &point2)
+void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 {
     x = point1.x();
     y = point1.y();

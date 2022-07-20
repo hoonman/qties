@@ -32,5 +32,4 @@ void Ellipse::perimeter(){}
 // area Function
 void Ellipse::area() {}
 
-// setPoints Function
-void Ellipse::setPoints(const QPoint &p1, const QPoint &p2){}
+

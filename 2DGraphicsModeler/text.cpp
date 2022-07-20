@@ -26,4 +26,4 @@ void Text::draw(ModelerApp *model)
 void Text::move(){}
 void Text::perimeter() {}
 void Text::area() {}
-void Text::setPoints(const QPoint &p1, const QPoint &p2) {}
+
