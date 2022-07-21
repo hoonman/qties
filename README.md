@@ -4,6 +4,7 @@
 
 Submitted by: **Team Qties**
 ![](https://github.com/hoonman/qties/blob/main/QTsLogo.jpg)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 Time spent: **x** hours spent in total
 ## Description
 
