@@ -10,6 +10,13 @@ Time spent: **x** hours spent in total
 
 This 2D Graphics Modeler will demonstrate the capabilities of 2D Graphics Modeler Inc's graphics engine.
 Potential customers will be looking for a 2D Graphics rendering library which can be integrated into their own software suite.
+
+
+
+
+
+
+
 ## Concepts that we must use:
 
 * Inheritance
