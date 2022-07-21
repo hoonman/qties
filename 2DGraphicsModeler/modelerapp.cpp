@@ -36,9 +36,13 @@ ModelerApp::ModelerApp(QWidget *parent) :
       menu[1]->addAction("Copy");
       menu[1]->addAction("Cut");
       menu[1]->addAction("Paste");
+      menu[1]->addAction("Delete");
+      menu[1]->addAction("Undo Action");
+      menu[1]->addAction("Redo Action");
 
       menu[2] = new QMenu("Help");
-      menu[2]->addAction("Contact us");
+      menu[2]->addAction("Contact Us");
+
 
       menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
                                                     //set the width, height;
@@ -48,7 +52,6 @@ ModelerApp::ModelerApp(QWidget *parent) :
       menuBar->addMenu(menu[2]);
 
   }
-
 
 
 ModelerApp::~ModelerApp()
@@ -135,3 +138,10 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     circle->setBrush(Qt::magenta, Qt::SolidPattern);
     circle->draw(this);
 }
+
+//This function will allow the contact us button press to display information
+void ModelerApp::on_pushButton_clicked()
+{
+    QMessageBox::information(this, "Contact Info", "The Qties");
+}
+

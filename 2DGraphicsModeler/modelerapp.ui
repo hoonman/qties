@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1313</width>
-    <height>672</height>
+    <width>1305</width>
+    <height>680</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,6 +36,37 @@
     <string>Read Parser</string>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>50</y>
+     <width>251</width>
+     <height>621</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>60</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Contact Us</string>
+   </property>
+  </widget>
+  <action name="actionContact_Us">
+   <property name="text">
+    <string>Contact Us</string>
+   </property>
+   <property name="toolTip">
+    <string>The Qties</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

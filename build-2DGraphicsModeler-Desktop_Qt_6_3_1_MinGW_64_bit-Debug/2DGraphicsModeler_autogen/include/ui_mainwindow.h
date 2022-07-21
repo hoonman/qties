@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
@@ -18,7 +19,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -27,6 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionContact_Us;
     QWidget *centralwidget;
     QGroupBox *groupBox;
     QWidget *layoutWidget;
@@ -38,14 +39,15 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit_Password;
     QPushButton *pushButton_Login;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QMenuBar *menuBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(800, 600);
+        actionContact_Us = new QAction(MainWindow);
+        actionContact_Us->setObjectName(QString::fromUtf8("actionContact_Us"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
@@ -94,13 +96,10 @@ public:
         verticalLayout->addWidget(pushButton_Login);
 
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 25));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
+        menuBar = new QMenuBar(MainWindow);
+        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 800, 22));
+        MainWindow->setMenuBar(menuBar);
 
         retranslateUi(MainWindow);
 
@@ -110,6 +109,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        actionContact_Us->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
+#if QT_CONFIG(tooltip)
+        actionContact_Us->setToolTip(QCoreApplication::translate("MainWindow", "The Qties", nullptr));
+#endif // QT_CONFIG(tooltip)
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Login Window", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Username", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));

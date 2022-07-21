@@ -1,5 +1,5 @@
-C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/mainwindow.h \
-  C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
+C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.h \
+  C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qarraydata.h \
@@ -335,4 +335,4 @@ C:/Users/binda/OneDrive/Desktop/Demo/qties/build-2DGraphicsModeler-Desktop_Qt_6_
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/binda/OneDrive/Desktop/Demo/qties/2DGraphicsModeler/modelerapp.h
+  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/modelerapp.h

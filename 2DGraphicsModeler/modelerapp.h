@@ -33,13 +33,16 @@ public:
     ~ModelerApp();
 
 
+
 private slots:
     void on_pushButton_readParser_clicked(QPaintEvent *event);
 
+    void on_pushButton_clicked();
 
 private:
     Ui::ModelerApp *ui;
     void paintEvent(QPaintEvent *event);
+
 };
 
 #endif // MODELERAPP_H
