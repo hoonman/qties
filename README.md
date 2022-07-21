@@ -1,5 +1,7 @@
 # CS1C - *2D Graphics Modeler Inc.*
 
+<br>
+<br>
 **2D Graphics Modeler**
 
 Submitted by: **Team Qties**
