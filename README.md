@@ -3,7 +3,7 @@
 **2D Graphics Modeler** is a (insert what it is).
 
 Submitted by: **Team Qties**
-
+![](https://github.com/hoonman/qties/blob/main/QTsLogo.jpg)
 Time spent: **x** hours spent in total
 ## Description
 
