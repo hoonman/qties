@@ -25,7 +25,7 @@ void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 // draw Function
 void Rectangle::draw(ModelerApp *model)
 {
-    painter = new QPainter;
+
     painter->begin(model);
     painter->setPen(getPen());
     painter->drawRect(x, y, width, height);
