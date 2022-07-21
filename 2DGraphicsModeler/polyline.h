@@ -40,6 +40,7 @@ public:
 
 private:
     vector<QPoint> points;
+    QPoint *start;
 };
 
 #endif // POLYLINE_H

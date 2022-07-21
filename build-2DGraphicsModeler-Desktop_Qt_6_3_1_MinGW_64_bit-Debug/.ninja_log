@@ -45,3 +45,12 @@
 188	1748	6800676413679887	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
 186	1945	6800676415649876	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
 1946	2211	6800676418269875	2DGraphicsModeler.exe	ce0f1996c3d0e4bb
+3	167	6800681652587663	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+3	167	6800681652587663	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+3	167	6800681652587663	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+3	167	6800681652587663	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+180	1486	6800681665777662	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9
+181	1497	6800681665897661	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+179	1559	6800681666507661	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+177	1733	6800681668257673	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+1733	1978	6800681670637649	2DGraphicsModeler.exe	ce0f1996c3d0e4bb

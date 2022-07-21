@@ -37,7 +37,7 @@ public:
 
 private:
     vector<QPoint> points;
-
+    QPoint *start;
 };
 
 #endif // POLYGON_H

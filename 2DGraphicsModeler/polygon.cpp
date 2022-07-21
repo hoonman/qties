@@ -14,7 +14,7 @@ void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 // draw Function
 void Polygon::draw(ModelerApp *model)
 {
-    QPoint *start = points.begin();
+    start = points.begin();
     painter->begin(model);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
