@@ -32,8 +32,7 @@ public:
     // area Function
     void area() override;
 
-    // setPoints Function
-    void setPoints(const QPoint &p1, const QPoint &p2) override;
+
 
 private:
     QFont font;

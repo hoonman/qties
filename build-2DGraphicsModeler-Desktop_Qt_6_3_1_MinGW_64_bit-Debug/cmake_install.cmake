@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler
+=======
+# Install script for directory: C:/CS1C/QTPROJECT/qties/2DGraphicsModeler
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +49,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,7 +14,6 @@ void Text::setText(int x, int y, int width, int length, int AllignmentFlag, QStr
 
 void Text::draw(ModelerApp *model)
 {
-    painter = new QPainter;
     QRect boundingRect(x, y, width, length);
     painter->begin(model);
     painter->setPen(getPen());
@@ -26,4 +25,4 @@ void Text::draw(ModelerApp *model)
 void Text::move(){}
 void Text::perimeter() {}
 void Text::area() {}
-void Text::setPoints(const QPoint &p1, const QPoint &p2) {}
+

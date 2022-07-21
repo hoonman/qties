@@ -15,7 +15,6 @@ void Ellipse::setEllipse(const QPoint &p1, int x, int y)
 // draw Function
 void Ellipse::draw(ModelerApp *model)
 {
-    painter = new QPainter;
     painter->begin(model);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
@@ -32,5 +31,4 @@ void Ellipse::perimeter(){}
 // area Function
 void Ellipse::area() {}
 
-// setPoints Function
-void Ellipse::setPoints(const QPoint &p1, const QPoint &p2){}
+

@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 44	4646	6800728428103755	2DGraphicsModeler_autogen/timestamp	908e99c774885cfe
 44	4646	6800728428103755	2DGraphicsModeler_autogen/mocs_compilation.cpp	908e99c774885cfe
 4672	10323	6800728491028716	CMakeFiles/2DGraphicsModeler.dir/ellipse.cpp.obj	f4ffc1809d1fcc4
@@ -23,3 +24,60 @@
 530	2829	6800730026050421	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	553aeba84a61bdd2
 527	3124	6800730029000737	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	aac3010cbddae488
 3124	3591	6800730033609781	2DGraphicsModeler.exe	cca149475a162d7a
+=======
+10	242	6800674089238628	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+10	242	6800674089238628	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+258	2008	6800674106878621	CMakeFiles/2DGraphicsModeler.dir/ellipse.cpp.obj	4c2097072a50f9ea
+265	2070	6800674107508614	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+597	2351	6800654081673567	CMakeFiles/2DGraphicsModeler.dir/main.cpp.obj	a418d42a3825147d
+263	2109	6800674107888612	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9
+595	2396	6800654082133569	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.obj	56f6f1667a46e23b
+261	2108	6800674107888612	CMakeFiles/2DGraphicsModeler.dir/rectangle.cpp.obj	4f683e7ca505be7
+259	2126	6800674108078616	CMakeFiles/2DGraphicsModeler.dir/line.cpp.obj	6e79267eace4422d
+256	2155	6800674108368627	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+602	2644	6800654084623555	CMakeFiles/2DGraphicsModeler.dir/parser.cpp.obj	426ae5fb744c7b17
+267	2218	6800674108988625	CMakeFiles/2DGraphicsModeler.dir/parser2.cpp.obj	fbba91bac710ae6a
+253	2351	6800674110318626	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+2351	2767	6800674114458643	2DGraphicsModeler.exe	ce0f1996c3d0e4bb
+272	2108	6800674107878610	CMakeFiles/2DGraphicsModeler.dir/Shape.cpp.obj	f4f2dabc6745bf5f
+10	242	6800674089238628	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+10	242	6800674089238628	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+270	2114	6800674107948618	CMakeFiles/2DGraphicsModeler.dir/text.cpp.obj	a8ef3602e82e1ab
+4	170	6800674431695701	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+4	170	6800674431695701	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+4	170	6800674431695701	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+4	170	6800674431695701	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+186	1705	6800674447041869	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9
+194	1744	6800674447439918	CMakeFiles/2DGraphicsModeler.dir/Shape.cpp.obj	f4f2dabc6745bf5f
+191	1757	6800674447569926	CMakeFiles/2DGraphicsModeler.dir/text.cpp.obj	a8ef3602e82e1ab
+183	1759	6800674447589916	CMakeFiles/2DGraphicsModeler.dir/line.cpp.obj	6e79267eace4422d
+189	1772	6800674447719944	CMakeFiles/2DGraphicsModeler.dir/rectangle.cpp.obj	4f683e7ca505be7
+184	1772	6800674447709922	CMakeFiles/2DGraphicsModeler.dir/ellipse.cpp.obj	4c2097072a50f9ea
+188	1819	6800674448199929	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+181	1846	6800674448459930	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+192	1875	6800674448759919	CMakeFiles/2DGraphicsModeler.dir/parser2.cpp.obj	fbba91bac710ae6a
+179	1979	6800674449789920	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+1980	2220	6800674452169920	2DGraphicsModeler.exe	ce0f1996c3d0e4bb
+7	176	6800676397969889	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+7	176	6800676397969889	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+7	176	6800676397969889	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+7	176	6800676397969889	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+193	1643	6800676412629891	CMakeFiles/2DGraphicsModeler.dir/rectangle.cpp.obj	4f683e7ca505be7
+194	1665	6800676412849888	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+191	1668	6800676412879884	CMakeFiles/2DGraphicsModeler.dir/line.cpp.obj	6e79267eace4422d
+190	1671	6800676412909885	CMakeFiles/2DGraphicsModeler.dir/ellipse.cpp.obj	4c2097072a50f9ea
+198	1677	6800676412979895	CMakeFiles/2DGraphicsModeler.dir/text.cpp.obj	a8ef3602e82e1ab
+196	1689	6800676413089888	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9
+188	1748	6800676413679887	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+186	1945	6800676415649876	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+1946	2211	6800676418269875	2DGraphicsModeler.exe	ce0f1996c3d0e4bb
+3	167	6800681652587663	2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+3	167	6800681652587663	2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+3	167	6800681652587663	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/timestamp	c028ed9610462a4f
+3	167	6800681652587663	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	c028ed9610462a4f
+180	1486	6800681665777662	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.obj	39860dc3256026b9
+181	1497	6800681665897661	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.obj	3cfd5c718742941d
+179	1559	6800681666507661	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.obj	46e9fd6eba4827fe
+177	1733	6800681668257673	CMakeFiles/2DGraphicsModeler.dir/modelerapp.cpp.obj	12cda974f942d817
+1733	1978	6800681670637649	2DGraphicsModeler.exe	ce0f1996c3d0e4bb
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8

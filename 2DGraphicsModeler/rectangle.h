@@ -20,7 +20,7 @@ public:
     //void setDimension(int x, int y, int width, int height);
 
     // setPoints Function
-    void setPoints(const QPoint& point, const QPoint& point2) override;
+    void setRectangle(const QPoint& point, const QPoint& point2);
 
     // draw Function
     void draw(ModelerApp* model) override;

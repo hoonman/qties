@@ -19,6 +19,9 @@ public:
     ~Polyline() override {}
 
 
+    //set polyline
+    void setPolyline(const QPoint &p1, const QPoint &p2);
+
     //Override from the base class
 
     // draw Function
@@ -33,11 +36,11 @@ public:
     // area Function
     void area() override;
 
-    // setPoints Function
-    void setPoints(const QPoint &p1, const QPoint &p2) override;
+
 
 private:
     vector<QPoint> points;
+    QPoint *start;
 };
 
 #endif // POLYLINE_H

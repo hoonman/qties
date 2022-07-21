@@ -1,4 +1,33 @@
 2DGraphicsModeler_autogen/timestamp: \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/CMakeLists.txt \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/Shape.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/Shape.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/ellipse.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/ellipse.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/line.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/line.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/main.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser2.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser2.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polygon.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polygon.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polyline.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polyline.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/rectangle.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/rectangle.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/text.cpp \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/text.h \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/vector.h \
+	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DGraphicsModeler_autogen/moc_predefs.h \
+	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake \
+	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake \
+	C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.3.1/mingw_64/include/QtCore/qarraydata.h \
@@ -511,6 +540,7 @@
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+<<<<<<< HEAD
 	C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/CMakeLists.txt \
 	C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/Shape.cpp \
 	C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/Shape.h \
@@ -541,4 +571,8 @@
 	C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake \
 	C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.ui \
 	C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/modelerapp.ui \
+=======
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.ui \
+	C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.ui \
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

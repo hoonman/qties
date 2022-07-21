@@ -35,14 +35,29 @@ public:
 
 
 private slots:
-    void on_pushButton_readParser_clicked(QPaintEvent *event);
+    //void on_pushButton_readParser_clicked(QPaintEvent *event);
 
     void on_pushButton_clicked();
 
 private:
     Ui::ModelerApp *ui;
     void paintEvent(QPaintEvent *event);
+<<<<<<< HEAD
 
+=======
+    void openFile();
+    std::string item;
+    std::string text;
+
+    int shapeID;
+    std::string shape;
+    int point1, point2, point3, point4;
+    Qt::GlobalColor color;
+    int width;
+    Qt::PenStyle penStyle;
+    Qt::PenCapStyle penCap;
+    Qt::PenJoinStyle penJoin;
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 };
 
 #endif // MODELERAPP_H

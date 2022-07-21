@@ -24,8 +24,8 @@ public:
     // Destructor
     ~Line() override {}
 
-    // setPoints Function
-    void setPoints(const QPoint &p1, const QPoint &p2) override;
+    // setLine Function
+    void setLine(const QPoint &p1, const QPoint &p2);
 
     // Overridden Functions
 

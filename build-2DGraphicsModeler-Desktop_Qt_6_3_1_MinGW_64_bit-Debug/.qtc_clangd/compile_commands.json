@@ -9,7 +9,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -30,11 +34,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -66,10 +78,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\main.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/main.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\main.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/main.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -81,7 +100,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -102,11 +125,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -138,10 +169,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\mainwindow.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\mainwindow.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -153,7 +191,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -174,11 +216,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -210,10 +260,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\modelerapp.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/modelerapp.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\modelerapp.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -225,7 +282,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -246,11 +307,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -282,10 +351,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\line.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/line.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\line.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/line.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -297,7 +373,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -318,11 +398,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -354,10 +442,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\ellipse.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/ellipse.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\ellipse.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/ellipse.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -369,7 +464,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -390,11 +489,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -426,10 +533,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\parser.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/parser.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\parser.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -441,7 +555,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -462,11 +580,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -498,10 +624,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\polygon.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polygon.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\polygon.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polygon.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -513,7 +646,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -534,11 +671,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -570,10 +715,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\polyline.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polyline.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\polyline.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polyline.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -585,7 +737,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -606,11 +762,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -642,10 +806,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\rectangle.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/rectangle.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\rectangle.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/rectangle.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -657,7 +828,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -678,11 +853,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -714,10 +897,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\parser2.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/parser2.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\text.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/text.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -729,7 +919,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -750,11 +944,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -786,10 +988,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\Shape.cpp"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/Shape.cpp"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\parser2.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser2.cpp"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -801,7 +1010,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -822,11 +1035,91 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtWidgets",
+        "-I",
+        "C:\\Qt\\6.3.1\\mingw_64\\include\\QtGui",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "C:\\Qt\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++",
+        "-Wno-unknown-pragmas",
+        "-Wno-unknown-warning-option",
+        "-Wno-documentation-unknown-command",
+        "-fno-delayed-template-parsing",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\Shape.cpp"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/Shape.cpp"
+},
+{
+    "arguments": [
+        "clang",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++17",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DQ_CREATOR_RUN",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_CORE_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQT_WIDGETS_LIB",
+        "-DUNICODE",
+        "-DWIN32",
+        "-DWIN64",
+        "-D_ENABLE_EXTENDED_ALIGNED_STORAGE",
+        "-D_UNICODE",
+        "-D_WIN64",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -858,10 +1151,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\mainwindow.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\mainwindow.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -873,7 +1173,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -894,11 +1198,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -930,10 +1242,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\modelerapp.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/modelerapp.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\modelerapp.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/modelerapp.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -945,7 +1264,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -966,11 +1289,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1002,10 +1333,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\vector.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/vector.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\vector.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/vector.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1017,7 +1355,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1038,11 +1380,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1074,10 +1424,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\line.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/line.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\line.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/line.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1089,7 +1446,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1110,11 +1471,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1146,10 +1515,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\ellipse.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/ellipse.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\ellipse.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/ellipse.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1161,7 +1537,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1182,11 +1562,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1218,10 +1606,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\parser.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/parser.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\parser.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1233,7 +1628,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1254,11 +1653,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1290,10 +1697,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\polygon.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polygon.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\polygon.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polygon.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1305,7 +1719,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1326,11 +1744,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1362,10 +1788,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\polyline.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polyline.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\polyline.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/polyline.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1377,7 +1810,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1398,11 +1835,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1434,10 +1879,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\rectangle.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/rectangle.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\rectangle.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/rectangle.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1449,7 +1901,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1470,11 +1926,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1506,10 +1970,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\Shape.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/Shape.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\Shape.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/Shape.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1521,7 +1992,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1542,11 +2017,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1578,10 +2061,17 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\text.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/text.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\text.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/text.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 },
 {
     "arguments": [
@@ -1593,7 +2083,11 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\AppData\\Local\\Temp\\QtCreator-ojvwNm\\clang-uiheader-bqteSr",
+=======
+        "C:\\Users\\amyah\\AppData\\Local\\Temp\\QtCreator-HkbAly\\clang-uiheader-uthzAR",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1614,11 +2108,19 @@
         "-D_UNICODE",
         "-D_WIN64",
         "-I",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler",
         "-I",
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler",
+        "-I",
+        "C:\\CS1C\\QTPROJECT\\qties\\build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\2DGraphicsModeler_autogen\\include",
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
         "-I",
         "C:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
@@ -1650,9 +2152,16 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
+<<<<<<< HEAD
         "C:\\Users\\Brian\\Documents\\CS1C_Project\\qties\\2DGraphicsModeler\\parser2.h"
     ],
     "directory": "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
     "file": "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/parser2.h"
+=======
+        "C:\\CS1C\\QTPROJECT\\qties\\2DGraphicsModeler\\parser2.h"
+    ],
+    "directory": "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/parser2.h"
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 }
 ]

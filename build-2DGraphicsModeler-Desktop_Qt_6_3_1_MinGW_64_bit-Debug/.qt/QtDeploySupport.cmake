@@ -25,7 +25,11 @@ endif()
 set(__QT_DEPLOY_SYSTEM_NAME "Windows")
 set(__QT_DEPLOY_IS_SHARED_LIBS_BUILD "ON")
 set(__QT_DEPLOY_TOOL "C:/Qt/6.3.1/mingw_64/bin/windeployqt.exe")
+<<<<<<< HEAD
 set(__QT_DEPLOY_IMPL_DIR "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qt")
+=======
+set(__QT_DEPLOY_IMPL_DIR "C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qt")
+>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 set(__QT_DEPLOY_VERBOSE "")
 set(__QT_CMAKE_EXPORT_NAMESPACE "Qt6")
 set(__QT_DEPLOY_GENERATOR_IS_MULTI_CONFIG "0")

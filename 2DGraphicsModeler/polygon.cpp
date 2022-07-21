@@ -5,7 +5,7 @@
 #include "polygon.h"
 
 // setPoints Function
-void Polygon::setPoints(const QPoint &p1, const QPoint &p2)
+void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 {
     points.push_back(p1);
     points.push_back(p2);
@@ -14,8 +14,7 @@ void Polygon::setPoints(const QPoint &p1, const QPoint &p2)
 // draw Function
 void Polygon::draw(ModelerApp *model)
 {
-    QPoint *start = points.begin();
-    painter = new QPainter;
+    start = points.begin();
     painter->begin(model);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
