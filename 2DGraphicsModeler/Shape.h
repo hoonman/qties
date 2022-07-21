@@ -26,6 +26,11 @@ public:
 
     //add copy operations here
 
+    //copy constructor
+    Shape(const Shape& shape);
+
+    //copy assignment
+    virtual Shape& operator=(const Shape& shape);
 
     // Getter Functions
 

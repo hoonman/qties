@@ -4,6 +4,16 @@
 
 #include "polygon.h"
 
+//copy constructor
+Polygon::Polygon(Polygon& polygon) : Shape(polygon), points{polygon.points} {}
+
+//copy assignment
+Polygon& Polygon::operator=(Polygon& polygon) {
+    this->Shape::operator=(polygon);
+    this->points = polygon.points;
+    return *this;
+}
+
 // setPoints Function
 void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 {

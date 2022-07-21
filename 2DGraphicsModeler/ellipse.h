@@ -18,9 +18,14 @@ public:
     // Destructor
     ~Ellipse() override {}
 
+    //copy constructor
+        Ellipse(const Ellipse& ellipse);
+
+        //copy assignment
+        virtual Ellipse& operator=(Ellipse & ellipse);
+
     // setEllipse Function
     void setEllipse(const QPoint &p1, int x, int y);
-
 
     //Override from the base class
 

@@ -24,6 +24,12 @@ public:
     // Destructor
     ~Line() override {}
 
+    //copy constructor
+        Line(const Line& line);
+
+    //copy assignment
+    virtual Line& operator=(const Line& line);
+
     // setLine Function
     void setLine(const QPoint &p1, const QPoint &p2);
 

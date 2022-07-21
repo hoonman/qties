@@ -18,6 +18,12 @@ public:
     // Destructor
     ~Polyline() override {}
 
+    //copy constructor
+        Polyline(Polyline& polyline);
+
+    //copy assignment
+    virtual Polyline& operator=(Polyline& polyline);
+
 
     //set polyline
     void setPolyline(const QPoint &p1, const QPoint &p2);

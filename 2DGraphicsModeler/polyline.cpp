@@ -12,6 +12,16 @@ void Polyline::setPolyline(const QPoint &p1, const QPoint &p2)
 
 }
 
+//copy constructor
+Polyline::Polyline(Polyline& polyline) : Shape(polyline), points{polyline.points} {}
+
+//copy assignment
+Polyline& Polyline::operator=(Polyline& polyline) {
+    this->Shape::operator=(polyline);
+    this->points = polyline.points;
+    return *this;
+}
+
 // draw Function
 void Polyline::draw(ModelerApp *model)
 {

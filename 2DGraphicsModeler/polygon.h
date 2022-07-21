@@ -17,6 +17,12 @@ public:
     // Destructor
     ~Polygon() override {}
 
+    //copy constructor
+        Polygon(Polygon& polygon);
+
+    //copy assignment
+    virtual Polygon& operator=(Polygon& polygon);
+
 
     // setPolygon Function
     void setPolygon(const QPoint &p1, const QPoint &p2);

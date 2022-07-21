@@ -17,6 +17,12 @@ public:
     // Destructor
     ~Rectangle() override {}
 
+    //copy constructor
+    Rectangle(const Rectangle& rectangle);
+
+    //copy assignment
+    virtual Rectangle& operator=(const Rectangle& rectangle);
+
     //void setDimension(int x, int y, int width, int height);
 
     // setPoints Function

@@ -4,6 +4,18 @@
 
 #include "ellipse.h"
 
+//copy constructor
+Ellipse::Ellipse(const Ellipse& ellipse) : Shape(ellipse), point1{ellipse.point1}, xAxis{ellipse.xAxis}, yAxis{ellipse.yAxis} {}
+
+//copy assignment
+Ellipse& Ellipse::operator=(Ellipse & ellipse) {
+    this->Shape::operator=(ellipse);
+    this->point1 = ellipse.point1;
+    this->xAxis = ellipse.xAxis;
+    this->yAxis = ellipse.yAxis;
+    return *this;
+}
+
 // setEllipse Function
 void Ellipse::setEllipse(const QPoint &p1, int x, int y)
 {

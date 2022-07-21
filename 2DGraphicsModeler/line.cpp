@@ -4,6 +4,17 @@
 
 #include "line.h"
 
+//copy constructor
+Line::Line(const Line& line) : Shape(line), Point1(line.Point1), Point2{line.Point2} {}
+
+//copy assignment
+Line& Line::operator=(const Line& line) {
+    this->Shape::operator=(line);
+    this->Point1 = line.Point1;
+    this->Point2 = line.Point2;
+    return *this;
+}
+
 // setPoints Function
 void Line::setLine(const QPoint &p1, const QPoint &p2)
 {

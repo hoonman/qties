@@ -4,6 +4,21 @@
 
 #include "Shape.h"
 
+//copy constructor
+Shape::Shape(const Shape& shape) : painter{shape.painter}, /*getQPainter(){shape.getQPainter),*/ font{shape.font}, id{shape.id}, shape{shape.shape}, pen{shape.pen}, brush{shape.brush} {}
+
+//copy assignment
+Shape& Shape::operator=(const Shape& shape) {
+    this->painter = shape.painter;
+    /*this->getQPainter() = shape.getQPainter;*/
+    this->font = shape.font;
+    this->id = shape.id;
+    this->shape = shape.shape;
+    this->pen = shape.pen;
+    this->brush = shape.brush;
+    return *this;
+}
+
 // setPen Function
 void Shape::setPen(Qt::GlobalColor color, int width, Qt::PenStyle p, Qt::PenCapStyle pc, Qt::PenJoinStyle pj)
 {
