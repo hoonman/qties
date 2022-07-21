@@ -1,6 +1,6 @@
 # CS1C - *2D Graphics Modeler Inc.*
 
-**2D Graphics Modeler** is a (insert what it is).
+**2D Graphics Modeler**
 
 Submitted by: **Team Qties**
 <img src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
