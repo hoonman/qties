@@ -27,8 +27,6 @@ set(PROJECT_SOURCES
         line.h
         ellipse.cpp
         ellipse.h
-	parser.h 
-	parser.cpp
         polygon.cpp
         polygon.h
         polyline.cpp

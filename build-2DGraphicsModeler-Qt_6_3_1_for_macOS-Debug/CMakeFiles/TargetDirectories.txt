@@ -1,5 +1,0 @@
-/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/CMakeFiles/2DGraphicsModeler.dir
-/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/CMakeFiles/edit_cache.dir
-/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
-/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/CMakeFiles/2DGraphicsModeler_autogen_timestamp_deps.dir
-/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/CMakeFiles/2DGraphicsModeler_autogen.dir

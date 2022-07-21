@@ -42,9 +42,9 @@ private slots:
 private:
     Ui::ModelerApp *ui;
     void paintEvent(QPaintEvent *event);
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
-=======
+//=======
     void openFile();
     std::string item;
     std::string text;
@@ -57,7 +57,7 @@ private:
     Qt::PenStyle penStyle;
     Qt::PenCapStyle penCap;
     Qt::PenJoinStyle penJoin;
->>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
+//>>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
 };
 
 #endif // MODELERAPP_H

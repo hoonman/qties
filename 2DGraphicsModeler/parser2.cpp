@@ -10,7 +10,7 @@ parser2::parser2(){}
 // openFile Function
 void parser2::readFile()
 {
-    std::ifstream infile("C:/Users/jh020/OneDrive/Desktop/demo2/qties/2DGraphicsModeler/shapes.txt", std::ios::in);
+    std::ifstream infile("shapes.txt", std::ios::in);
     if (infile.fail())
     {
         std::cout << "file could not be opened." << std::endl;

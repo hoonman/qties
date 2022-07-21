@@ -27,9 +27,9 @@ ModelerApp::ModelerApp(QWidget *parent) :
 
       menu[0] = new QMenu("File");
      // menu[0]->addSeparator(); //add a dividing line
-      menu[0]->addAction("New");
-      menu[0]->addAction("Print");
-      menu[0]->addAction("Save");
+      menu[0]->addAction("Save All");
+      menu[0]->addAction("Load");
+
 
 
       menu[1] = new QMenu("Edit");
@@ -43,6 +43,10 @@ ModelerApp::ModelerApp(QWidget *parent) :
       menu[2] = new QMenu("Help");
       menu[2]->addAction("Contact Us");
 
+      menu[3] = new QMenu("Exit");
+      menu[3]->addAction("Logout");
+      menu[3]->addAction("Exit Program");
+
 
       //menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
                                                     //set the width, height;
@@ -50,6 +54,7 @@ ModelerApp::ModelerApp(QWidget *parent) :
       menuBar->addMenu(menu[0]);
       menuBar->addMenu(menu[1]);
       menuBar->addMenu(menu[2]);
+      menuBar->addMenu(menu[3]);
 
   }
 
@@ -140,12 +145,12 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     text->draw(this);
 }
 
-<<<<<<< HEAD
+
 //This function will allow the contact us button press to display information
 void ModelerApp::on_pushButton_clicked()
 {
     QMessageBox::information(this, "Contact Info", "The Qties");
 }
-=======
->>>>>>> 9f109160e6a2f914cf749f7a48485852770f6fd8
+
+
 
