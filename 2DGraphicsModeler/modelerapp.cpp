@@ -40,7 +40,7 @@ ModelerApp::ModelerApp(QWidget *parent) :
       menu[2] = new QMenu("Help");
       menu[2]->addAction("Contact us");
 
-      menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
+      //menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
                                                     //set the width, height;
                                                     //set the menu bar position
       menuBar->addMenu(menu[0]);
@@ -56,46 +56,44 @@ ModelerApp::~ModelerApp()
     delete ui;
 }
 
-void ModelerApp::on_pushButton_readParser_clicked(QPaintEvent *event)
+void ModelerApp::openFile()
 {
-//    parser hi;
-//    hi.openFile();
-    int something;
-    parser2 fileName;
-    fileName.openAndDraw();
-    something = fileName.getID();
-    std::cout << "somethign: "<< something << std::endl;
-//    Shape* line = new Line;
-//    QPoint point(20, 90);
-//    QPoint point2(100, 20);
-//    line->setPoints(point, point2);
-//    line->setPen(Qt::blue, 4, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
-//    line->draw(this);
-
+    parser2 file;
+    file.readFile();
+    shapeID = file.getShapeID();
+    shape = file.getShape();
+    point1 = file.getPoint1();
+    point2 = file.getPoint2();
+    point3 = file.getPoint3();
+    point4 = file.getPoint4();
+    penJoin = file.getPenJoinStyle();
+    //std::cout << penJoin << std::endl;
+    color = file.getColor();
 }
+
 
 void ModelerApp::paintEvent(QPaintEvent *event)
 {
-    QString color;
-    Qt::GlobalColor gColor;
-
-//    parser parse;
-//    parse.setPenColor();
-//    color = parse.getPenColor();
-
-    gColor = Qt::cyan;
-
+    //notes: when the program first runs, entry point for qwidget application
+    //qobject is created, store pointers to the shapes
+    //
+    openFile();
+    //color = Qt::cyan;
     Line* line = new Line;
-    QPoint point(20, 90);
-    QPoint point2(100, 20);
+    QPoint point(point1, point2);
+    QPoint point2(point3, point4);
     line->setLine(point, point2);
-    line->setPen(Qt::blue, 4, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+    line->setPen(color, 4, Qt::DashDotLine, Qt::FlatCap, penJoin);
     line->draw(this);
-
+//    Shape* line = new Line;
+//    QPoint point(point1, point2);
+//    QPoint point2(point3, point4);
+//    line->setPoints(point, point2);
+//    line->setPen(color, 4, penStyle, penCap, penJoin);
+//    line->draw(this);
     Rectangle* rect = new Rectangle;
     rect->setRectangle(QPoint(20,200), QPoint(170, 100));
-    rect->setPen(gColor, 5, Qt::DashLine, Qt::RoundCap, Qt::RoundJoin);
-    //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    rect->setPen(Qt::cyan, 5, Qt::DashLine, Qt::RoundCap, Qt::RoundJoin);
     rect->draw(this);
 
     //testing polyline
@@ -104,7 +102,6 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     polyL->setPolyline(QPoint(460, 90), QPoint(470, 20));
     polyL->setPolyline(QPoint(530, 40), QPoint(540, 80));
     polyL->setPen(Qt::green, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
-    //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
     polyL->draw(this);
 
     //testing polgon
@@ -115,7 +112,6 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     polyG->setBrush(Qt::yellow, Qt::SolidPattern);
     polyG->draw(this);
 
-    //Made a different set function for ellipse dimensions
     Ellipse* ellip = new Ellipse;
     ellip->setEllipse(QPoint(520,200), 170, 100);
     ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
@@ -140,3 +136,5 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     text->setFont(Qt::blue, 10, "Comic Sans MS", QFont::StyleItalic, QFont::Normal);
     text->draw(this);
 }
+
+
