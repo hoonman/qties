@@ -1,14 +1,28 @@
 # CS1C - *2D Graphics Modeler Inc.*
 
-**2D Graphics Modeler** is a (insert what it is).
+**2D Graphics Modeler**
 
 Submitted by: **Team Qties**
+<img src="https://github.com/hoonman/qties/blob/main/miscFolder/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
 
 Time spent: **x** hours spent in total
 ## Description
 
 This 2D Graphics Modeler will demonstrate the capabilities of 2D Graphics Modeler Inc's graphics engine.
 Potential customers will be looking for a 2D Graphics rendering library which can be integrated into their own software suite.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## Concepts that we must use:
 
 * Inheritance
@@ -46,4 +60,4 @@ The following **optional** features are implemented:
 
 ## Gifs to show functionalities:
 # Login Screen
-![](https://github.com/hoonman/qties/blob/main/gif_files/login_screen.gif)
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/login_screen.gif)
