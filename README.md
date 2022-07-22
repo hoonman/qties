@@ -1,6 +1,9 @@
 # CS1C - *2D Graphics Modeler Inc.*
 
 **2D Graphics Modeler**
+<br>
+<br>
+
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" data-canonical-src="https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" width="100" height="70" align="left"/>
 Submitted by: **Team Qties**
 <br>
