@@ -5,6 +5,12 @@
 Submitted by: **Team Qties**
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
 
