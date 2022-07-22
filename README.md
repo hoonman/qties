@@ -2,7 +2,8 @@
 
 **2D Graphics Modeler**
 
-Submitted by: **Team Qties** <img src = "https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" width="100" height = "100>
+Submitted by: **Team Qties**
+<img src="https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" width="100" height = "100>
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
 
 Time spent: **x** hours spent in total
