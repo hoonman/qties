@@ -34,7 +34,22 @@ void Line::draw(ModelerApp *model)
 
 //needs implementation
 void Line::move(){}
-void Line::perimeter(){}
-void Line::area(){ }
+
+// perimeter
+double Line::perimeter()
+{
+    double perimeter = 0.0;
+
+    perimeter = sqrt(pow((Point2.x() - Point1.y()), 2)  + pow(Point2.y() - Point1.y(), 2)) ;
+
+    return perimeter;
+}
+
+// area
+double Line::area()
+{
+    return 0;
+}
+
 
 

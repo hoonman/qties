@@ -27,10 +27,10 @@ public:
     void move() override;
 
     // perimeter Function
-    void perimeter() override;
+    double perimeter() override;
 
     // area Function
-    void area() override;
+    double area() override;
 
 
 

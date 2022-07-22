@@ -23,6 +23,14 @@ void Text::draw(ModelerApp *model)
 //drawText(int x, int y, int width, int height, int flags, const QString &text, QRect *boundingRect = nullptr)
 }
 void Text::move(){}
-void Text::perimeter() {}
-void Text::area() {}
+
+double Text::perimeter()
+{
+    return 0;
+}
+
+double Text::area()
+{
+    return 0;
+}
 

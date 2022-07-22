@@ -38,9 +38,19 @@ void Ellipse::draw(ModelerApp *model)
 void Ellipse::move(){}
 
 // perimeter Function
-void Ellipse::perimeter(){}
+double Ellipse::perimeter()
+{
+    double perimeter = 0.0;
+
+    perimeter = 2 * M_PI * sqrt((pow(xAxis, 2) + pow(yAxis, 2)) / 2 );
+
+    return perimeter;
+}
 
 // area Function
-void Ellipse::area() {}
+double Ellipse::area()
+{
+    return M_PI * xAxis * yAxis;
+}
 
 

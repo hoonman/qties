@@ -34,6 +34,15 @@ void Polyline::draw(ModelerApp *model)
 
 //implementation
 void Polyline::move(){}
-void Polyline::perimeter(){}
-void Polyline::area() {}
 
+// perimeter
+double Polyline::perimeter()
+{
+    return 0;
+}
+
+// area
+double Polyline::area()
+{
+    return 0;
+}

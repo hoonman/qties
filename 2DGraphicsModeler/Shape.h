@@ -11,6 +11,7 @@
 #include "vector.h"
 #include "modelerapp.h"
 #include <QFont>
+#include <math.h>
 
 class Shape
 {
@@ -79,10 +80,10 @@ public:
     virtual void move() = 0;
 
     // perimeter Function
-    virtual void perimeter() = 0;
+    virtual double perimeter() = 0;
 
     // area Function
-    virtual void area() = 0;
+    virtual double area() = 0;
 
 protected:
     QPainter* painter;

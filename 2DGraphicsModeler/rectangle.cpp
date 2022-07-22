@@ -51,7 +51,13 @@ void Rectangle::draw(ModelerApp *model)
 void Rectangle::move(){}
 
 // perimeter Function
-void Rectangle::perimeter(){}
+double Rectangle::perimeter()
+{
+    return ( 2 * width ) + (2 * height);
+}
 
 // area Function
-void Rectangle::area(){ }
+double Rectangle::area()
+{
+    return width * height;
+}

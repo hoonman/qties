@@ -42,10 +42,10 @@ public:
     void move() override;
 
     // perimeter function
-    void perimeter() override;
+    double perimeter() override;
 
     // area function
-    void area() override;
+    double area() override;
 
 private:
     QPoint Point1;
