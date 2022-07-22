@@ -3,6 +3,8 @@
 **2D Graphics Modeler**
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" data-canonical-src="https://github.com/hoonman/qties/blob/main/miscFolder/qtLogo.png" width="100" height="70" align="left"/>
 Submitted by: **Team Qties**
+<br>
+<br>
 
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
 
