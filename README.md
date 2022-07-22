@@ -8,12 +8,12 @@
 <br>
 
 Submitted by: **Team Qties**
+Time spent: **x** hours spent in total
 <br>
 <br>
 <br>
 <img src="https://github.com/hoonman/qties/blob/main/miscFolder/QTsLogo.jpg" data-canonical-src="https://github.com/hoonman/qties/blob/main/QTsLogo.jpg" width="500" height="500" align = "left"/>
 
-Time spent: **x** hours spent in total
 ## Description
 
 This 2D Graphics Modeler will demonstrate the capabilities of 2D Graphics Modeler Inc's graphics engine.
