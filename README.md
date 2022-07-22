@@ -8,6 +8,7 @@
 <br>
 
 Submitted by: **Team Qties**
+<br>
 Time spent: **x** hours spent in total
 <br>
 <br>
