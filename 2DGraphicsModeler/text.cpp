@@ -12,7 +12,7 @@ void Text::setText(int x, int y, int width, int length, int AllignmentFlag, QStr
 }
 
 
-void Text::draw(ModelerApp *model)
+void Text::draw(MainApplication *model)
 {
     QRect boundingRect(x, y, width, length);
     painter->begin(model);

@@ -1,5 +1,0 @@
-X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/2DGraphicsModeler.dir
-X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
-X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/2DGraphicsModeler_autogen_timestamp_deps.dir
-X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/2DGraphicsModeler_autogen.dir

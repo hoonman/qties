@@ -6,7 +6,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "modelerapp.h"
+//#include "modelerapp.h"
+#include "mainapplication.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,6 +26,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    ModelerApp *modelerApp;
+    MainApplication *mainApplication;
 };
 #endif // MAINWINDOW_H

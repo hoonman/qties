@@ -25,7 +25,7 @@ void Ellipse::setEllipse(const QPoint &p1, int x, int y)
 }
 
 // draw Function
-void Ellipse::draw(ModelerApp *model)
+void Ellipse::draw(MainApplication *model)
 {
     painter->begin(model);
     painter->setPen(getPen());

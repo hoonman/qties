@@ -38,7 +38,7 @@ void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 //}
 
 // draw Function
-void Rectangle::draw(ModelerApp *model)
+void Rectangle::draw(MainApplication *model)
 {
 
     painter->begin(model);

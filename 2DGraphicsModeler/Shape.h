@@ -9,7 +9,8 @@
 #include <QColor>
 #include <QPoint>
 #include "vector.h"
-#include "modelerapp.h"
+//#include "modelerapp.h"
+#include "mainapplication.h"
 #include <QFont>
 #include <math.h>
 
@@ -74,7 +75,7 @@ public:
 
 
     // draw Function
-    virtual void draw(ModelerApp *mainPaint) = 0;
+    virtual void draw(MainApplication *mainPaint) = 0;
 
     // move Function
     virtual void move() = 0;

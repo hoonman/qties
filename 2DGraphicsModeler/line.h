@@ -7,7 +7,8 @@
 
 #include "Shape.h"
 #include <QPoint>
-#include "modelerapp.h"
+//#include "modelerapp.h"
+#include "mainapplication.h"
 
 class Line : public Shape
 {
@@ -36,7 +37,7 @@ public:
     // Overridden Functions
 
     // draw function
-    void draw(ModelerApp *model) override;
+    void draw(MainApplication *model) override;
 
     // move function
     void move() override;

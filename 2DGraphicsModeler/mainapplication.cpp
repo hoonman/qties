@@ -1,9 +1,6 @@
-// ========================================================================
-// modelerapp.cpp
-// ========================================================================
-
+#include "mainapplication.h"
+#include "ui_mainapplication.h"
 #include "modelerapp.h"
-#include "ui_modelerapp.h"
 #include "Shape.h"
 #include "line.h"
 #include "rectangle.h"
@@ -13,76 +10,19 @@
 #include "parser2.h"
 #include "text.h"
 
-ModelerApp::ModelerApp(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::ModelerApp)
+MainApplication::MainApplication(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainApplication)
 {
     ui->setupUi(this);
+}
 
-      statusBar = new QStatusBar(this);
-      menuBar = new QMenuBar(this);
-
-      act[0] = new QAction("Open",this);
-      act[0]->setShortcut(Qt::CTRL | Qt::Key_O );
-
-      menu[0] = new QMenu("File");
-     // menu[0]->addSeparator(); //add a dividing line
-      menu[0]->addAction("Save All");
-      menu[0]->addAction("Load");
-
-
-
-      menu[1] = new QMenu("Edit");
-      menu[1]->addAction("Copy");
-      menu[1]->addAction("Cut");
-      menu[1]->addAction("Paste");
-      menu[1]->addAction("Delete");
-      menu[1]->addAction("Undo Action");
-      menu[1]->addAction("Redo Action");
-
-      menu[2] = new QMenu("Help");
-      menu[2]->addAction("Contact Us");
-
-      menu[3] = new QMenu("Exit");
-      menu[3]->addAction("Logout");
-      menu[3]->addAction("Exit Program");
-
-
-      //menuBar->setGeometry(0,0,this->width(),23);//Start from the upper left coordinate,
-                                                    //set the width, height;
-                                                    //set the menu bar position
-      menuBar->addMenu(menu[0]);
-      menuBar->addMenu(menu[1]);
-      menuBar->addMenu(menu[2]);
-      menuBar->addMenu(menu[3]);
-
-      //menuBar->actionEvent();
-
-  }
-
-
-ModelerApp::~ModelerApp()
+MainApplication::~MainApplication()
 {
     delete ui;
 }
 
-void ModelerApp::openFile()
-{
-    parser2 file;
-    file.readFile();
-    shapeID = file.getShapeID();
-    shape = file.getShape();
-    point1 = file.getPoint1();
-    point2 = file.getPoint2();
-    point3 = file.getPoint3();
-    point4 = file.getPoint4();
-    penJoin = file.getPenJoinStyle();
-    //std::cout << penJoin << std::endl;
-    color = file.getColor();
-}
-
-
-void ModelerApp::paintEvent(QPaintEvent *event)
+void MainApplication::paintEvent(QPaintEvent *event)
 {
     //notes: when the program first runs, entry point for qwidget application
     //qobject is created, store pointers to the shapes
@@ -147,12 +87,17 @@ void ModelerApp::paintEvent(QPaintEvent *event)
     text->draw(this);
 }
 
-
-//This function will allow the contact us button press to display information
-void ModelerApp::on_pushButton_clicked()
+void MainApplication::openFile()
 {
-    QMessageBox::information(this, "Contact Info", "The Qties");
+    parser2 file;
+    file.readFile();
+    shapeID = file.getShapeID();
+    shape = file.getShape();
+    point1 = file.getPoint1();
+    point2 = file.getPoint2();
+    point3 = file.getPoint3();
+    point4 = file.getPoint4();
+    penJoin = file.getPenJoinStyle();
+    //std::cout << penJoin << std::endl;
+    color = file.getColor();
 }
-
-
-

@@ -23,7 +23,7 @@ Polyline& Polyline::operator=(Polyline& polyline) {
 }
 
 // draw Function
-void Polyline::draw(ModelerApp *model)
+void Polyline::draw(MainApplication *model)
 {
     start = points.begin();
     painter->begin(model);

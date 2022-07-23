@@ -19,9 +19,6 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-	modelerapp.h 
-	modelerapp.cpp
- 	modelerapp.ui
         vector.h
         line.cpp
         line.h
@@ -40,6 +37,9 @@ set(PROJECT_SOURCES
         parser2.cpp
         parser2.h
         Shape.cpp
+	mainapplication.h 
+	mainapplication.cpp 
+	mainapplication.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -30,7 +30,7 @@ public:
     //Override from the base class
 
     // draw Function
-    void draw(ModelerApp *model) override;
+    void draw(MainApplication *model) override;
 
     // move Function
     void move() override;

@@ -24,7 +24,7 @@ void Line::setLine(const QPoint &p1, const QPoint &p2)
 }
 
 // draw Function
-void Line::draw(ModelerApp *model)
+void Line::draw(MainApplication *model)
 {
     painter->begin(model);
     painter->setPen(getPen());

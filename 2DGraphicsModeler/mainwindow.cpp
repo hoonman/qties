@@ -29,8 +29,8 @@ void MainWindow::on_pushButton_Login_clicked()
     {
         QMessageBox::information(this, "Login", "Welcome Back!");
         hide();
-        modelerApp = new ModelerApp(this);
-        modelerApp->show();
+        mainApplication = new MainApplication(this);
+        mainApplication->show();
     }
     else
     {
