@@ -1,6 +1,5 @@
 #include "mainapplication.h"
 #include "ui_mainapplication.h"
-#include "modelerapp.h"
 #include "Shape.h"
 #include "line.h"
 #include "rectangle.h"

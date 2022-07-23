@@ -6,7 +6,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-//#include "modelerapp.h"
 #include "mainapplication.h"
 
 QT_BEGIN_NAMESPACE

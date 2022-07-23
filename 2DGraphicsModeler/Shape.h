@@ -9,7 +9,6 @@
 #include <QColor>
 #include <QPoint>
 #include "vector.h"
-//#include "modelerapp.h"
 #include "mainapplication.h"
 #include <QFont>
 #include <math.h>

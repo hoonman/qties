@@ -7,7 +7,6 @@
 
 #include "Shape.h"
 #include <QPoint>
-//#include "modelerapp.h"
 #include "mainapplication.h"
 
 class Line : public Shape
