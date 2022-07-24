@@ -32,8 +32,15 @@ void Line::draw(MainApplication *model)
     painter->end();
 }
 
-//needs implementation
-void Line::move(){}
+// move Function
+void Line::move(vector<int> dimensions)
+{
+    Point1.setX(dimensions[0]);
+    Point1.setY(dimensions[1]);
+    Point2.setX(dimensions[2]);
+    Point2.setY(dimensions[3]);
+
+}
 
 // perimeter
 double Line::perimeter()

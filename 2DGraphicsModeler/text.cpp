@@ -22,7 +22,13 @@ void Text::draw(MainApplication *model)
     painter->end();
 //drawText(int x, int y, int width, int height, int flags, const QString &text, QRect *boundingRect = nullptr)
 }
-void Text::move(){}
+
+// move function
+void Text::move(vector<int> dimensions)
+{
+    x = dimensions[0];
+    y = dimensions[1];
+}
 
 double Text::perimeter()
 {

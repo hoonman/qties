@@ -48,7 +48,11 @@ void Rectangle::draw(MainApplication *model)
 }
 
 // move Function
-void Rectangle::move(){}
+void Rectangle::move(vector<int> dimensions)
+{
+    x = dimensions[0];
+    y = dimensions[1];
+}
 
 // perimeter Function
 double Rectangle::perimeter()

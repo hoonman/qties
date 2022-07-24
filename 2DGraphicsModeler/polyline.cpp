@@ -32,8 +32,21 @@ void Polyline::draw(MainApplication *model)
     painter->end();
 }
 
-//implementation
-void Polyline::move(){}
+// move function
+void Polyline::move(vector<int> dimensions)
+{
+    for (int i = 0; i < dimensions.size(); i++)
+    {
+        if (i % 2 != 0)
+        {
+            points[i].setX(dimensions[i]);
+        }
+        else
+        {
+            points[i].setY(dimensions[i]);
+        }
+    }
+}
 
 // perimeter
 double Polyline::perimeter()

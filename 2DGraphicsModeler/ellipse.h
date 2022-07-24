@@ -19,10 +19,10 @@ public:
     ~Ellipse() override {}
 
     //copy constructor
-        Ellipse(const Ellipse& ellipse);
+    Ellipse(const Ellipse& ellipse);
 
-        //copy assignment
-        virtual Ellipse& operator=(Ellipse & ellipse);
+    //copy assignment
+    virtual Ellipse& operator=(Ellipse & ellipse);
 
     // setEllipse Function
     void setEllipse(const QPoint &p1, int x, int y);
@@ -33,7 +33,7 @@ public:
     void draw(MainApplication *model) override;
 
     // move Function
-    void move() override;
+    void move(vector<int>) override;
 
     // perimeter Function
     double perimeter() override;

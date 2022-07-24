@@ -77,7 +77,7 @@ public:
     virtual void draw(MainApplication *mainPaint) = 0;
 
     // move Function
-    virtual void move() = 0;
+    virtual void move(vector<int>) = 0;
 
     // perimeter Function
     virtual double perimeter() = 0;

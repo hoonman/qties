@@ -32,7 +32,7 @@ public:
     void draw(MainApplication* model) override;
 
     // move Function
-    void move() override;
+    void move(vector<int>) override;
 
     // perimeter Function
     double perimeter() override;

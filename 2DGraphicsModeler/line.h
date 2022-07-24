@@ -25,7 +25,7 @@ public:
     ~Line() override {}
 
     //copy constructor
-        Line(const Line& line);
+    Line(const Line& line);
 
     //copy assignment
     virtual Line& operator=(const Line& line);
@@ -39,7 +39,7 @@ public:
     void draw(MainApplication *model) override;
 
     // move function
-    void move() override;
+    void move(vector<int>) override;
 
     // perimeter function
     double perimeter() override;

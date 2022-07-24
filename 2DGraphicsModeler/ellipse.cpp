@@ -35,7 +35,11 @@ void Ellipse::draw(MainApplication *model)
 }
 
 // move Function
-void Ellipse::move(){}
+void Ellipse::move(vector<int> dimensions)
+{
+    point1.setX(dimensions[0]);
+    point1.setY(dimensions[1]);
+}
 
 // perimeter Function
 double Ellipse::perimeter()

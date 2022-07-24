@@ -7,7 +7,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -59,10 +59,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/main.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/main.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/main.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/main.cpp"
 },
 {
     "arguments": [
@@ -72,7 +72,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -124,10 +124,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainwindow.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/mainwindow.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainwindow.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -137,7 +137,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -189,10 +189,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/line.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/line.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/line.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/line.cpp"
 },
 {
     "arguments": [
@@ -202,7 +202,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -254,10 +254,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/ellipse.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/ellipse.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/ellipse.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/ellipse.cpp"
 },
 {
     "arguments": [
@@ -267,7 +267,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -319,10 +319,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polygon.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/polygon.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polygon.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/polygon.cpp"
 },
 {
     "arguments": [
@@ -332,7 +332,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -384,10 +384,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polyline.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/polyline.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polyline.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/polyline.cpp"
 },
 {
     "arguments": [
@@ -397,7 +397,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -449,10 +449,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/rectangle.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/rectangle.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/rectangle.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/rectangle.cpp"
 },
 {
     "arguments": [
@@ -462,7 +462,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -514,10 +514,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/text.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/text.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/text.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/text.cpp"
 },
 {
     "arguments": [
@@ -527,7 +527,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -579,10 +579,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/parser2.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/parser2.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/parser2.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/parser2.cpp"
 },
 {
     "arguments": [
@@ -592,7 +592,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -644,10 +644,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/Shape.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/Shape.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/Shape.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/Shape.cpp"
 },
 {
     "arguments": [
@@ -657,7 +657,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -709,10 +709,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainapplication.cpp"
+        "/Users/remorulloda/qties/2DGraphicsModeler/mainapplication.cpp"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainapplication.cpp"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/mainapplication.cpp"
 },
 {
     "arguments": [
@@ -722,7 +722,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -774,10 +774,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainwindow.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/mainwindow.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainwindow.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/mainwindow.h"
 },
 {
     "arguments": [
@@ -787,7 +787,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -839,10 +839,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/vector.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/vector.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/vector.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/vector.h"
 },
 {
     "arguments": [
@@ -852,7 +852,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -904,10 +904,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/line.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/line.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/line.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/line.h"
 },
 {
     "arguments": [
@@ -917,7 +917,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -969,10 +969,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/ellipse.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/ellipse.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/ellipse.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/ellipse.h"
 },
 {
     "arguments": [
@@ -982,7 +982,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1034,10 +1034,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polygon.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/polygon.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polygon.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/polygon.h"
 },
 {
     "arguments": [
@@ -1047,7 +1047,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1099,10 +1099,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polyline.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/polyline.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/polyline.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/polyline.h"
 },
 {
     "arguments": [
@@ -1112,7 +1112,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1164,10 +1164,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/rectangle.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/rectangle.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/rectangle.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/rectangle.h"
 },
 {
     "arguments": [
@@ -1177,7 +1177,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1229,10 +1229,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/Shape.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/Shape.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/Shape.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/Shape.h"
 },
 {
     "arguments": [
@@ -1242,7 +1242,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1294,10 +1294,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/text.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/text.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/text.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/text.h"
 },
 {
     "arguments": [
@@ -1307,7 +1307,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1359,10 +1359,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/parser2.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/parser2.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/parser2.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/parser2.h"
 },
 {
     "arguments": [
@@ -1372,7 +1372,7 @@
         "-I",
         "/Users/remorulloda/Qt/Qt Creator.app/Contents/Resources/cplusplus/wrappedQtHeaders/QtCore",
         "-I",
-        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-NcBzxk/clang-uiheader-NIFeke",
+        "/private/var/folders/51/7tqfp5qn12jc1zhz8hjzdz640000gn/T/QtCreator-AiLwGE/clang-uiheader-ILkHSH",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1424,9 +1424,9 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainapplication.h"
+        "/Users/remorulloda/qties/2DGraphicsModeler/mainapplication.h"
     ],
     "directory": "/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/.qtc_clangd",
-    "file": "/Users/remorulloda/Desktop/qties/2DGraphicsModeler/mainapplication.h"
+    "file": "/Users/remorulloda/qties/2DGraphicsModeler/mainapplication.h"
 }
 ]
