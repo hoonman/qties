@@ -1,0 +1,18 @@
+# ninja log v5
+1	505	1658703976089973262	2DGraphicsModeler_autogen/timestamp	51a5d90e028a44b4
+1	505	1658703976089973262	2DGraphicsModeler_autogen/mocs_compilation.cpp	51a5d90e028a44b4
+1	505	1658703976089973262	/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/2DGraphicsModeler_autogen/timestamp	51a5d90e028a44b4
+1	505	1658703976089973262	/Users/remorulloda/qties/build-2DGraphicsModeler-Qt_6_3_1_for_macOS-Debug/2DGraphicsModeler_autogen/mocs_compilation.cpp	51a5d90e028a44b4
+506	3731	1658703979314453494	CMakeFiles/2DGraphicsModeler.dir/main.cpp.o	5e3fec284710f520
+505	3737	1658703979314724604	CMakeFiles/2DGraphicsModeler.dir/2DGraphicsModeler_autogen/mocs_compilation.cpp.o	24ebc04883a36600
+506	4044	1658703979625694996	CMakeFiles/2DGraphicsModeler.dir/line.cpp.o	b74822fe2e341b05
+509	4057	1658703979641388926	CMakeFiles/2DGraphicsModeler.dir/rectangle.cpp.o	a99414a1e9f5f72f
+506	4071	1658703979656336955	CMakeFiles/2DGraphicsModeler.dir/ellipse.cpp.o	999d966e0e9c7620
+507	4075	1658703979661346256	CMakeFiles/2DGraphicsModeler.dir/polygon.cpp.o	1cee7571afac909a
+508	4081	1658703979668617625	CMakeFiles/2DGraphicsModeler.dir/polyline.cpp.o	4ffd8eaef1b66122
+509	4089	1658703979680131299	CMakeFiles/2DGraphicsModeler.dir/text.cpp.o	d0c99c29802401ba
+506	4104	1658703979693429557	CMakeFiles/2DGraphicsModeler.dir/mainwindow.cpp.o	abe5184ccf537360
+511	4284	1658703979877423156	CMakeFiles/2DGraphicsModeler.dir/parser2.cpp.o	a3cf8459e241ac03
+3735	5550	1658703981143026590	CMakeFiles/2DGraphicsModeler.dir/Shape.cpp.o	57915cdf8fcb44a1
+3738	5853	1658703981444884488	CMakeFiles/2DGraphicsModeler.dir/mainapplication.cpp.o	4559dd43a1337200
+5853	6031	1658703981628047740	2DGraphicsModeler.app/Contents/MacOS/2DGraphicsModeler	250f46f266f359df
