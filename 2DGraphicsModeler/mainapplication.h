@@ -36,33 +36,22 @@ protected:
 
 private slots:
 
-
+    // IGNORE THE WARNING CALLED "Slots named on_foo_bar are error prone...", there are no issues here
     void on_actionExit_Program_triggered();
-
     void on_actionLogout_triggered();
-
     void on_actionContact_Us_triggered();
-
     void on_actionLoad_triggered();
-
     void on_actionCircle_triggered();
-
     void on_actionLine_triggered();
-
     void on_actionRectangle_triggered();
-
     void on_actionPolygon_triggered();
-
     void on_actionPolygon_2_triggered();
-
     void on_actionPolyline_triggered();
-
-
     void on_actionText_triggered();
 
 private:
     Ui::MainApplication *ui;
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 
     MainWindow *mainWindow;
     AboutUs *aboutUs;
