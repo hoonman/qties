@@ -7,6 +7,7 @@
 #include <QMenu>
 #include <QAction>
 #include <QStatusBar>
+#include <QMouseEvent>
 
 class MainWindow;
 class AboutUs;
@@ -26,7 +27,16 @@ public:
     void setAdmin(bool settingAdmin){userIsAdmin = settingAdmin;}
     bool isAdmin(bool userIsAdmin){return this->userIsAdmin;}
 
+protected:
+    void mouseDoubleClickEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
+    void onMouseEvent(QPointF qPoint);
+
 private slots:
+
+
     void on_actionExit_Program_triggered();
 
     void on_actionLogout_triggered();

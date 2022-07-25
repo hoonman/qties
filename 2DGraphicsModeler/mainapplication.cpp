@@ -26,6 +26,47 @@ MainApplication::~MainApplication()
     delete ui;
 }
 
+// Start of Move Functions
+
+void MainApplication::mouseDoubleClickEvent(QMouseEvent *event)
+{
+    QPointF doubleClickPoint = event->globalPosition();
+    onMouseEvent(doubleClickPoint);
+    std::cout << "Double Click...\n";
+    event->accept();
+}
+
+void MainApplication::mouseMoveEvent(QMouseEvent *event)
+{
+    QPointF movePoint = event->globalPosition();
+    onMouseEvent(movePoint);
+    std::cout << "Moving...\n";
+    event->accept();
+}
+
+void MainApplication::mousePressEvent(QMouseEvent *event)
+{
+    event->accept();
+}
+
+void MainApplication::mouseReleaseEvent(QMouseEvent *event)
+{
+    event->accept();
+}
+
+void MainApplication::onMouseEvent(QPointF qPoint)
+{
+    // Whenever the Mouse double clicks, the coordinates are sent here
+    // Also, whenever the mouse moves, the coordinates are sent here
+    // Though i think they are only sent if u double click/or click and hold and then move the mouse or just by double clicking
+    double xCoordinate = qPoint.rx();
+    double yCoordinate = qPoint.ry();
+    std::cout << " | " << xCoordinate << " ";
+    std::cout << yCoordinate << std::endl;
+}
+
+// End of move Functions
+
 void MainApplication::paintEvent(QPaintEvent *event)
 {
     //notes: when the program first runs, entry point for qwidget application
