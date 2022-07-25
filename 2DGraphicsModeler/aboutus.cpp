@@ -6,6 +6,8 @@ AboutUs::AboutUs(QWidget *parent) :
     ui(new Ui::AboutUs)
 {
     ui->setupUi(this);
+
+    setWindowTitle("About Us");
 }
 
 AboutUs::~AboutUs()
