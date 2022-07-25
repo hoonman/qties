@@ -46,6 +46,9 @@ void MainApplication::mouseMoveEvent(QMouseEvent *event)
 
 void MainApplication::mousePressEvent(QMouseEvent *event)
 {
+    QPointF clickPoint = event->globalPosition();
+    onMouseEvent(clickPoint);
+    std::cout << "Clicking...\n";
     event->accept();
 }
 
@@ -58,7 +61,7 @@ void MainApplication::onMouseEvent(QPointF qPoint)
 {
     // Whenever the Mouse double clicks, the coordinates are sent here
     // Also, whenever the mouse moves, the coordinates are sent here
-    // Though i think they are only sent if u double click/or click and hold and then move the mouse or just by double clicking
+    // Though i think they are only sent if u double click/or click and hold and then move the mouse
     double xCoordinate = qPoint.rx();
     double yCoordinate = qPoint.ry();
     std::cout << " | " << xCoordinate << " ";
