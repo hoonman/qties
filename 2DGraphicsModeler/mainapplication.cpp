@@ -1,4 +1,5 @@
 #include "mainapplication.h"
+#include "mainwindow.h"
 #include "ui_mainapplication.h"
 #include "Shape.h"
 #include "line.h"
@@ -100,3 +101,17 @@ void MainApplication::openFile()
     //std::cout << penJoin << std::endl;
     color = file.getColor();
 }
+
+void MainApplication::on_actionExit_Program_triggered()
+{
+    QApplication::quit();
+}
+
+
+void MainApplication::on_actionLogout_triggered()
+{
+    hide();
+    mainWindow = new MainWindow(this);
+    mainWindow->show();
+}
+

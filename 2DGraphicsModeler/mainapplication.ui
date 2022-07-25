@@ -30,17 +30,6 @@
     <addaction name="actionSave_All"/>
     <addaction name="actionLoad"/>
    </widget>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>Edit</string>
-    </property>
-    <addaction name="actionCopy"/>
-    <addaction name="actionCut"/>
-    <addaction name="actionPaste"/>
-    <addaction name="actionDelete"/>
-    <addaction name="actionUndo_Action"/>
-    <addaction name="actionRedo_Action"/>
-   </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
@@ -51,11 +40,34 @@
     <property name="title">
      <string>Exit</string>
     </property>
-    <addaction name="actionExit_Program"/>
     <addaction name="actionLogout"/>
+    <addaction name="actionExit_Program"/>
+   </widget>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionCircle"/>
+    <addaction name="actionLine"/>
+    <addaction name="actionRectangle"/>
+    <addaction name="actionPolygon"/>
+    <addaction name="actionPolygon_2"/>
+    <addaction name="actionPolyline"/>
+   </widget>
+   <widget class="QMenu" name="menuRemove">
+    <property name="title">
+     <string>Remove</string>
+    </property>
+    <addaction name="actionText"/>
+    <addaction name="actionLine_2"/>
+    <addaction name="actionRectangle_2"/>
+    <addaction name="actionElipse"/>
+    <addaction name="actionPolygone"/>
+    <addaction name="actionPolyline_2"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuEdit"/>
+   <addaction name="menuAdd"/>
+   <addaction name="menuRemove"/>
    <addaction name="menuHelp"/>
    <addaction name="menuExit"/>
   </widget>
@@ -75,44 +87,74 @@
     <string>Contact Us</string>
    </property>
   </action>
-  <action name="actionExit_Program">
+  <action name="actionLogout">
    <property name="text">
     <string>Logout</string>
    </property>
   </action>
-  <action name="actionLogout">
+  <action name="actionExit_Program">
    <property name="text">
     <string>Exit Program</string>
    </property>
   </action>
-  <action name="actionCopy">
+  <action name="actionCircle">
    <property name="text">
-    <string>Copy</string>
+    <string>Text</string>
    </property>
   </action>
-  <action name="actionCut">
+  <action name="actionLine">
    <property name="text">
-    <string>Cut</string>
+    <string>Line</string>
    </property>
   </action>
-  <action name="actionPaste">
+  <action name="actionRectangle">
    <property name="text">
-    <string>Paste</string>
+    <string>Rectangle</string>
    </property>
   </action>
-  <action name="actionDelete">
+  <action name="actionPolygon">
    <property name="text">
-    <string>Delete</string>
+    <string>Elipse</string>
    </property>
   </action>
-  <action name="actionUndo_Action">
+  <action name="actionPolygon_2">
    <property name="text">
-    <string>Undo Action</string>
+    <string>Polygon</string>
    </property>
   </action>
-  <action name="actionRedo_Action">
+  <action name="actionPolyline">
    <property name="text">
-    <string>Redo Action</string>
+    <string>Polyline</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="actionLine_2">
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionRectangle_2">
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionElipse">
+   <property name="text">
+    <string>Elipse</string>
+   </property>
+  </action>
+  <action name="actionPolygone">
+   <property name="text">
+    <string>Polygon</string>
+   </property>
+  </action>
+  <action name="actionPolyline_2">
+   <property name="text">
+    <string>Polyline</string>
    </property>
   </action>
  </widget>

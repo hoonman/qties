@@ -8,6 +8,8 @@
 #include <QAction>
 #include <QStatusBar>
 
+class MainWindow;
+
 namespace Ui {
 class MainApplication;
 }
@@ -20,9 +22,16 @@ public:
     explicit MainApplication(QWidget *parent = nullptr);
     ~MainApplication();
 
+private slots:
+    void on_actionExit_Program_triggered();
+
+    void on_actionLogout_triggered();
+
 private:
     Ui::MainApplication *ui;
     void paintEvent(QPaintEvent *event);
+
+    MainWindow *mainWindow;
 
     void openFile();
     std::string item;

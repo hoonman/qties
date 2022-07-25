@@ -25,6 +25,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
     MainApplication *mainApplication;
 };
 #endif // MAINWINDOW_H
