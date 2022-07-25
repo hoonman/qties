@@ -59,11 +59,6 @@
      <string>Remove</string>
     </property>
     <addaction name="actionText"/>
-    <addaction name="actionLine_2"/>
-    <addaction name="actionRectangle_2"/>
-    <addaction name="actionElipse"/>
-    <addaction name="actionPolygone"/>
-    <addaction name="actionPolyline_2"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAdd"/>
@@ -129,32 +124,7 @@
   </action>
   <action name="actionText">
    <property name="text">
-    <string>Text</string>
-   </property>
-  </action>
-  <action name="actionLine_2">
-   <property name="text">
-    <string>Line</string>
-   </property>
-  </action>
-  <action name="actionRectangle_2">
-   <property name="text">
-    <string>Rectangle</string>
-   </property>
-  </action>
-  <action name="actionElipse">
-   <property name="text">
-    <string>Elipse</string>
-   </property>
-  </action>
-  <action name="actionPolygone">
-   <property name="text">
-    <string>Polygon</string>
-   </property>
-  </action>
-  <action name="actionPolyline_2">
-   <property name="text">
-    <string>Polyline</string>
+    <string>Selected Shape</string>
    </property>
   </action>
  </widget>

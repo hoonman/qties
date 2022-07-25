@@ -10,6 +10,7 @@
 #include "ellipse.h"
 #include "parser2.h"
 #include "text.h"
+#include "QFileDialog"
 
 MainApplication::MainApplication(QWidget *parent) :
     QMainWindow(parent),
@@ -122,4 +123,85 @@ void MainApplication::on_actionContact_Us_triggered()
     aboutUs = new AboutUs(this);
     aboutUs->show();
 }
+
+
+void MainApplication::on_actionLoad_triggered()
+{
+    QString filePathName = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath());
+
+    parser2 file;
+    file.setFilePath(filePathName);
+    file.readFile();
+}
+// ADD ---------------------------------------------------------------------------------------------
+// User must be admin in order to use ALL the functions BELOW this line
+// ADD ---------------------------------------------------------------------------------------------
+
+
+void MainApplication::on_actionCircle_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+
+void MainApplication::on_actionLine_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+
+void MainApplication::on_actionRectangle_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+
+void MainApplication::on_actionPolygon_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+
+void MainApplication::on_actionPolygon_2_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+
+void MainApplication::on_actionPolyline_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+// END OF ADD ---------------------------------------------------------------------------------------------
+// START OF DELETE ----------------------------------------------------------------------------------------
+
+
+void MainApplication::on_actionText_triggered()
+{
+    if(userIsAdmin == true)
+    {
+
+    }
+}
+
+// END OF DELETE ----------------------------------------------------------------------------------------
 

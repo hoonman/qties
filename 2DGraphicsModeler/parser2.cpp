@@ -13,6 +13,11 @@ parser2::parser2(){}
 //    std::ifstream infile("shapes.txt", std::ios::in);
 //}
 
+void parser2::setFilePath(QString newFilePath){
+    filePathName = newFilePath;
+    pathNameSet = true;
+}
+
 void parser2::readFile()
 {
     std::ifstream infile("shapes.txt", std::ios::in);
@@ -21,6 +26,19 @@ void parser2::readFile()
         std::cout << "file could not be opened." << std::endl;
         return;
     }
+
+    if(pathNameSet == true)
+    {
+
+        std::ifstream infile( filePathName.toStdString(), std::ios::in);
+        if (infile.fail())
+        {
+            std::cout << "file could not be opened." << std::endl;
+            return;
+        }
+    }
+
+
     getline(infile, text, ' ');
     getline(infile, item, '\n');
     shapeID = std::stoi(item);

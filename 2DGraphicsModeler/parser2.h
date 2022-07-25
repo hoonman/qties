@@ -16,6 +16,7 @@
 #include "Shape.h"
 #include "line.h"
 #include <QApplication>
+#include <QString>
 //using namespace std;
 
 class parser2
@@ -43,7 +44,12 @@ public:
     void readPolyLine(std::ifstream& infile);
     void readBrush(std::ifstream& infile);
 
+    void setFilePath(QString newFilePath);
+
 private:
+    QString filePathName;
+    bool pathNameSet;
+
     std::string item;
     std::string text;
 

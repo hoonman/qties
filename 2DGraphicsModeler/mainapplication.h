@@ -33,6 +33,23 @@ private slots:
 
     void on_actionContact_Us_triggered();
 
+    void on_actionLoad_triggered();
+
+    void on_actionCircle_triggered();
+
+    void on_actionLine_triggered();
+
+    void on_actionRectangle_triggered();
+
+    void on_actionPolygon_triggered();
+
+    void on_actionPolygon_2_triggered();
+
+    void on_actionPolyline_triggered();
+
+
+    void on_actionText_triggered();
+
 private:
     Ui::MainApplication *ui;
     void paintEvent(QPaintEvent *event);
