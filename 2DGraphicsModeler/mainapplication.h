@@ -9,6 +9,7 @@
 #include <QStatusBar>
 
 class MainWindow;
+class AboutUs;
 
 namespace Ui {
 class MainApplication;
@@ -27,11 +28,14 @@ private slots:
 
     void on_actionLogout_triggered();
 
+    void on_actionContact_Us_triggered();
+
 private:
     Ui::MainApplication *ui;
     void paintEvent(QPaintEvent *event);
 
     MainWindow *mainWindow;
+    AboutUs *aboutUs;
 
     void openFile();
     std::string item;

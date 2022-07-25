@@ -1,5 +1,6 @@
 #include "mainapplication.h"
 #include "mainwindow.h"
+#include "aboutus.h"
 #include "ui_mainapplication.h"
 #include "Shape.h"
 #include "line.h"
@@ -113,5 +114,12 @@ void MainApplication::on_actionLogout_triggered()
     hide();
     mainWindow = new MainWindow(this);
     mainWindow->show();
+}
+
+
+void MainApplication::on_actionContact_Us_triggered()
+{
+    aboutUs = new AboutUs(this);
+    aboutUs->show();
 }
 

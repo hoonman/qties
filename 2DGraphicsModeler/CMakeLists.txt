@@ -40,6 +40,9 @@ set(PROJECT_SOURCES
 	mainapplication.h 
 	mainapplication.cpp 
 	mainapplication.ui
+	aboutus.h 
+	aboutus.cpp 
+	aboutus.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
