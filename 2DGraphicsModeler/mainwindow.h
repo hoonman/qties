@@ -27,5 +27,7 @@ private:
     Ui::MainWindow *ui;
 
     MainApplication *mainApplication;
+
+    bool userIsAdmin;
 };
 #endif // MAINWINDOW_H

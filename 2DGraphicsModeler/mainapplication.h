@@ -23,6 +23,9 @@ public:
     explicit MainApplication(QWidget *parent = nullptr);
     ~MainApplication();
 
+    void setAdmin(bool settingAdmin){userIsAdmin = settingAdmin;}
+    bool isAdmin(bool userIsAdmin){return this->userIsAdmin;}
+
 private slots:
     void on_actionExit_Program_triggered();
 
@@ -36,6 +39,8 @@ private:
 
     MainWindow *mainWindow;
     AboutUs *aboutUs;
+
+    bool userIsAdmin;
 
     void openFile();
     std::string item;

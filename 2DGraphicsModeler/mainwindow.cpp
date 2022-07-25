@@ -25,11 +25,20 @@ void MainWindow::on_pushButton_Login_clicked()
     QString username = ui->lineEdit_Username->text();
     QString password = ui->lineEdit_Password->text();
 
-    if(username == "Admin" && password == "Password")
+    if(username == "Admin" && password == "Password" || username == "User" && password == "Password")
     {
+
+
         QMessageBox::information(this, "Login", "Welcome Back!");
         hide();
         mainApplication = new MainApplication(this);
+
+        if(username == "Admin" && password == "Password")
+        {
+            userIsAdmin = true;
+            mainApplication->setAdmin(true);
+        }
+
         mainApplication->show();
     }
     else
