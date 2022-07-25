@@ -112,7 +112,7 @@ void MainApplication::on_actionExit_Program_triggered()
 
 void MainApplication::on_actionLogout_triggered()
 {
-    hide();
+    close();
     mainWindow = new MainWindow(this);
     mainWindow->show();
 }

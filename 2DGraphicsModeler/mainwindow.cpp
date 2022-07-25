@@ -30,7 +30,7 @@ void MainWindow::on_pushButton_Login_clicked()
 
 
         QMessageBox::information(this, "Login", "Welcome Back!");
-        hide();
+        close();
         mainApplication = new MainApplication(this);
 
         if(username == "Admin" && password == "Password")
