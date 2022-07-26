@@ -23,10 +23,11 @@ Polyline& Polyline::operator=(Polyline& polyline) {
 }
 
 // draw Function
-void Polyline::draw(MainWindow *model)
+void Polyline::draw(QPaintDevice* device)
 {
+    painter = new QPainter(device);
     start = points.begin();
-    painter->begin(model);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->drawPolyline(start, points.size());
     painter->end();

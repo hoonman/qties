@@ -18,53 +18,61 @@
 #include <QApplication>
 #include <QString>
 //using namespace std;
+#include <vector>
+#include <string>
+#include <limits>
+#include <QColor>
 
-class parser2
+
+using std::string;
+using std::cout;
+using std::ifstream;
+using std::numeric_limits;
+using std::streamsize;
+using std::endl;
+
+
+class Parser
 {
-public:
-    parser2();
-    ~parser2() {}
-    void readFile();
-    int getShapeID() {return shapeID;}
-    void openFile();
-    std::string getShape() {return shape;}
-    int getPoint1() {return point1;}
-    int getPoint2() {return point2;}
-    int getPoint3() {return point3;}
-    int getPoint4() {return point4;}
-    vector<int> getVPoints() {return intVector;}
-    Qt::GlobalColor getColor() {return color;}
-    int getWidth() {return width;}
-    Qt::PenStyle getPenStyle() {return penStyle;}
-    Qt::PenCapStyle getPenCap() {return penCap;}
-    Qt::PenJoinStyle getPenJoinStyle() {return penJoin;}
 
-    void readPen(std::ifstream& infile);
-    void readLine(std::ifstream& infile);
-    void readPolyLine(std::ifstream& infile);
-    void readBrush(std::ifstream& infile);
+    public:
+        Parser(){}
+        ~Parser(){}
+        void readFile();
+        void readLine(std::ifstream& infile);
+        void readPolyline(std::ifstream& infile);
+        void readPolygon(std::ifstream& infile);
+        void readRectangle(std::ifstream& infile);
+        void readSquare(std::ifstream& infile);
+        void readEllipse(std::ifstream& infile);
+        void readCircle(std::ifstream& infile);
+        void readText(std::ifstream& infile);
+        void setApplication(QPaintDevice* device);
 
-    void setFilePath(QString newFilePath);
+        Qt::GlobalColor convertPenColor(string incolor);
+        Qt::PenStyle convertPenStyle(string pStyle);
+        Qt::PenJoinStyle convertPenJoinStyle(string pJStyle);
+        Qt::PenCapStyle convertPenCapStyle(string pCStyle);
 
-private:
-    QString filePathName;
-    bool pathNameSet;
+        Qt::GlobalColor converBrushColor(string brushColor);
+        Qt::BrushStyle convertBrushStyle(string bStyle);
+        vector<Shape*> returnParser();
 
-    std::string item;
-    std::string text;
+        Qt::AlignmentFlag convertAlignment(string allign);
+        Qt::GlobalColor converTextColor(string textcolor);
+        QFont::Style convertStyle(string style);
+        QFont::Weight convertWeight(string weight);
 
-    int shapeID;
-    std::string shape;
-    int point1, point2, point3, point4;
-    vector<int> intVector;
-    Qt::GlobalColor color;
-    int width;
-    Qt::PenStyle penStyle;
-    Qt::PenCapStyle penCap;
-    Qt::PenJoinStyle penJoin;
-    Qt::BrushStyle brushStyle;
-    Qt::GlobalColor brushColor;
 
+    private:
+        int id;
+        string ShapeType;
+        vector<Shape*> test;
+        Qt::GlobalColor qtGColor;
+        Qt::PenStyle qtPStyle;
+        Qt::PenCapStyle qtPCStyle;
+        Qt::PenJoinStyle qtJStyle;
 };
+
 
 #endif // PARSER_H

@@ -25,9 +25,10 @@ void Ellipse::setEllipse(const QPoint &p1, int x, int y)
 }
 
 // draw Function
-void Ellipse::draw(MainWindow *model)
+void Ellipse::draw(QPaintDevice* device)
 {
-    painter->begin(model);
+    painter = new QPainter(device);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawEllipse(point1, xAxis, yAxis);

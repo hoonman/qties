@@ -29,7 +29,7 @@ public:
     //Override from the base class
 
     // draw function
-    void draw(MainWindow *model) override;
+    void draw(QPaintDevice* device) override;
 
     // move Function
     void move(vector<int>) override;

@@ -33,10 +33,9 @@ public:
     // Move Constructor
     vector(vector&& obj) noexcept
     {
-        currentSize = 0;
-        allocatedSize = 0;
-        arr = nullptr;
-        *this = std::move(obj);
+        currentSize = obj.currentSize;
+        allocatedSize = obj.allocatedSize;
+        arr = obj.arr;
     }
 
     // Copy Assignment
@@ -63,13 +62,9 @@ public:
         if(this != & obj)
         {
         delete[] arr;
-        arr = obj.arr;
+        arr = std::move(obj.arr);
         currentSize = obj.currentSize;
         allocatedSize = obj.allocatedSize;
-
-        obj.arr = nullptr;
-        currentSize = 0;
-        allocatedSize  = 0;
         }
         return *this;
     }

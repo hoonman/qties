@@ -22,10 +22,11 @@ void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 }
 
 // draw Function
-void Polygon::draw(MainWindow *model)
+void Polygon::draw(QPaintDevice* device)
 {
+    painter = new QPainter(device);
     start = points.begin();
-    painter->begin(model);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawPolygon(start, points.size(), Qt::OddEvenFill);

@@ -38,10 +38,10 @@ void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 //}
 
 // draw Function
-void Rectangle::draw(MainWindow *model)
+void Rectangle::draw(QPaintDevice* device)
 {
-
-    painter->begin(model);
+    painter = new QPainter(device);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->drawRect(x, y, width, height);
     painter->end();

@@ -19,7 +19,7 @@ public:
 
     enum class ShapeType {Initial, Line, Polyline, Polygon, Rectangle, Ellipse, Text};
     // Constructor
-    Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Initial){painter = new QPainter;};
+    Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Initial){};
 
 
     // Destructor
@@ -74,7 +74,7 @@ public:
 
 
     // draw Function
-    virtual void draw(MainWindow *mainPaint) = 0;
+    virtual void draw(QPaintDevice* device) = 0;
 
     // move Function
     virtual void move(vector<int>) = 0;

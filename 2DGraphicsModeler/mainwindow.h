@@ -51,11 +51,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    void paintEvent(QPaintEvent *event) override;
+ //   void paintEvent(QPaintEvent *event) override;
     AboutUs *aboutUs;
 
 
-    void openFile();
+//    void openFile();
     std::string item;
     std::string text;
 

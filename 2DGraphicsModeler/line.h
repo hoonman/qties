@@ -36,7 +36,7 @@ public:
     // Overridden Functions
 
     // draw function
-    void draw(MainWindow *model) override;
+    void draw(QPaintDevice* device) override;
 
     // move function
     void move(vector<int>) override;
