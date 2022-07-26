@@ -18,15 +18,14 @@ login::~login()
 void login::on_pushButton_Login_clicked()
 {
     QString username = ui->lineEdit_Username->text();
-        QString password = ui->lineEdit_Password->text();
+    QString password = ui->lineEdit_Password->text();
 
         if(username == "Admin" && password == "Password" || username == "User" && password == "Password")
         {
 
-
             QMessageBox::information(this, "Login", "Welcome Back!");
             close();
-            mainwindow = new MainWindow(this);
+
 
             if(username == "Admin" && password == "Password")
             {
@@ -34,6 +33,10 @@ void login::on_pushButton_Login_clicked()
             }
 
             shutDownWindow = true;
+
+            mainwindow = new MainWindow(this);
+            mainwindow->show();
+
         }
         else
         {
