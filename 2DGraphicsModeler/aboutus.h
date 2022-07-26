@@ -14,7 +14,6 @@ class AboutUs : public QMainWindow
 public:
     explicit AboutUs(QWidget *parent = nullptr);
     ~AboutUs();
-
 private:
     Ui::AboutUs *ui;
 };
