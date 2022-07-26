@@ -16,10 +16,13 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        vector.h
+        login.cpp
+        login.h
+        login.ui
+	mainwindow.h 
+	mainwindow.cpp 
+	mainwindow.ui
+	vector.h
         line.cpp
         line.h
         ellipse.cpp
@@ -37,9 +40,6 @@ set(PROJECT_SOURCES
         parser2.cpp
         parser2.h
         Shape.cpp
-	mainapplication.h 
-	mainapplication.cpp 
-	mainapplication.ui
 	aboutus.h 
 	aboutus.cpp 
 	aboutus.ui

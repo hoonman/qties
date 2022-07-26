@@ -1,19 +1,24 @@
-// ========================================================================
-// mainwindow.cpp
-// ========================================================================
-
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include <QMessageBox>
+#include "ui_mainwindow.h"
+#include "login.h"
+#include "aboutus.h"
+#include "Shape.h"
+#include "line.h"
+#include "rectangle.h"
+#include "polyline.h"
+#include "polygon.h"
+#include "ellipse.h"
+#include "parser2.h"
+#include "text.h"
+#include "QFileDialog"
 
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    setWindowTitle("Login Window");
+    setWindowTitle("Modeler Paint App");
 }
 
 MainWindow::~MainWindow()
@@ -21,31 +26,202 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// Start of Move Functions
 
-void MainWindow::on_pushButton_Login_clicked()
+void MainWindow::mouseDoubleClickEvent(QMouseEvent *event)
 {
-    QString username = ui->lineEdit_Username->text();
-    QString password = ui->lineEdit_Password->text();
+    QPointF doubleClickPoint = event->globalPosition();
+    onMouseEvent(doubleClickPoint);
+    std::cout << "Double Click...\n";
+    event->accept();
+}
 
-    if(username == "Admin" && password == "Password" || username == "User" && password == "Password")
-    {
+void MainWindow::mouseMoveEvent(QMouseEvent *event)
+{
+    QPointF movePoint = event->globalPosition();
+    onMouseEvent(movePoint);
+    std::cout << "Moving...\n";
+    event->accept();
+}
+
+void MainWindow::mousePressEvent(QMouseEvent *event)
+{
+    QPointF clickPoint = event->globalPosition();
+    onMouseEvent(clickPoint);
+    std::cout << "Clicking...\n";
+    event->accept();
+}
+
+void MainWindow::mouseReleaseEvent(QMouseEvent *event)
+{
+    event->accept();
+}
+
+void MainWindow::onMouseEvent(QPointF qPoint)
+{
+    // Whenever the Mouse double clicks, the coordinates are sent here
+    // Also, whenever the mouse moves, the coordinates are sent here
+    // Though i think they are only sent if u double click/or click and hold and then move the mouse
+    double xCoordinate = qPoint.rx();
+    double yCoordinate = qPoint.ry();
+    std::cout << " | " << xCoordinate << " ";
+    std::cout << yCoordinate << std::endl;
+}
+
+// End of move Functions
+
+void MainWindow::paintEvent(QPaintEvent *event)
+{
+    //notes: when the program first runs, entry point for qwidget application
+    //qobject is created, store pointers to the shapes
+    //
+    openFile();
+    //color = Qt::cyan;
+    Line* line = new Line;
+    QPoint point(point1, point2);
+    QPoint point2(point3, point4);
+    line->setLine(point, point2);
+    line->setPen(color, 4, Qt::DashDotLine, Qt::FlatCap, penJoin);
+    line->draw(this);
+//    Shape* line = new Line;
+//    QPoint point(point1, point2);
+//    QPoint point2(point3, point4);
+//    line->setPoints(point, point2);
+//    line->setPen(color, 4, penStyle, penCap, penJoin);
+//    line->draw(this);
+    Rectangle* rect = new Rectangle;
+    rect->setRectangle(QPoint(20,200), QPoint(170, 100));
+    rect->setPen(Qt::cyan, 5, Qt::DashLine, Qt::RoundCap, Qt::RoundJoin);
+    rect->draw(this);
+
+    //testing polyline
+    Polyline* polyL = new Polyline;
+  //  460, 90, 470, 20, 530, 40, 540, 80
+    polyL->setPolyline(QPoint(460, 90), QPoint(470, 20));
+    polyL->setPolyline(QPoint(530, 40), QPoint(540, 80));
+    polyL->setPen(Qt::green, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    polyL->draw(this);
+
+    //testing polgon
+    Polygon* polyG = new Polygon;
+    polyG->setPolygon(QPoint(900, 90), QPoint(910, 20));
+    polyG->setPolygon(QPoint(970, 40), QPoint(980, 80));
+    polyG->setPen(Qt::cyan, 5, Qt::DashDotDotLine, Qt::FlatCap, Qt::MiterJoin);
+    polyG->setBrush(Qt::yellow, Qt::SolidPattern);
+    polyG->draw(this);
+
+    Ellipse* ellip = new Ellipse;
+    ellip->setEllipse(QPoint(520,200), 170, 100);
+    ellip->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    ellip->setBrush(Qt::white, Qt::NoBrush);
+    ellip->draw(this);
+
+    Rectangle* square = new Rectangle;
+    square->setRectangle(QPoint(800, 150), QPoint(200, 200));
+    square->setPen(Qt::red, 5, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
+    square->setBrush(Qt::blue, Qt::HorPattern);
+    //rect->setPen(Qt::black, 5, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    square->draw(this);
+
+    Ellipse* circle = new Ellipse;
+    circle->setEllipse(QPoint(120,450), 100, 100);
+    circle->setPen(Qt::black, 12, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    circle->setBrush(Qt::magenta, Qt::SolidPattern);
+    circle->draw(this);
+
+    Text* text = new Text;
+    text->setText(250, 425, 500, 50, Qt::AlignCenter, "Class Project 2 - 2D Graphics Modeler");
+    text->setFont(Qt::blue, 10, "Comic Sans MS", QFont::StyleItalic, QFont::Normal);
+    text->draw(this);
+}
+
+void MainWindow::openFile()
+{
+    parser2 file;
+    file.readFile();
+    shapeID = file.getShapeID();
+    shape = file.getShape();
+    point1 = file.getPoint1();
+    point2 = file.getPoint2();
+    point3 = file.getPoint3();
+    point4 = file.getPoint4();
+    penJoin = file.getPenJoinStyle();
+    //std::cout << penJoin << std::endl;
+    color = file.getColor();
+}
 
 
-        QMessageBox::information(this, "Login", "Welcome Back!");
-        close();
-        mainApplication = new MainApplication(this);
 
-        if(username == "Admin" && password == "Password")
-        {
-            userIsAdmin = true;
-            mainApplication->setAdmin(true);
-        }
 
-        mainApplication->show();
-    }
-    else
-    {
-        QMessageBox::warning(this,"Login","Username or Password is incorrect");
-    }
+void MainWindow::on_actionSave_All_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionLoad_triggered()
+{
+    QString filePathName = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath());
+
+    parser2 file;
+    file.setFilePath(filePathName);
+    file.readFile();
+}
+
+
+void MainWindow::on_actionText_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionLine_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionRectangle_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionElipse_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionPolygon_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionPolyline_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionContact_Us_triggered()
+{
+    aboutUs = new AboutUs(this);
+    aboutUs->show();
+}
+
+
+void MainWindow::on_actionLogout_triggered()
+{
+    close();
+    Login = new login(this);
+    Login->show();
+}
+
+
+void MainWindow::on_actionExit_Program_triggered()
+{
+    QApplication::quit();
 }
 

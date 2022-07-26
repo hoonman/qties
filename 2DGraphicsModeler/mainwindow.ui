@@ -6,101 +6,125 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>304</width>
-    <height>221</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>304</width>
-    <height>221</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>241</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Login Window</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>60</y>
-       <width>183</width>
-       <height>105</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Username</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_Username"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Password</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_Password">
-          <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_Login">
-        <property name="text">
-         <string>Login</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>304</width>
+     <width>800</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_All"/>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionText"/>
+    <addaction name="actionLine"/>
+    <addaction name="actionRectangle"/>
+    <addaction name="actionElipse"/>
+    <addaction name="actionPolygon"/>
+    <addaction name="actionPolyline"/>
+   </widget>
+   <widget class="QMenu" name="menuRemove">
+    <property name="title">
+     <string>Remove</string>
+    </property>
+    <addaction name="actionSelected_Shape"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionContact_Us"/>
+   </widget>
+   <widget class="QMenu" name="menuExit_2">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="actionLogout"/>
+    <addaction name="actionExit_Program"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAdd"/>
+   <addaction name="menuRemove"/>
+   <addaction name="menuExit"/>
+   <addaction name="menuExit_2"/>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave_All">
+   <property name="text">
+    <string>Save All</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionElipse">
+   <property name="text">
+    <string>Elipse</string>
+   </property>
+  </action>
+  <action name="actionPolygon">
+   <property name="text">
+    <string>Polygon</string>
+   </property>
+  </action>
+  <action name="actionPolyline">
+   <property name="text">
+    <string>Polyline</string>
+   </property>
+  </action>
   <action name="actionContact_Us">
    <property name="text">
     <string>Contact Us</string>
    </property>
-   <property name="toolTip">
-    <string>The Qties</string>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionExit_Program">
+   <property name="text">
+    <string>Exit Program</string>
+   </property>
+  </action>
+  <action name="actionSelected_Shape">
+   <property name="text">
+    <string>Selected Shape</string>
    </property>
   </action>
  </widget>

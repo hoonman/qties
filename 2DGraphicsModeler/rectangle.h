@@ -29,7 +29,7 @@ public:
     void setRectangle(const QPoint& point, const QPoint& point2);
 
     // draw Function
-    void draw(MainApplication* model) override;
+    void draw(MainWindow* model) override;
 
     // move Function
     void move(vector<int>) override;

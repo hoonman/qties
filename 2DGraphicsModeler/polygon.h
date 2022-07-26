@@ -29,7 +29,7 @@ public:
     //Override from the base class
 
     // draw function
-    void draw(MainApplication *model) override;
+    void draw(MainWindow *model) override;
 
     // move Function
     void move(vector<int>) override;

@@ -1,0 +1,30 @@
+#ifndef LOGIN_H
+#define LOGIN_H
+
+#include <QWidget>
+#include <QMessageBox>
+#include "mainwindow.h"
+
+//class MainWindow;
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class login; }
+QT_END_NAMESPACE
+
+class login : public QWidget
+{
+    Q_OBJECT
+
+public:
+    login(QWidget *parent = nullptr);
+    ~login();
+
+private slots:
+    void on_pushButton_Login_clicked();
+
+private:
+    Ui::login *ui;
+    MainWindow *mainwindow;
+    bool userIsAdmin;
+};
+#endif // LOGIN_H

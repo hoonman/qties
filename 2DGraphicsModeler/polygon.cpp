@@ -22,7 +22,7 @@ void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
 }
 
 // draw Function
-void Polygon::draw(MainApplication *model)
+void Polygon::draw(MainWindow *model)
 {
     start = points.begin();
     painter->begin(model);

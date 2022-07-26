@@ -9,7 +9,7 @@
 #include <QColor>
 #include <QPoint>
 #include "vector.h"
-#include "mainapplication.h"
+#include "mainwindow.h"
 #include <QFont>
 #include <math.h>
 
@@ -74,7 +74,7 @@ public:
 
 
     // draw Function
-    virtual void draw(MainApplication *mainPaint) = 0;
+    virtual void draw(MainWindow *mainPaint) = 0;
 
     // move Function
     virtual void move(vector<int>) = 0;

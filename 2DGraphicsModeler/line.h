@@ -7,7 +7,7 @@
 
 #include "Shape.h"
 #include <QPoint>
-#include "mainapplication.h"
+#include "mainwindow.h"
 
 class Line : public Shape
 {
@@ -36,7 +36,7 @@ public:
     // Overridden Functions
 
     // draw function
-    void draw(MainApplication *model) override;
+    void draw(MainWindow *model) override;
 
     // move function
     void move(vector<int>) override;
