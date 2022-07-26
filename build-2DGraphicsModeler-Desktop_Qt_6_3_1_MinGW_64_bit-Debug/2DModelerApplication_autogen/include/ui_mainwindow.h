@@ -12,10 +12,14 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
 #include <canvas.h>
 
@@ -38,6 +42,10 @@ public:
     QAction *actionExit;
     QWidget *centralwidget;
     canvas *widget;
+    QPushButton *pushButton;
+    QComboBox *comboBox;
+    QTreeWidget *treeWidget;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuAdd;
@@ -51,6 +59,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(800, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8(""));
         actionSave_All = new QAction(MainWindow);
         actionSave_All->setObjectName(QString::fromUtf8("actionSave_All"));
         actionLoad = new QAction(MainWindow);
@@ -79,11 +88,27 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         widget = new canvas(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(-1, -1, 801, 551));
+        widget->setGeometry(QRect(210, 20, 541, 531));
+        widget->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255)"));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(10, 60, 51, 31));
+        comboBox = new QComboBox(centralwidget);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(10, 20, 82, 28));
+        treeWidget = new QTreeWidget(centralwidget);
+        QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem();
+        __qtreewidgetitem->setText(0, QString::fromUtf8("1"));
+        treeWidget->setHeaderItem(__qtreewidgetitem);
+        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setGeometry(QRect(10, 110, 181, 331));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(10, 450, 181, 29));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 25));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuAdd = new QMenu(menubar);
@@ -137,6 +162,8 @@ public:
         actionContact_Us->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
         actionLogout->setText(QCoreApplication::translate("MainWindow", "Logout", nullptr));
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Modify", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuAdd->setTitle(QCoreApplication::translate("MainWindow", "Add", nullptr));
         menuRemove->setTitle(QCoreApplication::translate("MainWindow", "Remove", nullptr));

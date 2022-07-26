@@ -9,6 +9,8 @@
 #include <QAction>
 #include <QStatusBar>
 #include <QMouseEvent>
+#include <QtCore>
+#include <QtGui>
 
 class AboutUs;
 
@@ -48,6 +50,8 @@ private slots:
     void on_actionLogout_triggered();
 
     void on_actionExit_triggered();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

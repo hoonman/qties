@@ -11,11 +11,25 @@
 #include "text.h"
 #include "QFileDialog"
 
+
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->comboBox->addItem("Line");
+    ui->comboBox->addItem("Polyline");
+    ui->comboBox->addItem("Polygon");
+    ui->comboBox->addItem("Rectangle");
+    ui->comboBox->addItem("Ellipse");
+    ui->comboBox->addItem("Square");
+    ui->comboBox->addItem("Circle");
+    ui->comboBox->addItem("Text");
+
+    //ui->treeWidget->setColumnCount(2);
+
+
 }
 
 MainWindow::~MainWindow()
@@ -109,4 +123,11 @@ void MainWindow::on_actionExit_triggered()
 {
 
 }
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    QMessageBox::information(this, "Title", ui->comboBox->currentText());
+}
+
 

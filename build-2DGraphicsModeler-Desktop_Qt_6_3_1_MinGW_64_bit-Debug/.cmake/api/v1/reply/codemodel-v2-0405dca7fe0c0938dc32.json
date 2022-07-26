@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2DModelerApplication",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication-Debug-4b54e9f728f586cb4724.json",
+					"name" : "2DModelerApplication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication_autogen-Debug-41dc9bb6526ee8b7fc77.json",
+					"name" : "2DModelerApplication_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication_autogen_timestamp_deps-Debug-02243397eb64db79bb5e.json",
+					"name" : "2DModelerApplication_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jh020/OneDrive/Desktop/reborn2/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

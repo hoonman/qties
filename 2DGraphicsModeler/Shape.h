@@ -9,7 +9,6 @@
 #include <QColor>
 #include <QPoint>
 #include "vector.h"
-#include "mainwindow.h"
 #include <QFont>
 #include <math.h>
 
