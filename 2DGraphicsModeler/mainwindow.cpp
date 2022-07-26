@@ -1,6 +1,5 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include "login.h"
+#include "./ui_mainwindow.h"
 #include "aboutus.h"
 #include "Shape.h"
 #include "line.h"
@@ -12,63 +11,17 @@
 #include "text.h"
 #include "QFileDialog"
 
-
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowTitle("Modeler Paint App");
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-// Start of Move Functions
-
-void MainWindow::mouseDoubleClickEvent(QMouseEvent *event)
-{
-    QPointF doubleClickPoint = event->globalPosition();
-    onMouseEvent(doubleClickPoint);
-    std::cout << "Double Click...\n";
-    event->accept();
-}
-
-void MainWindow::mouseMoveEvent(QMouseEvent *event)
-{
-    QPointF movePoint = event->globalPosition();
-    onMouseEvent(movePoint);
-    std::cout << "Moving...\n";
-    event->accept();
-}
-
-void MainWindow::mousePressEvent(QMouseEvent *event)
-{
-    QPointF clickPoint = event->globalPosition();
-    onMouseEvent(clickPoint);
-    std::cout << "Clicking...\n";
-    event->accept();
-}
-
-void MainWindow::mouseReleaseEvent(QMouseEvent *event)
-{
-    event->accept();
-}
-
-void MainWindow::onMouseEvent(QPointF qPoint)
-{
-    // Whenever the Mouse double clicks, the coordinates are sent here
-    // Also, whenever the mouse moves, the coordinates are sent here
-    // Though i think they are only sent if u double click/or click and hold and then move the mouse
-    double xCoordinate = qPoint.rx();
-    double yCoordinate = qPoint.ry();
-    std::cout << " | " << xCoordinate << " ";
-    std::cout << yCoordinate << std::endl;
-}
-
-// End of move Functions
 
 void MainWindow::paintEvent(QPaintEvent *event)
 {
@@ -150,9 +103,6 @@ void MainWindow::openFile()
     color = file.getColor();
 }
 
-
-
-
 void MainWindow::on_actionSave_All_triggered()
 {
 
@@ -161,11 +111,7 @@ void MainWindow::on_actionSave_All_triggered()
 
 void MainWindow::on_actionLoad_triggered()
 {
-    QString filePathName = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath());
 
-    parser2 file;
-    file.setFilePath(filePathName);
-    file.readFile();
 }
 
 
@@ -205,23 +151,26 @@ void MainWindow::on_actionPolyline_triggered()
 }
 
 
+void MainWindow::on_actionSelected_Shape_triggered()
+{
+
+}
+
+
 void MainWindow::on_actionContact_Us_triggered()
 {
-    aboutUs = new AboutUs(this);
-    aboutUs->show();
+
 }
 
 
 void MainWindow::on_actionLogout_triggered()
 {
-    close();
-    Login = new login(this);
-    Login->show();
+
 }
 
 
-void MainWindow::on_actionExit_Program_triggered()
+void MainWindow::on_actionExit_triggered()
 {
-    QApplication::quit();
+
 }
 

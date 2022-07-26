@@ -47,24 +47,24 @@
     </property>
     <addaction name="actionSelected_Shape"/>
    </widget>
-   <widget class="QMenu" name="menuExit">
+   <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
     <addaction name="actionContact_Us"/>
    </widget>
-   <widget class="QMenu" name="menuExit_2">
+   <widget class="QMenu" name="menuExit">
     <property name="title">
      <string>Exit</string>
     </property>
     <addaction name="actionLogout"/>
-    <addaction name="actionExit_Program"/>
+    <addaction name="actionExit"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAdd"/>
    <addaction name="menuRemove"/>
+   <addaction name="menuHelp"/>
    <addaction name="menuExit"/>
-   <addaction name="menuExit_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSave_All">
@@ -107,6 +107,11 @@
     <string>Polyline</string>
    </property>
   </action>
+  <action name="actionSelected_Shape">
+   <property name="text">
+    <string>Selected Shape</string>
+   </property>
+  </action>
   <action name="actionContact_Us">
    <property name="text">
     <string>Contact Us</string>
@@ -117,14 +122,9 @@
     <string>Logout</string>
    </property>
   </action>
-  <action name="actionExit_Program">
+  <action name="actionExit">
    <property name="text">
-    <string>Exit Program</string>
-   </property>
-  </action>
-  <action name="actionSelected_Shape">
-   <property name="text">
-    <string>Selected Shape</string>
+    <string>Exit</string>
    </property>
   </action>
  </widget>

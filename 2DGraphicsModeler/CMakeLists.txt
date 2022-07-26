@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(2DGraphicsModeler VERSION 0.1 LANGUAGES CXX)
+project(2DModelerApplication VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -16,12 +16,12 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        login.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+	login.cpp
         login.h
         login.ui
-	mainwindow.h 
-	mainwindow.cpp 
-	mainwindow.ui
 	vector.h
         line.cpp
         line.h
@@ -46,31 +46,31 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(2DGraphicsModeler
+    qt_add_executable(2DModelerApplication
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET 2DGraphicsModeler APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET 2DModelerApplication APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(2DGraphicsModeler SHARED
+        add_library(2DModelerApplication SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(2DGraphicsModeler
+        add_executable(2DModelerApplication
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(2DGraphicsModeler PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(2DModelerApplication PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-set_target_properties(2DGraphicsModeler PROPERTIES
+set_target_properties(2DModelerApplication PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -79,5 +79,5 @@ set_target_properties(2DGraphicsModeler PROPERTIES
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(2DGraphicsModeler)
+    qt_finalize_executable(2DModelerApplication)
 endif()
