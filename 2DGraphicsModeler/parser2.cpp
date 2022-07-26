@@ -27,16 +27,6 @@ void parser2::readFile()
         return;
     }
 
-    if(pathNameSet == true)
-    {
-
-        std::ifstream infile( filePathName.toStdString(), std::ios::in);
-        if (infile.fail())
-        {
-            std::cout << "file could not be opened." << std::endl;
-            return;
-        }
-    }
 
 
     getline(infile, text, ' ');

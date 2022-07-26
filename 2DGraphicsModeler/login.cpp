@@ -31,10 +31,9 @@ void login::on_pushButton_Login_clicked()
             if(username == "Admin" && password == "Password")
             {
                 userIsAdmin = true;
-                //mainwindow->setAdmin(true);
             }
 
-            mainwindow->show();
+            shutDownWindow = true;
         }
         else
         {

@@ -9,11 +9,6 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.show();
-    w.hide();
-
-    login *Login;
-    Login = new login();
-    Login->show();
 
     return a.exec();
 }
