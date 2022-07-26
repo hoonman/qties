@@ -1,0 +1,27 @@
+# ninja log v5
+7	368	6805233553770352	2DModelerApplication_autogen/timestamp	f0c352061bad213b
+7	368	6805233553770352	2DModelerApplication_autogen/mocs_compilation.cpp	f0c352061bad213b
+373	3693	6805233587017294	CMakeFiles/2DModelerApplication.dir/mainwindow.cpp.obj	50553c1c5ffa8944
+7	368	6805233553770352	X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp	f0c352061bad213b
+7	368	6805233553770352	X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/mocs_compilation.cpp	f0c352061bad213b
+4515	9114	6805219324666614	CMakeFiles/2DModelerApplication.dir/2DModelerApplication_autogen/mocs_compilation.cpp.obj	aa67fcc5afdab152
+1507	7465	6805160909281187	CMakeFiles/2DModelerApplication.dir/text.cpp.obj	a7fe546965672274
+1369	6819	6805160900571228	CMakeFiles/2DModelerApplication.dir/ellipse.cpp.obj	ebee3e47e0d91d20
+384	3362	6805233583707302	CMakeFiles/2DModelerApplication.dir/login.cpp.obj	4fd4b351f141fcf6
+1473	6885	6805160901851215	CMakeFiles/2DModelerApplication.dir/rectangle.cpp.obj	80068d1a106ca1e6
+1401	7187	6805160906401195	CMakeFiles/2DModelerApplication.dir/polygon.cpp.obj	14cfd4d5a98e3477
+322	3072	6805162496427138	CMakeFiles/2DModelerApplication.dir/main.cpp.obj	e39ee724b6d8f6e9
+6820	9897	6805160933592756	CMakeFiles/2DModelerApplication.dir/parser2.cpp.obj	872a4422cac0f765
+1338	7406	6805160908691211	CMakeFiles/2DModelerApplication.dir/line.cpp.obj	b68be294687d42a1
+1439	7423	6805160908861190	CMakeFiles/2DModelerApplication.dir/polyline.cpp.obj	33780b8ddbe9f5a1
+397	3163	6805233581717307	CMakeFiles/2DModelerApplication.dir/aboutus.cpp.obj	5b851cfd135006af
+6854	9639	6805160931031191	CMakeFiles/2DModelerApplication.dir/Shape.cpp.obj	9910877c7763d92b
+3694	4239	6805233592437990	2DModelerApplication.exe	34527a0e95265331
+6	325	6805236484786937	2DModelerApplication_autogen/timestamp	f0c352061bad213b
+6	325	6805236484786937	2DModelerApplication_autogen/mocs_compilation.cpp	f0c352061bad213b
+6	325	6805236484786937	X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp	f0c352061bad213b
+6	325	6805236484786937	X:/Qt/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/mocs_compilation.cpp	f0c352061bad213b
+356	2825	6805236509776941	CMakeFiles/2DModelerApplication.dir/aboutus.cpp.obj	5b851cfd135006af
+344	3027	6805236511796927	CMakeFiles/2DModelerApplication.dir/login.cpp.obj	4fd4b351f141fcf6
+332	3386	6805236515370139	CMakeFiles/2DModelerApplication.dir/mainwindow.cpp.obj	50553c1c5ffa8944
+3386	3867	6805236520160297	2DModelerApplication.exe	34527a0e95265331

@@ -159,7 +159,8 @@ void MainWindow::on_actionSelected_Shape_triggered()
 
 void MainWindow::on_actionContact_Us_triggered()
 {
-
+    aboutUs = new AboutUs(this);
+    aboutUs->show();
 }
 
 
