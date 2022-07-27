@@ -23,6 +23,7 @@ void Text::draw(QPaintDevice* device)
 //drawText(int x, int y, int width, int height, int flags, const QString &text, QRect *boundingRect = nullptr)
 
     //ID text
+    setID(8);
     QPainter *idText = new QPainter(device);
     idText->setFont(QFont("Times", 12, QFont::Bold));
     idText->drawText(QPoint(x + 80, y), "ID: 8");

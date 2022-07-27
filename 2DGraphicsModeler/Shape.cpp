@@ -50,7 +50,7 @@ void Shape::setFont(Qt::GlobalColor color, int pointSize, QString family, QFont:
 }
 
 // setId Function
-void Shape::setID(QString incomingID)
+void Shape::setID(int incomingID)
 {
     shapeID = incomingID;
 }

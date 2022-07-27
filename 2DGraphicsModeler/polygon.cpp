@@ -31,7 +31,7 @@ void myPolygon::draw(QPaintDevice* device)
     painter->drawPolygon(start, points.size(), Qt::OddEvenFill);
     painter->end();
 
-    setID("3");
+    setID(3);
     QPainter *idText = new QPainter(device);
     idText->setFont(QFont("Times", 12, QFont::Bold));
     idText->drawText(QPoint(points[0]), "ID: 3");

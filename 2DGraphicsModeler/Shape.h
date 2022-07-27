@@ -118,7 +118,7 @@ public:
 
 
     // getID Function
-    const QString& getID() const{return shapeID;}
+    const int& getID() const{return shapeID;}
 
 
     // Setter Functions
@@ -139,7 +139,7 @@ public:
     void setFont(Qt::GlobalColor color, int pointSize, QString family, QFont::Style style, QFont::Weight weight);
 
     // setID Function
-    void setID(QString incomingID);
+    void setID(int incomingID);
 
 
     // Virtual Functions
@@ -168,7 +168,7 @@ private:
     ShapeType shape;
     QPen pen;
     QBrush brush;
-    QString shapeID;
+    int shapeID;
 };
 
 #endif // SHAPE_H
