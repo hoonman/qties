@@ -44,6 +44,7 @@ void Line::draw(QPaintDevice* device)
 // move Function
 void Line::move(vector<int> dimensions)
 {
+
     Point1.setX(dimensions[0]);
     Point1.setY(dimensions[1]);
     Point2.setX(dimensions[2]);

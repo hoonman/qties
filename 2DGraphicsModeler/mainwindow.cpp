@@ -31,6 +31,8 @@ MainWindow::MainWindow(QWidget *parent)
     //ui->treeWidget->setColumnCount(2);
 
 
+
+
 }
 
 MainWindow::~MainWindow()
@@ -117,8 +119,10 @@ void MainWindow::on_actionContact_Us_triggered()
 
 void MainWindow::on_actionLogout_triggered()
 {
-    Login = new login(this);
-    Login->show();
+    //Login = new login(this);
+    //Login->show();
+    //this->hide();
+
 }
 
 

@@ -11,6 +11,7 @@
 #include "storage.h"
 #include "vector.h"
 
+
 canvas::canvas(QWidget *parent)
     : QWidget{parent}
 {
@@ -20,10 +21,17 @@ canvas::canvas(QWidget *parent)
 
 void canvas::paintEvent(QPaintEvent *event)
 {
+
     Parser parse;
-    vector<Shape*> myShapes = parse.manualDraw();
+    std::cout << endl << "paint event";
+    vector<Shape*> myShapes = parse.readFile();
+    //parse.readFile();
+    std::cout << endl << endl << "CRASHING HERE OR THERE";
     for(int i = 0; i < myShapes.size(); i++)
     {
         myShapes[i]->draw(this);
     }
+
+    std::cout << endl << endl << "CRASHING HERE OR THERE";
+
 }

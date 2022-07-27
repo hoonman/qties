@@ -22,7 +22,7 @@ public:
 signals:
 
     private:
-
+    vector<Shape*> myShapes;
 
 };
 

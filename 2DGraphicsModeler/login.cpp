@@ -32,10 +32,10 @@ void login::on_pushButton_Login_clicked()
                 userIsAdmin = true;
             }
 
-//            shutDownWindow = true;
+            shutDownWindow = true;
 
-//            mainwindow = new MainWindow(this);
-//            mainwindow->show();
+            mainwindow = new MainWindow(this);
+            mainwindow->show();
 
         }
         else

@@ -42,14 +42,22 @@ class Parser
         Parser(){}
         ~Parser(){}
         vector<Shape*> readFile();
-        Line* readLine(std::ifstream& infile);
-        myPolyline* readPolyline(std::ifstream& infile);
-        myPolygon* readPolygon(std::ifstream& infile);
-        myRectangle* readRectangle(std::ifstream& infile);
-        myRectangle* readSquare(std::ifstream& infile);
-        myEllipse* readEllipse(std::ifstream& infile);
-        myEllipse* readCircle(std::ifstream& infile);
-        Text* readText(std::ifstream& infile);
+ //       Line* readLine(std::ifstream& infile);
+ //       myPolyline* readPolyline(std::ifstream& infile);
+ //       myPolygon* readPolygon(std::ifstream& infile);
+//        myRectangle* readRectangle(std::ifstream& infile);
+//        myRectangle* readSquare(std::ifstream& infile);
+//        myEllipse* readEllipse(std::ifstream& infile);
+//        myEllipse* readCircle(std::ifstream& infile);
+//        Text* readText(std::ifstream& infile);
+        void readLine(std::ifstream& infile);
+        void readPolyline(std::ifstream& infile);
+        void readPolygon(std::ifstream& infile);
+        void readRectangle(std::ifstream& infile);
+        void readSquare(std::ifstream& infile);
+        void readEllipse(std::ifstream& infile);
+        void readCircle(std::ifstream& infile);
+        void readText(std::ifstream& infile);
         vector<Shape*> manualDraw();
 
 
@@ -66,25 +74,20 @@ class Parser
         QFont::Style convertStyle(string style);
         QFont::Weight convertWeight(string weight);
 
+        void changeCoordinates();
+
 
     private:
         int id;
         string ShapeType;
         string blank;
 
-        Qt::GlobalColor qtGColor;
-        Qt::PenStyle qtPStyle;
-        Qt::PenCapStyle qtPCStyle;
-        Qt::PenJoinStyle qtJStyle;
+        int pt1;
+                int pt2;
+                int pt3;
+                int pt4;
 
-        Qt::GlobalColor qtBcolor;
-        Qt::BrushStyle qtBstyle;
-
-
-        Qt::AlignmentFlag qtAFlag;
-        Qt::GlobalColor fontColor;
-        QFont::Style fontStyle;
-        QFont::Weight fontWeight;
+            vector<Shape*> myVector;
 };
 
 

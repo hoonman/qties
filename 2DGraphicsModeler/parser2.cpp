@@ -3,10 +3,20 @@
 // ========================================================================
 
 #include "parser2.h"
+/*
+void Parser::changeCoordinates()
+{
+    pt2 = 900;
+    pt4 = 200;
+    pt2 = pt2 + 1000;
+    pt4 = pt4 + 1000;
+
+}
+*/
 
 vector<Shape*> Parser::readFile()
 {
-    vector<Shape*> myVector;
+
     //file variable
     ifstream myFile;
 
@@ -14,8 +24,11 @@ vector<Shape*> Parser::readFile()
     if (myFile.fail())
     {
         cout << "file could not be opened." << std::endl;
-        return -1;
+        return 1;
     }
+
+    int hello = 0;
+    cout << endl << endl << "STARTING..." << endl;
 
     std::string line;
     while(myFile.peek() != EOF)
@@ -24,59 +37,71 @@ vector<Shape*> Parser::readFile()
         myFile >> id;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, ShapeType, '\r');
-        cout << id;
-        cout << ShapeType;
+        getline(myFile, ShapeType, '\n');
+        //myFile >> ShapeType;
+        hello = hello + 1;
+        std::cout << endl << endl << hello << endl;
 
         if(ShapeType == "Line")
         {
-            myVector.push_back(readLine(myFile));
+           readLine(myFile);
+            std:: cout << endl << endl << "Reading line!!!" << endl;
 
         }
         else if(ShapeType == "Polyline")
         {
-             myVector.push_back(readPolyline(myFile));
+            readPolyline(myFile);
+             std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Polygon")
         {
-            myVector.push_back(readPolygon(myFile));
+           readPolygon(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Rectangle")
         {
-            myVector.push_back(readRectangle(myFile));
+           readRectangle(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Square")
         {
-            myVector.push_back(readSquare(myFile));
+           readSquare(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Ellipse")
         {
-            myVector.push_back(readEllipse(myFile));
+           readEllipse(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Circle")
         {
-            myVector.push_back(readCircle(myFile));
+           readCircle(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
         else if(ShapeType == "Text")
         {
-            myVector.push_back(readText(myFile));
+           readText(myFile);
+            std:: cout << endl << endl << "WE DID IT!!!" << endl;
 
         }
+
+        std::cout << endl << endl << "END OF FILE!!" << endl;
 
     }
     myFile.close();
 
+    std::cout << endl << endl << "END OF Function!!" << endl;
 
     return myVector;
 }
 
-Line* Parser::readLine(std::ifstream& myFile)
+void Parser::readLine(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -86,7 +111,10 @@ Line* Parser::readLine(std::ifstream& myFile)
     string penStyle;
     string penCap;
     string penJoinStyle;
-
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
 
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> x1;
@@ -102,34 +130,44 @@ Line* Parser::readLine(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, mycolor, '\r');
-        this->qtGColor = convertPenColor(mycolor);
+        getline(myFile, mycolor, '\n');
+        qtGColor = convertPenColor(mycolor);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> penWidth;
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
+        std::cout << mycolor << endl;
+        std::cout << penWidth << endl;
+        std::cout << penStyle << endl;
+        std::cout << penCap << endl;
+        std::cout << penJoinStyle << endl;
+
+        std::cout << qtGColor << endl;
+        std::cout << qtPStyle << endl;
+        std::cout << qtPCStyle << endl;
+        std::cout << qtJStyle << endl;
 
         Line* tempLine = new Line;
         tempLine->setLine(point1, point2);
-        tempLine->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        return tempLine;
+        tempLine->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        myVector.push_back(tempLine);
 }
 
 
-myPolyline* Parser::readPolyline(std::ifstream& myFile)
+void Parser::readPolyline(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -141,6 +179,10 @@ myPolyline* Parser::readPolyline(std::ifstream& myFile)
     string penStyle;
     string penCap;
     string penJoinStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> x1;
         myFile.ignore(numeric_limits<streamsize>::max(), ',');
@@ -164,34 +206,44 @@ myPolyline* Parser::readPolyline(std::ifstream& myFile)
         QPoint point4(x4,y4);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> penWidth;
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        //getline(myFile, penJoinStyle, '/n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
 
+        std::cout << color << endl;
+        std::cout << penWidth << endl;
+        std::cout << penStyle << endl;
+        std::cout << penCap << endl;
+        std::cout << penJoinStyle << endl;
+
+        std::cout << qtGColor << endl;
+        std::cout << qtPStyle << endl;
+        std::cout << qtPCStyle << endl;
+        std::cout << qtJStyle << endl;
         myPolyline* tempPoly = new myPolyline;
         tempPoly->setmyPolyline(point1, point2);
         tempPoly->setmyPolyline(point3, point4);
-        tempPoly->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        return tempPoly;
+        tempPoly->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        myVector.push_back(tempPoly);
 }
 
-myPolygon* Parser::readPolygon(std::ifstream& myFile)
+void Parser::readPolygon(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -205,7 +257,13 @@ myPolygon* Parser::readPolygon(std::ifstream& myFile)
     string penJoinStyle;
     string brushColor;
     string brushStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
 
+    Qt::GlobalColor qtBcolor;
+    Qt::BrushStyle qtBstyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -230,8 +288,8 @@ myPolygon* Parser::readPolygon(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -239,37 +297,52 @@ myPolygon* Parser::readPolygon(std::ifstream& myFile)
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         //penJstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushColor, '\r');
-        this->qtBcolor = converBrushColor(brushColor);
+        getline(myFile, brushColor, '\n');
+        qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushStyle, '\r');
-        this->qtBstyle = convertBrushStyle(brushStyle);
+        getline(myFile, brushStyle, '\n');
+        qtBstyle = convertBrushStyle(brushStyle);
+        std::cout << color << endl;
+        std::cout << penWidth << endl;
+        std::cout << penStyle << endl;
+        std::cout << penCap << endl;
+        std::cout << penJoinStyle << endl;
+
+        std::cout << qtGColor << endl;
+        std::cout << qtPStyle << endl;
+        std::cout << qtPCStyle << endl;
+        std::cout << qtJStyle << endl;
+
+        std::cout << qtBcolor << endl;
+        std::cout << qtBstyle << endl;
+
+
         myPolygon* tempPolygon = new myPolygon;
         tempPolygon->setmyPolygon(point1, point2);
         tempPolygon->setmyPolygon(point3, point4);
-        tempPolygon->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        tempPolygon->setBrush(this->qtBcolor, this->qtBstyle);
-        return tempPolygon;
+        tempPolygon->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        tempPolygon->setBrush(qtBcolor, qtBstyle);
+        myVector.push_back(tempPolygon);
 }
 
-myRectangle* Parser::readRectangle(std::ifstream& myFile)
+void Parser::readRectangle(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -281,6 +354,13 @@ myRectangle* Parser::readRectangle(std::ifstream& myFile)
     string penJoinStyle;
     string brushColor;
     string brushStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
+
+    Qt::GlobalColor qtBcolor;
+    Qt::BrushStyle qtBstyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -295,8 +375,8 @@ myRectangle* Parser::readRectangle(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -304,35 +384,35 @@ myRectangle* Parser::readRectangle(std::ifstream& myFile)
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushColor, '\r');
-        this->qtBcolor = converBrushColor(brushColor);
+        getline(myFile, brushColor, '\n');
+        qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushStyle, '\r');
-        this->qtBstyle = convertBrushStyle(brushStyle);
+        getline(myFile, brushStyle, '\n');
+        qtBstyle = convertBrushStyle(brushStyle);
 
         myRectangle* tempRect = new myRectangle;
         tempRect->setmyRectangle(point1, point2);
-        tempRect->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        tempRect->setBrush(this->qtBcolor, this->qtBstyle);
-        return tempRect;
+        tempRect->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        tempRect->setBrush(qtBcolor, qtBstyle);
+        myVector.push_back(tempRect);
 }
-myRectangle* Parser::readSquare(std::ifstream& myFile)
+void Parser::readSquare(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -344,6 +424,13 @@ myRectangle* Parser::readSquare(std::ifstream& myFile)
     string penJoinStyle;
     string brushColor;
     string brushStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
+
+    Qt::GlobalColor qtBcolor;
+    Qt::BrushStyle qtBstyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -356,8 +443,8 @@ myRectangle* Parser::readSquare(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -365,36 +452,36 @@ myRectangle* Parser::readSquare(std::ifstream& myFile)
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushColor, '\r');
-        this->qtBcolor = converBrushColor(brushColor);
+        getline(myFile, brushColor, '\n');
+        qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushStyle, '\r');
-        this->qtBstyle = convertBrushStyle(brushStyle);
+        getline(myFile, brushStyle, '\n');
+        qtBstyle = convertBrushStyle(brushStyle);
 
         myRectangle* tempRect = new myRectangle;
         tempRect->setmyRectangle(point1, point2);
-        tempRect->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        tempRect->setBrush(this->qtBcolor, this->qtBstyle);
-        return tempRect;
+        tempRect->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        tempRect->setBrush(qtBcolor, qtBstyle);
+        myVector.push_back(tempRect);
 }
 
-myEllipse* Parser::readEllipse(std::ifstream& myFile)
+void Parser::readEllipse(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -406,6 +493,13 @@ myEllipse* Parser::readEllipse(std::ifstream& myFile)
     string penJoinStyle;
     string brushColor;
     string brushStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
+
+    Qt::GlobalColor qtBcolor;
+    Qt::BrushStyle qtBstyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -419,8 +513,8 @@ myEllipse* Parser::readEllipse(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -428,36 +522,36 @@ myEllipse* Parser::readEllipse(std::ifstream& myFile)
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushColor, '\r');
-        this->qtBcolor = converBrushColor(brushColor);
+        getline(myFile, brushColor, '\n');
+        qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushStyle, '\r');
-        this->qtBstyle = convertBrushStyle(brushStyle);
+        getline(myFile, brushStyle, '\n');
+        qtBstyle = convertBrushStyle(brushStyle);
 
         myEllipse* tempEllipse = new myEllipse;
         tempEllipse->setmyEllipse(point1, x2, y2);
-        tempEllipse->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        tempEllipse->setBrush(this->qtBcolor, this->qtBstyle);
-        return tempEllipse;
+        tempEllipse->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        tempEllipse->setBrush(qtBcolor, qtBstyle);
+        myVector.push_back(tempEllipse);
 }
 
-myEllipse* Parser::readCircle(std::ifstream& myFile)
+void Parser::readCircle(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -469,7 +563,13 @@ myEllipse* Parser::readCircle(std::ifstream& myFile)
     string penJoinStyle;
     string brushColor;
     string brushStyle;
+    Qt::GlobalColor qtGColor;
+    Qt::PenStyle qtPStyle;
+    Qt::PenCapStyle qtPCStyle;
+    Qt::PenJoinStyle qtJStyle;
 
+    Qt::GlobalColor qtBcolor;
+    Qt::BrushStyle qtBstyle;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -481,8 +581,8 @@ myEllipse* Parser::readCircle(std::ifstream& myFile)
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, color, '\r');
-        this->qtGColor = convertPenColor(color);
+        getline(myFile, color, '\n');
+        qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -490,36 +590,36 @@ myEllipse* Parser::readCircle(std::ifstream& myFile)
         //penstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penStyle, '\r');
-        this->qtPStyle = convertPenStyle(penStyle);
+        getline(myFile, penStyle, '\n');
+        qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penCap, '\r');
-        this->qtPCStyle = convertPenCapStyle(penCap);
+        getline(myFile, penCap, '\n');
+        qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, penJoinStyle, '\r');
-        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
+        getline(myFile, penJoinStyle, '\n');
+        qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushColor, '\r');
-        this->qtBcolor = converBrushColor(brushColor);
+        getline(myFile, brushColor, '\n');
+        qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, brushStyle, '\r');
-        this->qtBstyle = convertBrushStyle(brushStyle);
+        getline(myFile, brushStyle, '\n');
+        qtBstyle = convertBrushStyle(brushStyle);
 
         myEllipse* tempEllipse = new myEllipse;
         tempEllipse->setmyEllipse(point1, x2, x2);
-        tempEllipse->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
-        tempEllipse->setBrush(this->qtBcolor, this->qtBstyle);
-        return tempEllipse;
+        tempEllipse->setPen(qtGColor, penWidth, qtPStyle, qtPCStyle, qtJStyle);
+        tempEllipse->setBrush(qtBcolor, qtBstyle);
+        myVector.push_back(tempEllipse);
 }
 
-Text* Parser::readText(std::ifstream& myFile)
+void Parser::readText(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -531,6 +631,10 @@ Text* Parser::readText(std::ifstream& myFile)
     string textFont;
     string fontStyle;
     string fontWeight;
+    Qt::AlignmentFlag qtAFlag;
+    Qt::GlobalColor fontColor;
+    QFont::Style qtfontStyle;
+    QFont::Weight qtfontWeight;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         myFile >> x1;
@@ -544,18 +648,18 @@ Text* Parser::readText(std::ifstream& myFile)
         //text string
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, textString, '\r');
+        getline(myFile, textString, '\n');
         QString mystring = QString::fromStdString(textString);
         //text color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, Textcolor, '\r');
-        this->fontColor = converTextColor(Textcolor);
+        getline(myFile, Textcolor, '\n');
+        fontColor = converTextColor(Textcolor);
         //text allignment
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, textAllignment, '\r');
-        this->qtAFlag = convertAlignment(textAllignment);
+        getline(myFile, textAllignment, '\n');
+        qtAFlag = convertAlignment(textAllignment);
         //text pointsize
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -563,25 +667,35 @@ Text* Parser::readText(std::ifstream& myFile)
         //text font;
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, textFont, '\r');
+        getline(myFile, textFont, '\n');
         QString fontString = QString::fromStdString(textFont);
         //text fontstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, fontStyle, '\r');
-        this->fontStyle = convertStyle(fontStyle);
+        getline(myFile, fontStyle, '\n');
+        qtfontStyle = convertStyle(fontStyle);
         //text fontstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
-        getline(myFile, fontWeight, '\r');
+        getline(myFile, fontWeight, '\n');
         getline(myFile, blank, '\n');
-        this->fontWeight = convertWeight(fontWeight);
+        qtfontWeight = convertWeight(fontWeight);
+        std::cout << textString << endl;
+        std::cout << Textcolor << endl;
+        std::cout << textAllignment << endl;
+        std::cout << textFont << endl;
+        std::cout << fontStyle << endl;
+        std::cout << fontWeight << endl;
+
 
         Text* tempText = new Text;
-        tempText->setText(x1, y1, x2, y2, this->qtAFlag, mystring);
-        tempText->setFont(this->fontColor,PointSize, fontString, this->fontStyle, this->fontWeight);
+        tempText->setText(x1, y1, x2, y2, qtAFlag, mystring);
+        tempText->setFont(fontColor,PointSize, fontString, qtfontStyle, qtfontWeight);
 
-        return tempText;
+
+
+
+        myVector.push_back(tempText);
 }
 
 
