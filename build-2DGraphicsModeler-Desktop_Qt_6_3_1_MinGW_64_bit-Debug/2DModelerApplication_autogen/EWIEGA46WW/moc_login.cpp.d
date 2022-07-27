@@ -1,6 +1,5 @@
-C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_login.cpp: C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/login.h \
-  C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
-  C:/CS1C/QTPROJECT/qties/2DGraphicsModeler/mainwindow.h \
+C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_login.cpp: C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/login.h \
+  C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QDeadlineTimer \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QEvent \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QList \
@@ -815,4 +814,5 @@ C:/CS1C/QTPROJECT/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-De
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wnnc.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wow64apiset.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypes.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h \
+  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.h

@@ -30,6 +30,10 @@ void myPolyline::draw(QPaintDevice* device)
     painter->setPen(getPen());
     painter->drawPolyline(start, points.size());
     painter->end();
+
+    QPainter *idText = new QPainter(device);
+    idText->setFont(QFont("Times", 12, QFont::Bold));
+    idText->drawText(QPoint(points[0]), "ID: 2");
 }
 
 // move function

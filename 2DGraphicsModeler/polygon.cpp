@@ -30,6 +30,10 @@ void myPolygon::draw(QPaintDevice* device)
     painter->setBrush(getBrush());
     painter->drawPolygon(start, points.size(), Qt::OddEvenFill);
     painter->end();
+
+    QPainter *idText = new QPainter(device);
+    idText->setFont(QFont("Times", 12, QFont::Bold));
+    idText->drawText(QPoint(points[0]), "ID: 3");
 }
 
 // move Function

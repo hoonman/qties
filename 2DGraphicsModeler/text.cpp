@@ -21,6 +21,11 @@ void Text::draw(QPaintDevice* device)
     painter->drawText(x, y, width, length, AllignmentFlag, text, &boundingRect);
     painter->end();
 //drawText(int x, int y, int width, int height, int flags, const QString &text, QRect *boundingRect = nullptr)
+
+    //ID text
+    QPainter *idText = new QPainter(device);
+    idText->setFont(QFont("Times", 12, QFont::Bold));
+    idText->drawText(QPoint(x + 80, y), "ID: 8");
 }
 
 // move function

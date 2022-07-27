@@ -32,6 +32,10 @@ void myEllipse::draw(QPaintDevice* device)
     painter->setBrush(getBrush());
     painter->drawEllipse(point1, xAxis, yAxis);
     painter->end();
+
+    QPainter *idText = new QPainter(device);
+    idText->setFont(QFont("Times", 12, QFont::Bold));
+    idText->drawText(QPoint(point1), "ID: 6");
 }
 
 // move Function

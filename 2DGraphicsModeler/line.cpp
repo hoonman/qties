@@ -30,6 +30,11 @@ void Line::draw(QPaintDevice* device)
     painter->setPen(getPen());
     painter->drawLine(Point1, Point2);
     painter->end();
+
+    //Id text
+    QPainter *idText = new QPainter(device);
+    idText->setFont(QFont("Times", 12, QFont::Bold));
+    idText->drawText(QPoint(Point2), "ID: 1");
 }
 
 // move Function
