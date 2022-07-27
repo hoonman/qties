@@ -827,3 +827,56 @@ QFont::Weight Parser::convertWeight(string weight)
     }
 }
 
+vector<Shape*> Parser::manualDraw()
+{
+    vector<Shape*> ourShapes;
+    Line* tempLine = new Line;
+
+    tempLine->setLine(QPoint(20,90), QPoint(100,20));
+    tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+    ourShapes.push_back(tempLine);
+
+    myPolyline* tempPoly = new myPolyline;
+    tempPoly->setmyPolyline(QPoint(460,90), QPoint(470,20));
+    tempPoly->setmyPolyline(QPoint(530,40),QPoint(540,80));
+    tempPoly->setPen(Qt::green, 6, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    ourShapes.push_back(tempPoly);
+
+    myPolygon* tempPolygon = new myPolygon;
+    tempPolygon->setmyPolygon(QPoint(900,90), QPoint(910,20));
+    tempPolygon->setmyPolygon(QPoint(970,40),QPoint(980,80));
+    tempPolygon->setPen(Qt::cyan, 6, Qt::DashDotDotLine, Qt::FlatCap, Qt::MiterJoin);
+    tempPolygon->setBrush(Qt::yellow, Qt::SolidPattern);
+    ourShapes.push_back(tempPolygon);
+
+    myRectangle* tempRect = new myRectangle;
+    tempRect->setmyRectangle(QPoint(20,200), QPoint(170,100));
+    tempRect->setPen(Qt::blue, 0, Qt::DashLine, Qt::RoundCap, Qt::RoundJoin);
+    tempRect->setBrush(Qt::red, Qt::VerPattern);
+    ourShapes.push_back(tempRect);
+
+    myRectangle* tempSquare = new myRectangle;
+    tempSquare->setmyRectangle(QPoint(250,150), QPoint(200,200));
+    tempSquare->setPen(Qt::red , 0, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
+    tempSquare->setBrush(Qt::blue, Qt::HorPattern);
+    ourShapes.push_back(tempSquare);
+
+    myEllipse* tempEllipse = new myEllipse;
+    tempEllipse->setmyEllipse(QPoint(520,200), 170, 100);
+    tempEllipse->setPen(Qt::black, 12, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    tempEllipse->setBrush(Qt::white, Qt::NoBrush);
+    ourShapes.push_back(tempEllipse);
+
+    myEllipse* tempCircle = new myEllipse;
+    tempCircle->setmyEllipse(QPoint(750,150), 200, 200);
+    tempCircle->setPen(Qt::black, 12, Qt::SolidLine, Qt::FlatCap, Qt::MiterJoin);
+    tempCircle->setBrush(Qt::magenta, Qt::SolidPattern);
+    ourShapes.push_back(tempCircle);
+
+    Text* tempText = new Text;
+    tempText->setText(250, 425, 500, 50, Qt::AlignCenter, QString("Class Project 2 - 2D Graphics Modeler"));
+    tempText->setFont(Qt::blue , 10, QString("Comic Sans MS"), QFont::StyleItalic, QFont::Normal);
+    ourShapes.push_back(tempText);
+
+    return ourShapes;
+}

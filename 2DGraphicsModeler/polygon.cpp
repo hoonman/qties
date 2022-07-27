@@ -26,7 +26,6 @@ void myPolygon::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     start = points.begin();
-    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawPolygon(start, points.size(), Qt::OddEvenFill);

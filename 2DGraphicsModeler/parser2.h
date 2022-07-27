@@ -51,7 +51,7 @@ class Parser
         myEllipse* readEllipse(std::ifstream& infile);
         myEllipse* readCircle(std::ifstream& infile);
         Text* readText(std::ifstream& infile);
-        vector<Shape*> returnParser();
+        vector<Shape*> manualDraw();
 
 
         Qt::GlobalColor convertPenColor(string incolor);

@@ -16,7 +16,6 @@ void Text::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     QRect boundingRect(x, y, width, length);
-    painter->begin(device);
     painter->setPen(getPen());
     painter->setFont(getFont());
     painter->drawText(x, y, width, length, AllignmentFlag, text, &boundingRect);

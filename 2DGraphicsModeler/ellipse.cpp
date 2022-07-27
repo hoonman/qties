@@ -28,7 +28,6 @@ void myEllipse::setmyEllipse(const QPoint &p1, int x, int y)
 void myEllipse::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
-    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawEllipse(point1, xAxis, yAxis);

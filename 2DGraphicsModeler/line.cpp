@@ -27,7 +27,6 @@ void Line::setLine(const QPoint &p1, const QPoint &p2)
 void Line::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
-    painter->begin(device);
     painter->setPen(getPen());
     painter->drawLine(Point1, Point2);
     painter->end();

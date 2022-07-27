@@ -27,7 +27,6 @@ void myPolyline::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     start = points.begin();
-    painter->begin(device);
     painter->setPen(getPen());
     painter->drawPolyline(start, points.size());
     painter->end();

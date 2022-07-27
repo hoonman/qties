@@ -41,7 +41,6 @@ void myRectangle::setmyRectangle(const QPoint& point1, const QPoint& point2)
 void myRectangle::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
-    painter->begin(device);
     painter->setPen(getPen());
     painter->drawRect(x, y, width, height);
     painter->end();
