@@ -4,8 +4,9 @@
 
 #include "parser2.h"
 
-void Parser::readFile()
+vector<Shape*> Parser::readFile()
 {
+    vector<Shape*> myVector;
     //file variable
     ifstream myFile;
 
@@ -13,11 +14,11 @@ void Parser::readFile()
     if (myFile.fail())
     {
         cout << "file could not be opened." << std::endl;
-        return;
+        return -1;
     }
 
     std::string line;
-    while(getline(myFile,line))
+    while(myFile.peek() != EOF)
     {
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> id;
@@ -29,50 +30,53 @@ void Parser::readFile()
 
         if(ShapeType == "Line")
         {
-            readLine(myFile);
+            myVector.push_back(readLine(myFile));
 
         }
         else if(ShapeType == "Polyline")
         {
-            readPolyline(myFile);
+             myVector.push_back(readPolyline(myFile));
 
         }
         else if(ShapeType == "Polygon")
         {
-            readPolygon(myFile);
+            myVector.push_back(readPolygon(myFile));
 
         }
         else if(ShapeType == "Rectangle")
         {
-            readRectangle(myFile);
+            myVector.push_back(readRectangle(myFile));
 
         }
         else if(ShapeType == "Square")
         {
-            readSquare(myFile);
+            myVector.push_back(readSquare(myFile));
 
         }
         else if(ShapeType == "Ellipse")
         {
-            readEllipse(myFile);
+            myVector.push_back(readEllipse(myFile));
 
         }
         else if(ShapeType == "Circle")
         {
-            readCircle(myFile);
+            myVector.push_back(readCircle(myFile));
 
         }
         else if(ShapeType == "Text")
         {
-            readText(myFile);
+            myVector.push_back(readText(myFile));
 
         }
 
     }
     myFile.close();
+
+
+    return myVector;
 }
 
-void Parser::readLine(std::ifstream& myFile)
+Line* Parser::readLine(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -93,8 +97,8 @@ void Parser::readLine(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ',');
         myFile >> y2;
 
-      //  QPoint point1(x1,y1);
-       // QPoint point2(x2,y2);
+        QPoint point1(x1,y1);
+        QPoint point2(x2,y2);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -118,11 +122,14 @@ void Parser::readLine(std::ifstream& myFile)
         getline(myFile, penJoinStyle, '\r');
         this->qtJStyle = convertPenJoinStyle(penJoinStyle);
 
-
+        Line* tempLine = new Line;
+        tempLine->setLine(point1, point2);
+        tempLine->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        return tempLine;
 }
 
 
-void Parser::readPolyline(std::ifstream& myFile)
+myPolyline* Parser::readPolyline(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -151,9 +158,14 @@ void Parser::readPolyline(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ',');
         myFile >> y4;
         //color
+        QPoint point1(x1,y1);
+        QPoint point2(x2,y2);
+        QPoint point3(x3,y3);
+        QPoint point4(x4,y4);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile >> penWidth;
@@ -161,17 +173,25 @@ void Parser::readPolyline(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
 
+        myPolyline* tempPoly = new myPolyline;
+        tempPoly->setmyPolyline(point1, point2);
+        tempPoly->setmyPolyline(point3, point4);
+        tempPoly->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        return tempPoly;
 }
 
-void Parser::readPolygon(std::ifstream& myFile)
+myPolygon* Parser::readPolygon(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -203,10 +223,15 @@ void Parser::readPolygon(std::ifstream& myFile)
         myFile >> x4;
         myFile.ignore();
         myFile >> y4;
+        QPoint point1(x1,y1);
+        QPoint point2(x2,y2);
+        QPoint point3(x3,y3);
+        QPoint point4(x4,y4);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -215,26 +240,36 @@ void Parser::readPolygon(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         //penJstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushColor, '\r');
+        this->qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushStyle, '\r');
-
+        this->qtBstyle = convertBrushStyle(brushStyle);
+        myPolygon* tempPolygon = new myPolygon;
+        tempPolygon->setmyPolygon(point1, point2);
+        tempPolygon->setmyPolygon(point3, point4);
+        tempPolygon->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        tempPolygon->setBrush(this->qtBcolor, this->qtBstyle);
+        return tempPolygon;
 }
 
-void Parser::readRectangle(std::ifstream& myFile)
+myRectangle* Parser::readRectangle(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -255,10 +290,13 @@ void Parser::readRectangle(std::ifstream& myFile)
         myFile >> x2;
         myFile.ignore();
         myFile >> y2;
+        QPoint point1(x1,y1);
+        QPoint point2(x2,y2);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -267,24 +305,34 @@ void Parser::readRectangle(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushColor, '\r');
+        this->qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushStyle, '\r');
+        this->qtBstyle = convertBrushStyle(brushStyle);
 
+        myRectangle* tempRect = new myRectangle;
+        tempRect->setmyRectangle(point1, point2);
+        tempRect->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        tempRect->setBrush(this->qtBcolor, this->qtBstyle);
+        return tempRect;
 }
-void Parser::readSquare(std::ifstream& myFile)
+myRectangle* Parser::readSquare(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -303,10 +351,13 @@ void Parser::readSquare(std::ifstream& myFile)
         myFile >> y1;
         myFile.ignore();
         myFile >> x2;
+        QPoint point1(x1,y1);
+        QPoint point2(x2,x2);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -315,25 +366,35 @@ void Parser::readSquare(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushColor, '\r');
+        this->qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushStyle, '\r');
+        this->qtBstyle = convertBrushStyle(brushStyle);
 
+        myRectangle* tempRect = new myRectangle;
+        tempRect->setmyRectangle(point1, point2);
+        tempRect->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        tempRect->setBrush(this->qtBcolor, this->qtBstyle);
+        return tempRect;
 }
 
-void Parser::readEllipse(std::ifstream& myFile)
+myEllipse* Parser::readEllipse(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -354,10 +415,12 @@ void Parser::readEllipse(std::ifstream& myFile)
         myFile >> x2;
         myFile.ignore();
         myFile >> y2;
+        QPoint point1(x1,y1);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -366,25 +429,35 @@ void Parser::readEllipse(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushColor, '\r');
+        this->qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushStyle, '\r');
+        this->qtBstyle = convertBrushStyle(brushStyle);
 
+        myEllipse* tempEllipse = new myEllipse;
+        tempEllipse->setmyEllipse(point1, x2, y2);
+        tempEllipse->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        tempEllipse->setBrush(this->qtBcolor, this->qtBstyle);
+        return tempEllipse;
 }
 
-void Parser::readCircle(std::ifstream& myFile)
+myEllipse* Parser::readCircle(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -404,10 +477,12 @@ void Parser::readCircle(std::ifstream& myFile)
         myFile >> y1;
         myFile.ignore();
         myFile >> x2;
+        QPoint point1(x1,y1);
         //color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, color, '\r');
+        this->qtGColor = convertPenColor(color);
         //width
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -416,25 +491,35 @@ void Parser::readCircle(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penStyle, '\r');
+        this->qtPStyle = convertPenStyle(penStyle);
         //penCapstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penCap, '\r');
+        this->qtPCStyle = convertPenCapStyle(penCap);
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, penJoinStyle, '\r');
+        this->qtJStyle = convertPenJoinStyle(penJoinStyle);
         //brush color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushColor, '\r');
+        this->qtBcolor = converBrushColor(brushColor);
         //brush style
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, brushStyle, '\r');
+        this->qtBstyle = convertBrushStyle(brushStyle);
 
+        myEllipse* tempEllipse = new myEllipse;
+        tempEllipse->setmyEllipse(point1, x2, x2);
+        tempEllipse->setPen(this->qtGColor, penWidth, this->qtPStyle, this->qtPCStyle, this->qtJStyle);
+        tempEllipse->setBrush(this->qtBcolor, this->qtBstyle);
+        return tempEllipse;
 }
 
-void Parser::readText(std::ifstream& myFile)
+Text* Parser::readText(std::ifstream& myFile)
 {
     //dimensions
     int x1,y1;
@@ -455,18 +540,22 @@ void Parser::readText(std::ifstream& myFile)
         myFile >> x2;
         myFile.ignore();
         myFile >> y2;
+
         //text string
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, textString, '\r');
+        QString mystring = QString::fromStdString(textString);
         //text color
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, Textcolor, '\r');
+        this->fontColor = converTextColor(Textcolor);
         //text allignment
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, textAllignment, '\r');
+        this->qtAFlag = convertAlignment(textAllignment);
         //text pointsize
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
@@ -475,15 +564,23 @@ void Parser::readText(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, textFont, '\r');
+        QString fontString = QString::fromStdString(textFont);
         //text fontstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, fontStyle, '\r');
+        this->fontStyle = convertStyle(fontStyle);
         //text fontstyle
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, fontWeight, '\r');
+        this->fontWeight = convertWeight(fontWeight);
 
+        Text* tempText = new Text;
+        tempText->setText(x1, y1, x2, y2, this->qtAFlag, mystring);
+        tempText->setFont(this->fontColor,PointSize, fontString, this->fontStyle, this->fontWeight);
+
+        return tempText;
 }
 
 
@@ -495,70 +592,70 @@ Qt::GlobalColor Parser::convertPenColor(string incolor)
     }
     else if(incolor == "black")
     {
-        return Qt::GlobalColor::black;
+        return Qt::black;
     }
     else if(incolor == "red")
     {
-        return Qt::GlobalColor::red;
+        return Qt::red;
     }
     else if(incolor == "blue")
     {
-        return Qt::GlobalColor::blue;
+        return Qt::blue;
     }
     else if(incolor == "cyan")
     {
-        return Qt::GlobalColor::cyan;
+        return Qt::cyan;
     }
     else if(incolor == "magenta")
     {
-        return Qt::GlobalColor::magenta;
+        return Qt::magenta;
     }
     else if(incolor == "yellow")
     {
-        return Qt::GlobalColor::yellow;
+        return Qt::yellow;
     }
     else
-        return Qt::GlobalColor::gray;
+        return Qt::gray;
 }
 
 Qt::PenStyle Parser::convertPenStyle(string pStyle)
 {
     if(pStyle == "SolidLine")
     {
-        return Qt::PenStyle::SolidLine;
+        return Qt::SolidLine;
     }
     else if(pStyle == "DashLine")
     {
-        return Qt::PenStyle::DashLine;
+        return Qt::DashLine;
     }
     else if(pStyle == "DotLine")
     {
-        return Qt::PenStyle::DotLine;
+        return Qt::DotLine;
     }
     else if(pStyle == "DashDotLine")
     {
-        return Qt::PenStyle::DashDotLine;
+        return Qt::DashDotLine;
     }
     else if(pStyle == "DashDotDotLine")
     {
-        return Qt::PenStyle::DashDotDotLine;
+        return Qt::DashDotDotLine;
     }
     else
-        return Qt::PenStyle::NoPen;
+        return Qt::NoPen;
 }
 
 Qt::PenJoinStyle Parser::convertPenJoinStyle(string pJStyle)
 {
     if(pJStyle == "MiterJoin")
     {
-        return Qt::PenJoinStyle::MiterJoin;
+        return Qt::MiterJoin;
     }
     else if(pJStyle == "BevelJoin")
     {
-        return Qt::PenJoinStyle::BevelJoin;
+        return Qt::BevelJoin;
     }
     else
-        return Qt::PenJoinStyle::RoundJoin;
+        return Qt::RoundJoin;
 
 }
 
@@ -566,49 +663,49 @@ Qt::PenCapStyle Parser::convertPenCapStyle(string pCStyle)
 {
     if(pCStyle == "FlatCap")
     {
-        return Qt::PenCapStyle::FlatCap;
+        return Qt::FlatCap;
     }
     else if(pCStyle == "SquareCap")
     {
-        return Qt::PenCapStyle::SquareCap;
+        return Qt::SquareCap;
     }
     else
-        return Qt::PenCapStyle::RoundCap;
+        return Qt::RoundCap;
 }
 
 Qt::GlobalColor Parser::converBrushColor(string brushColor)
 {
     if(brushColor == "white")
     {
-        return Qt::GlobalColor::white;
+        return Qt::white;
     }
     else if(brushColor == "black")
     {
-        return Qt::GlobalColor::black;
+        return Qt::black;
     }
     else if(brushColor == "red")
     {
-        return Qt::GlobalColor::red;
+        return Qt::red;
     }
     else if(brushColor == "blue")
     {
-        return Qt::GlobalColor::blue;
+        return Qt::blue;
     }
     else if(brushColor == "cyan")
     {
-        return Qt::GlobalColor::cyan;
+        return Qt::cyan;
     }
     else if(brushColor == "magenta")
     {
-        return Qt::GlobalColor::magenta;
+        return Qt::magenta;
     }
     else if(brushColor == "yellow")
     {
-        return Qt::GlobalColor::yellow;
+        return Qt::yellow;
     }
     else
     {
-        return Qt::GlobalColor::gray;
+        return Qt::gray;
     }
 }
 
@@ -616,19 +713,19 @@ Qt::BrushStyle Parser::convertBrushStyle(string bStyle)
 {
     if(bStyle == "SolidPattern")
     {
-        return Qt::BrushStyle::SolidPattern;
+        return Qt::SolidPattern;
     }
     else if(bStyle == "HorPattern")
     {
-        return Qt::BrushStyle::HorPattern;
+        return Qt::HorPattern;
     }
     else if(bStyle == "VerPattern")
     {
-        return Qt::BrushStyle::VerPattern;
+        return Qt::VerPattern;
     }
     else
     {
-        return Qt::BrushStyle::NoBrush;
+        return Qt::NoBrush;
     }
 }
 
@@ -637,23 +734,23 @@ Qt::AlignmentFlag Parser::convertAlignment(string allign)
 {
     if(allign == "AlignLeft")
     {
-        return Qt::AlignmentFlag::AlignLeft;
+        return Qt::AlignLeft;
     }
     else if(allign == "AlignRight")
     {
-        return Qt::AlignmentFlag::AlignRight;
+        return Qt::AlignRight;
     }
     else if(allign == "AlignTop")
     {
-        return Qt::AlignmentFlag::AlignTop;
+        return Qt::AlignTop;
     }
     else if(allign == "AlignBottom")
     {
-        return Qt::AlignmentFlag::AlignBottom;
+        return Qt::AlignBottom;
     }
     else
     {
-        return Qt::AlignmentFlag::AlignCenter;
+        return Qt::AlignCenter;
     }
 }
 
@@ -661,35 +758,35 @@ Qt::GlobalColor Parser::converTextColor(string textcolor)
 {
     if(textcolor == "white")
     {
-        return Qt::GlobalColor::white;
+        return Qt::white;
     }
     else if(textcolor == "black")
     {
-        return Qt::GlobalColor::black;
+        return Qt::black;
     }
     else if(textcolor == "red")
     {
-        return Qt::GlobalColor::red;
+        return Qt::red;
     }
     else if(textcolor == "blue")
     {
-        return Qt::GlobalColor::blue;
+        return Qt::blue;
     }
     else if(textcolor == "cyan")
     {
-        return Qt::GlobalColor::cyan;
+        return Qt::cyan;
     }
     else if(textcolor == "magenta")
     {
-        return Qt::GlobalColor::magenta;
+        return Qt::magenta;
     }
     else if(textcolor == "yellow")
     {
-        return Qt::GlobalColor::yellow;
+        return Qt::yellow;
     }
     else
     {
-        return Qt::GlobalColor::gray;
+        return Qt::gray;
     }
 }
 
@@ -698,15 +795,15 @@ QFont::Style Parser::convertStyle(string style)
 {
     if(style == "StyleNormal")
     {
-        return QFont::Style::StyleNormal;
+        return QFont::StyleNormal;
     }
     else if(style == "StyleItalic")
     {
-        return QFont::Style::StyleItalic;
+        return QFont::StyleItalic;
     }
     else
     {
-        return QFont::Style::StyleOblique;
+        return QFont::StyleOblique;
     }
 }
 
@@ -714,23 +811,19 @@ QFont::Weight Parser::convertWeight(string weight)
 {
     if(weight == "Thin")
     {
-        return QFont::Weight::Thin;
+        return QFont::Thin;
     }
     else if(weight == "Light")
     {
-        return QFont::Weight::Light;
+        return QFont::Light;
     }
     else if(weight == "Normal")
     {
-        return QFont::Weight::Normal;
+        return QFont::Normal;
     }
     else
     {
-        return QFont::Weight::Bold;
+        return QFont::Bold;
     }
 }
 
-        vector<Shape*> Parser::returnParser()
-        {
-            return test;
-        }

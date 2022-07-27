@@ -1,23 +1,23 @@
 // ========================================================================
-// ellipse.h
+// myEllipse.h
 // ========================================================================
 
 #include "ellipse.h"
 
 //copy constructor
-Ellipse::Ellipse(const Ellipse& ellipse) : Shape(ellipse), point1{ellipse.point1}, xAxis{ellipse.xAxis}, yAxis{ellipse.yAxis} {}
+myEllipse::myEllipse(const myEllipse& myEllipse) : Shape(myEllipse), point1{myEllipse.point1}, xAxis{myEllipse.xAxis}, yAxis{myEllipse.yAxis} {}
 
 //copy assignment
-Ellipse& Ellipse::operator=(Ellipse & ellipse) {
-    this->Shape::operator=(ellipse);
-    this->point1 = ellipse.point1;
-    this->xAxis = ellipse.xAxis;
-    this->yAxis = ellipse.yAxis;
+myEllipse& myEllipse::operator=(myEllipse & myEllipse) {
+    this->Shape::operator=(myEllipse);
+    this->point1 = myEllipse.point1;
+    this->xAxis = myEllipse.xAxis;
+    this->yAxis = myEllipse.yAxis;
     return *this;
 }
 
-// setEllipse Function
-void Ellipse::setEllipse(const QPoint &p1, int x, int y)
+// setmyEllipse Function
+void myEllipse::setmyEllipse(const QPoint &p1, int x, int y)
 {
     point1 = p1;
     xAxis = x;
@@ -25,7 +25,7 @@ void Ellipse::setEllipse(const QPoint &p1, int x, int y)
 }
 
 // draw Function
-void Ellipse::draw(QPaintDevice* device)
+void myEllipse::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     painter->begin(device);
@@ -36,14 +36,14 @@ void Ellipse::draw(QPaintDevice* device)
 }
 
 // move Function
-void Ellipse::move(vector<int> dimensions)
+void myEllipse::move(vector<int> dimensions)
 {
     point1.setX(dimensions[0]);
     point1.setY(dimensions[1]);
 }
 
 // perimeter Function
-double Ellipse::perimeter()
+double myEllipse::perimeter()
 {
     double perimeter = 0.0;
 
@@ -53,7 +53,7 @@ double Ellipse::perimeter()
 }
 
 // area Function
-double Ellipse::area()
+double myEllipse::area()
 {
     return M_PI * xAxis * yAxis;
 }

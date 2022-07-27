@@ -1,26 +1,26 @@
 // ========================================================================
-// rectangle.h
+// myRectangle.h
 // ========================================================================
 
 #include "rectangle.h"
 
 //copy constructor
-Rectangle::Rectangle(const Rectangle& rectangle) : Shape(rectangle), point1{rectangle.point1}, point2{rectangle.point2}, x{rectangle.x}, y{rectangle.y}, width{rectangle.width}, height{rectangle.height} {}
+myRectangle::myRectangle(const myRectangle& myRectangle) : Shape(myRectangle), point1{myRectangle.point1}, point2{myRectangle.point2}, x{myRectangle.x}, y{myRectangle.y}, width{myRectangle.width}, height{myRectangle.height} {}
 
 //copy assignment
-Rectangle& Rectangle::operator=(const Rectangle& rectangle) {
-    this->Shape::operator=(rectangle);
-    this->point1 = rectangle.point1;
-    this->point2 = rectangle.point2;
-    this->x = rectangle.x;
-    this->y = rectangle.y;
-    this->width = rectangle.width;
-    this->height = rectangle.height;
+myRectangle& myRectangle::operator=(const myRectangle& myRectangle) {
+    this->Shape::operator=(myRectangle);
+    this->point1 = myRectangle.point1;
+    this->point2 = myRectangle.point2;
+    this->x = myRectangle.x;
+    this->y = myRectangle.y;
+    this->width = myRectangle.width;
+    this->height = myRectangle.height;
     return *this;
 }
 
 // setPoints Function
-void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
+void myRectangle::setmyRectangle(const QPoint& point1, const QPoint& point2)
 {
     x = point1.x();
     y = point1.y();
@@ -29,7 +29,7 @@ void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 }
 
 // setDimension Function
-//void Rectangle::setDimension(int x, int y, int width, int height)
+//void myRectangle::setDimension(int x, int y, int width, int height)
 //{
 //    this->x = x;
 //    this->y = y;
@@ -38,7 +38,7 @@ void Rectangle::setRectangle(const QPoint& point1, const QPoint& point2)
 //}
 
 // draw Function
-void Rectangle::draw(QPaintDevice* device)
+void myRectangle::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     painter->begin(device);
@@ -48,20 +48,20 @@ void Rectangle::draw(QPaintDevice* device)
 }
 
 // move Function
-void Rectangle::move(vector<int> dimensions)
+void myRectangle::move(vector<int> dimensions)
 {
     x = dimensions[0];
     y = dimensions[1];
 }
 
 // perimeter Function
-double Rectangle::perimeter()
+double myRectangle::perimeter()
 {
     return ( 2 * width ) + (2 * height);
 }
 
 // area Function
-double Rectangle::area()
+double myRectangle::area()
 {
     return width * height;
 }

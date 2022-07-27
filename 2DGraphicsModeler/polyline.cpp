@@ -1,11 +1,11 @@
 // ========================================================================
-// polyline.cpp
+// myPolyline.cpp
 // ========================================================================
 
 #include "polyline.h"
 
 // setPoints Function
-void Polyline::setPolyline(const QPoint &p1, const QPoint &p2)
+void myPolyline::setmyPolyline(const QPoint &p1, const QPoint &p2)
 {
     points.push_back(p1);
     points.push_back(p2);
@@ -13,17 +13,17 @@ void Polyline::setPolyline(const QPoint &p1, const QPoint &p2)
 }
 
 //copy constructor
-Polyline::Polyline(Polyline& polyline) : Shape(polyline), points{polyline.points} {}
+myPolyline::myPolyline(myPolyline& myPolyline) : Shape(myPolyline), points{myPolyline.points} {}
 
 //copy assignment
-Polyline& Polyline::operator=(Polyline& polyline) {
-    this->Shape::operator=(polyline);
-    this->points = polyline.points;
+myPolyline& myPolyline::operator=(myPolyline& myPolyline) {
+    this->Shape::operator=(myPolyline);
+    this->points = myPolyline.points;
     return *this;
 }
 
 // draw Function
-void Polyline::draw(QPaintDevice* device)
+void myPolyline::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     start = points.begin();
@@ -34,7 +34,7 @@ void Polyline::draw(QPaintDevice* device)
 }
 
 // move function
-void Polyline::move(vector<int> dimensions)
+void myPolyline::move(vector<int> dimensions)
 {
     for (int i = 0; i < dimensions.size(); i++)
     {
@@ -50,13 +50,13 @@ void Polyline::move(vector<int> dimensions)
 }
 
 // perimeter
-double Polyline::perimeter()
+double myPolyline::perimeter()
 {
     return 0;
 }
 
 // area
-double Polyline::area()
+double myPolyline::area()
 {
     return 0;
 }

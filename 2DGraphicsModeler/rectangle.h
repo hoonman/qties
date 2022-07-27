@@ -1,32 +1,32 @@
 // ========================================================================
-// rectangle.h
+// myRectangle.h
 // ========================================================================
 
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef myRectangle_H
+#define myRectangle_H
 #include <QPoint>
 #include "Shape.h"
 
-class Rectangle : public Shape
+class myRectangle : public Shape
 {
 public:
     // Constructor
-    Rectangle(QPaintDevice* device = nullptr, int id = -1)
+    myRectangle(QPaintDevice* device = nullptr, int id = -1)
         : Shape{device, id, ShapeType::Rectangle} {}
 
     // Destructor
-    ~Rectangle() override {}
+    ~myRectangle() override {}
 
     //copy constructor
-    Rectangle(const Rectangle& rectangle);
+    myRectangle(const myRectangle& myRectangle);
 
     //copy assignment
-    virtual Rectangle& operator=(const Rectangle& rectangle);
+    virtual myRectangle& operator=(const myRectangle& myRectangle);
 
     //void setDimension(int x, int y, int width, int height);
 
     // setPoints Function
-    void setRectangle(const QPoint& point, const QPoint& point2);
+    void setmyRectangle(const QPoint& point, const QPoint& point2);
 
     // draw Function
     void draw(QPaintDevice* device) override;
@@ -49,4 +49,4 @@ private:
     int height;
 };
 
-#endif // RECTANGLE_H
+#endif // myRectangle_H

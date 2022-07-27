@@ -10,6 +10,8 @@
 #include "ellipse.h"
 #include "parser2.h"
 #include "text.h"
+#include "storage.h"
+
 
 class canvas : public QWidget
 {
@@ -20,6 +22,7 @@ public:
 signals:
 
     private:
+
 
 };
 

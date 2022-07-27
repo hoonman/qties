@@ -1,31 +1,31 @@
 // ========================================================================
-// ellipse.h
+// myEllipse.h
 // ========================================================================
 
-#ifndef ELLIPSE_H
-#define ELLIPSE_H
+#ifndef myEllipse_H
+#define myEllipse_H
 #include <QPoint>
 #include "Shape.h"
 
-class Ellipse : public Shape
+class myEllipse : public Shape
 {
 public:
 
     // Constructor
-    Ellipse(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Ellipse)
+    myEllipse(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Ellipse)
         : Shape{device, id, shape} {}
 
     // Destructor
-    ~Ellipse() override {}
+    ~myEllipse() override {}
 
     //copy constructor
-    Ellipse(const Ellipse& ellipse);
+    myEllipse(const myEllipse& myEllipse);
 
     //copy assignment
-    virtual Ellipse& operator=(Ellipse & ellipse);
+    virtual myEllipse& operator=(myEllipse & myEllipse);
 
-    // setEllipse Function
-    void setEllipse(const QPoint &p1, int x, int y);
+    // setmyEllipse Function
+    void setmyEllipse(const QPoint &p1, int x, int y);
 
     //Override from the base class
 

@@ -1,28 +1,28 @@
 // ========================================================================
-// polygon.cpp
+// myPolygon.cpp
 // ========================================================================
 
 #include "polygon.h"
 
 //copy constructor
-Polygon::Polygon(Polygon& polygon) : Shape(polygon), points{polygon.points} {}
+myPolygon::myPolygon(myPolygon& myPolygon) : Shape(myPolygon), points{myPolygon.points} {}
 
 //copy assignment
-Polygon& Polygon::operator=(Polygon& polygon) {
-    this->Shape::operator=(polygon);
-    this->points = polygon.points;
+myPolygon& myPolygon::operator=(myPolygon& myPolygon) {
+    this->Shape::operator=(myPolygon);
+    this->points = myPolygon.points;
     return *this;
 }
 
 // setPoints Function
-void Polygon::setPolygon(const QPoint &p1, const QPoint &p2)
+void myPolygon::setmyPolygon(const QPoint &p1, const QPoint &p2)
 {
     points.push_back(p1);
     points.push_back(p2);
 }
 
 // draw Function
-void Polygon::draw(QPaintDevice* device)
+void myPolygon::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     start = points.begin();
@@ -34,7 +34,7 @@ void Polygon::draw(QPaintDevice* device)
 }
 
 // move Function
-void Polygon::move(vector<int> dimensions)
+void myPolygon::move(vector<int> dimensions)
 {
     for (int i = 0; i < dimensions.size(); i++)
     {
@@ -50,7 +50,7 @@ void Polygon::move(vector<int> dimensions)
 }
 
 // perimeter Function
-double Polygon::perimeter()
+double myPolygon::perimeter()
 {
     double totalPerimeter = 0.0;
     double perimeter = 0.0;
@@ -69,7 +69,7 @@ double Polygon::perimeter()
 
 // area Function
 // Uses shoelace formula
-double Polygon::area()
+double myPolygon::area()
 {
     double totalArea = 0.0;
 

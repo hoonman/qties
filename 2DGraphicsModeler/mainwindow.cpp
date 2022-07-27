@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Text");
 
     //ui->treeWidget->setColumnCount(2);
+    Parser parse;
 
 
 }

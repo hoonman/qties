@@ -12,6 +12,7 @@
 #include <QtCore>
 #include <QtGui>
 
+
 class AboutUs;
 
 QT_BEGIN_NAMESPACE
@@ -53,6 +54,7 @@ private slots:
 
     void on_pushButton_clicked();
 
+
 private:
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
@@ -62,7 +64,6 @@ private:
 //    void openFile();
     std::string item;
     std::string text;
-
     int shapeID;
     std::string shape;
     int point1, point2, point3, point4;

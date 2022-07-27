@@ -13,8 +13,6 @@
 #include <string>
 #include <fstream>
 #include <QPainter>
-#include "Shape.h"
-#include "line.h"
 #include <QApplication>
 #include <QString>
 //using namespace std;
@@ -22,7 +20,13 @@
 #include <string>
 #include <limits>
 #include <QColor>
-
+#include "Shape.h"
+#include "line.h"
+#include "rectangle.h"
+#include "polyline.h"
+#include "polygon.h"
+#include "ellipse.h"
+#include "text.h"
 
 using std::string;
 using std::cout;
@@ -38,16 +42,17 @@ class Parser
     public:
         Parser(){}
         ~Parser(){}
-        void readFile();
-        void readLine(std::ifstream& infile);
-        void readPolyline(std::ifstream& infile);
-        void readPolygon(std::ifstream& infile);
-        void readRectangle(std::ifstream& infile);
-        void readSquare(std::ifstream& infile);
-        void readEllipse(std::ifstream& infile);
-        void readCircle(std::ifstream& infile);
-        void readText(std::ifstream& infile);
-        void setApplication(QPaintDevice* device);
+        vector<Shape*> readFile();
+        Line* readLine(std::ifstream& infile);
+        myPolyline* readPolyline(std::ifstream& infile);
+        myPolygon* readPolygon(std::ifstream& infile);
+        myRectangle* readRectangle(std::ifstream& infile);
+        myRectangle* readSquare(std::ifstream& infile);
+        myEllipse* readEllipse(std::ifstream& infile);
+        myEllipse* readCircle(std::ifstream& infile);
+        Text* readText(std::ifstream& infile);
+        vector<Shape*> returnParser();
+
 
         Qt::GlobalColor convertPenColor(string incolor);
         Qt::PenStyle convertPenStyle(string pStyle);
@@ -56,7 +61,6 @@ class Parser
 
         Qt::GlobalColor converBrushColor(string brushColor);
         Qt::BrushStyle convertBrushStyle(string bStyle);
-        vector<Shape*> returnParser();
 
         Qt::AlignmentFlag convertAlignment(string allign);
         Qt::GlobalColor converTextColor(string textcolor);
@@ -67,11 +71,20 @@ class Parser
     private:
         int id;
         string ShapeType;
-        vector<Shape*> test;
+
         Qt::GlobalColor qtGColor;
         Qt::PenStyle qtPStyle;
         Qt::PenCapStyle qtPCStyle;
         Qt::PenJoinStyle qtJStyle;
+
+        Qt::GlobalColor qtBcolor;
+        Qt::BrushStyle qtBstyle;
+
+
+        Qt::AlignmentFlag qtAFlag;
+        Qt::GlobalColor fontColor;
+        QFont::Style fontStyle;
+        QFont::Weight fontWeight;
 };
 
 

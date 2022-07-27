@@ -1,31 +1,31 @@
 // ========================================================================
-// polygon.h
+// myPolygon.h
 // ========================================================================
 
-#ifndef POLYGON_H
-#define POLYGON_H
+#ifndef myPolygon_H
+#define myPolygon_H
 #include <QPoint>
 #include "Shape.h"
 
-class Polygon : public Shape
+class myPolygon : public Shape
 {
 public:
     // Constructor
-    Polygon(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Polygon)
+    myPolygon(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Polygon)
         : Shape{device, id, shape} {}
 
     // Destructor
-    ~Polygon() override {}
+    ~myPolygon() override {}
 
     //copy constructor
-        Polygon(Polygon& polygon);
+        myPolygon(myPolygon& myPolygon);
 
     //copy assignment
-    virtual Polygon& operator=(Polygon& polygon);
+    virtual myPolygon& operator=(myPolygon& myPolygon);
 
 
-    // setPolygon Function
-    void setPolygon(const QPoint &p1, const QPoint &p2);
+    // setmyPolygon Function
+    void setmyPolygon(const QPoint &p1, const QPoint &p2);
     //Override from the base class
 
     // draw function
@@ -46,4 +46,4 @@ private:
     QPoint *start;
 };
 
-#endif // POLYGON_H
+#endif // myPolygon_H

@@ -45,6 +45,8 @@ set(PROJECT_SOURCES
 	aboutus.ui
         canvas.h
         canvas.cpp
+        storage.h
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
