@@ -730,7 +730,7 @@ Qt::GlobalColor Parser::convertPenColor(string incolor)
         return Qt::yellow;
     }
     else
-        return Qt::gray;
+        return Qt::green;
 }
 
 Qt::PenStyle Parser::convertPenStyle(string pStyle)
@@ -820,7 +820,7 @@ Qt::GlobalColor Parser::converBrushColor(string brushColor)
     }
     else
     {
-        return Qt::gray;
+        return Qt::green;
     }
 }
 
@@ -901,7 +901,7 @@ Qt::GlobalColor Parser::converTextColor(string textcolor)
     }
     else
     {
-        return Qt::gray;
+        return Qt::green;
     }
 }
 
