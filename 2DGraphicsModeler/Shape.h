@@ -24,6 +24,73 @@ public:
     // Destructor
     virtual ~Shape() {delete painter;}
 
+    // Overloaded operators
+
+    // operator Overloaded <
+    bool operator <(const Shape& shapeObject)
+    {
+        if(getID() < shapeObject.getID())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // operator Overloaded >
+    bool operator >(const Shape& shapeObject)
+    {
+        if(getID() > shapeObject.getID())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // operator Overloaded <=
+    bool operator <=(const Shape& shapeObject)
+    {
+        if(getID() <= shapeObject.getID())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // operator Overloaded >=
+    bool operator >=(const Shape& shapeObject)
+    {
+        if(getID() < shapeObject.getID())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // operator Overloaded ==
+    bool operator ==(const Shape& shapeObject)
+    {
+        if(getID() == shapeObject.getID())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     //add copy operations here
 
     //copy constructor
@@ -50,6 +117,10 @@ public:
     const QFont& getFont() const{return font;}
 
 
+    // getID Function
+    const QString& getID() const{return shapeID;}
+
+
     // Setter Functions
 
     // setShape Function
@@ -66,6 +137,9 @@ public:
 
     // setFont Function
     void setFont(Qt::GlobalColor color, int pointSize, QString family, QFont::Style style, QFont::Weight weight);
+
+    // setID Function
+    void setID(QString incomingID);
 
 
     // Virtual Functions
@@ -94,6 +168,7 @@ private:
     ShapeType shape;
     QPen pen;
     QBrush brush;
+    QString shapeID;
 };
 
 #endif // SHAPE_H

@@ -49,14 +49,16 @@ void myRectangle::draw(QPaintDevice* device)
     QPainter *idText = new QPainter(device);
     if(height == width)
     {
+        setID("5");
         idText->setFont(QFont("Times", 12, QFont::Bold));
         idText->drawText(QPoint(x + 20, y + 40), "ID: 5");
         idText->end();
     }
     else{
-    idText->setFont(QFont("Times", 12, QFont::Bold));
-    idText->drawText(QPoint(x + 20, y + 40), "ID: 4");
-    idText->end();
+        setID("4");
+        idText->setFont(QFont("Times", 12, QFont::Bold));
+        idText->drawText(QPoint(x + 20, y + 40), "ID: 4");
+        idText->end();
     }
 }
 

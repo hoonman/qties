@@ -5,7 +5,7 @@
 #include "Shape.h"
 
 //copy constructor
-Shape::Shape(const Shape& shape) : painter{shape.painter}, /*getQPainter(){shape.getQPainter),*/ font{shape.font}, id{shape.id}, shape{shape.shape}, pen{shape.pen}, brush{shape.brush} {}
+Shape::Shape(const Shape& shape) : painter{shape.painter}, /*getQPainter(){shape.getQPainter),*/ font{shape.font}, id{shape.id}, shape{shape.shape}, pen{shape.pen}, brush{shape.brush}, shapeID{shape.shapeID} {}
 
 //copy assignment
 Shape& Shape::operator=(const Shape& shape) {
@@ -16,6 +16,7 @@ Shape& Shape::operator=(const Shape& shape) {
     this->shape = shape.shape;
     this->pen = shape.pen;
     this->brush = shape.brush;
+    this->shapeID = shape.shapeID;
     return *this;
 }
 
@@ -48,3 +49,8 @@ void Shape::setFont(Qt::GlobalColor color, int pointSize, QString family, QFont:
     font.setWeight(weight);
 }
 
+// setId Function
+void Shape::setID(QString incomingID)
+{
+    shapeID = incomingID;
+}
