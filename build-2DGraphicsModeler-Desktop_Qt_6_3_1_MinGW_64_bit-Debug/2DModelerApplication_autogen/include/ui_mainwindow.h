@@ -126,7 +126,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1283, 21));
+        menubar->setGeometry(QRect(0, 0, 1283, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuAdd = new QMenu(menubar);
@@ -178,7 +178,7 @@ public:
         actionPolyline->setText(QCoreApplication::translate("MainWindow", "Polyline", nullptr));
         actionSelected_Shape->setText(QCoreApplication::translate("MainWindow", "Selected Shape", nullptr));
         actionContact_Us->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
-        actionLogout->setText(QCoreApplication::translate("MainWindow", "Logout", nullptr));
+        actionLogout->setText(QCoreApplication::translate("MainWindow", "Login/Logout", nullptr));
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Modify", nullptr));

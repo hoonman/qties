@@ -12,7 +12,7 @@
 #include <QtCore>
 #include <QtGui>
 
-
+class login;
 class AboutUs;
 
 QT_BEGIN_NAMESPACE
@@ -59,7 +59,7 @@ private:
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
     AboutUs *aboutUs;
-
+    login *Login;
 
 //    void openFile();
     std::string item;

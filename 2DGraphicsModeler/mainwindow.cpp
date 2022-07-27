@@ -10,6 +10,7 @@
 #include "parser2.h"
 #include "text.h"
 #include "QFileDialog"
+#include "login.h"
 
 vector<Shape*>Shapes;
 
@@ -116,13 +117,14 @@ void MainWindow::on_actionContact_Us_triggered()
 
 void MainWindow::on_actionLogout_triggered()
 {
-
+    Login = new login(this);
+    Login->show();
 }
 
 
 void MainWindow::on_actionExit_triggered()
 {
-
+    QApplication::quit();
 }
 
 
