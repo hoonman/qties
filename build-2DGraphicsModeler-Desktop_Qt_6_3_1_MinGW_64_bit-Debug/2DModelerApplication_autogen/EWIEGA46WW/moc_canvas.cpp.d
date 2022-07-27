@@ -1,5 +1,5 @@
-C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_canvas.cpp: C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/canvas.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
+C:/Users/jh020/OneDrive/Desktop/reborn2/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_canvas.cpp: C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/canvas.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QDeadlineTimer \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QEvent \
   C:/Qt/6.3.1/mingw_64/include/QtCore/QFile \
@@ -836,14 +836,14 @@ C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wow64apiset.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypes.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/Shape.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/ellipse.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/line.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/mainwindow.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/parser2.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polygon.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/polyline.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/rectangle.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/storage.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/text.h \
-  C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/vector.h
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/Shape.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/ellipse.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/line.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/mainwindow.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/parser2.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/polygon.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/polyline.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/rectangle.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/storage.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/text.h \
+  C:/Users/jh020/OneDrive/Desktop/reborn2/qties/2DGraphicsModeler/vector.h

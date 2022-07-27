@@ -64,7 +64,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(1283, 574);
         MainWindow->setStyleSheet(QString::fromUtf8(""));
         actionSave_All = new QAction(MainWindow);
         actionSave_All->setObjectName(QString::fromUtf8("actionSave_All"));
@@ -94,7 +94,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         widget = new canvas(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(210, 20, 541, 531));
+        widget->setGeometry(QRect(200, 0, 1081, 531));
         widget->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255)"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -126,7 +126,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 24));
+        menubar->setGeometry(QRect(0, 0, 1283, 21));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuAdd = new QMenu(menubar);

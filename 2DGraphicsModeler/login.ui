@@ -25,13 +25,13 @@
    <property name="title">
     <string>Sign in</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>40</x>
       <y>40</y>
       <width>183</width>
-      <height>90</height>
+      <height>105</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -59,7 +59,11 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_Password"/>
+        <widget class="QLineEdit" name="lineEdit_Password">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>

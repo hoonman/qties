@@ -25,7 +25,7 @@ class Ui_login
 {
 public:
     QGroupBox *groupBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
@@ -43,20 +43,20 @@ public:
         groupBox = new QGroupBox(login);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(30, 10, 251, 161));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(40, 40, 183, 90));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(40, 40, 183, 105));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        lineEdit_Username = new QLineEdit(widget);
+        lineEdit_Username = new QLineEdit(layoutWidget);
         lineEdit_Username->setObjectName(QString::fromUtf8("lineEdit_Username"));
 
         horizontalLayout->addWidget(lineEdit_Username);
@@ -66,20 +66,21 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_Password = new QLineEdit(widget);
+        lineEdit_Password = new QLineEdit(layoutWidget);
         lineEdit_Password->setObjectName(QString::fromUtf8("lineEdit_Password"));
+        lineEdit_Password->setEchoMode(QLineEdit::Password);
 
         horizontalLayout_2->addWidget(lineEdit_Password);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
 
-        pushButton_Login = new QPushButton(widget);
+        pushButton_Login = new QPushButton(layoutWidget);
         pushButton_Login->setObjectName(QString::fromUtf8("pushButton_Login"));
 
         verticalLayout->addWidget(pushButton_Login);
