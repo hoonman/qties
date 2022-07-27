@@ -16,7 +16,6 @@
 #include <QApplication>
 #include <QString>
 //using namespace std;
-#include <vector>
 #include <string>
 #include <limits>
 #include <QColor>
@@ -71,6 +70,7 @@ class Parser
     private:
         int id;
         string ShapeType;
+        string blank;
 
         Qt::GlobalColor qtGColor;
         Qt::PenStyle qtPStyle;

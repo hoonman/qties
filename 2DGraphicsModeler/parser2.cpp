@@ -574,6 +574,7 @@ Text* Parser::readText(std::ifstream& myFile)
         myFile.ignore(numeric_limits<streamsize>::max(), ':');
         myFile.ignore();
         getline(myFile, fontWeight, '\r');
+        getline(myFile, blank, '\n');
         this->fontWeight = convertWeight(fontWeight);
 
         Text* tempText = new Text;

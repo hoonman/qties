@@ -11,7 +11,7 @@
 #include "text.h"
 #include "QFileDialog"
 
-
+vector<Shape*>Shapes;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Text");
 
     //ui->treeWidget->setColumnCount(2);
-    Parser parse;
 
 
 }

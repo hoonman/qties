@@ -9,13 +9,15 @@
 #include "text.h"
 #include "vector.h"
 
-struct Storage
+
+class vectorstorage
 {
 public:
-    Storage();
+    vectorstorage(){}
     vector<Shape*> getVector();
     void setVector(vector<Shape*> myShapes);
-    vector<Shape*> GLOBALSHAPES;
+    vector<Shape*> globalvector;
 };
+
 
 #endif // STORAGE_H

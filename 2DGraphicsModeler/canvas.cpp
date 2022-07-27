@@ -22,7 +22,6 @@ void canvas::paintEvent(QPaintEvent *event)
 {
     Parser parse;
     vector<Shape*> myShapes = parse.manualDraw();
-
     for(int i = 0; i < myShapes.size(); i++)
     {
         myShapes[i]->draw(this);

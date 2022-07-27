@@ -26,6 +26,7 @@ void Text::draw(QPaintDevice* device)
     QPainter *idText = new QPainter(device);
     idText->setFont(QFont("Times", 12, QFont::Bold));
     idText->drawText(QPoint(x + 80, y), "ID: 8");
+    idText->end();
 }
 
 // move function

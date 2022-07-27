@@ -46,6 +46,7 @@ set(PROJECT_SOURCES
         canvas.h
         canvas.cpp
         storage.h
+        storage.cpp
 
 )
 

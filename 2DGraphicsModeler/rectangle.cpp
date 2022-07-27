@@ -42,12 +42,22 @@ void myRectangle::draw(QPaintDevice* device)
 {
     painter = new QPainter(device);
     painter->setPen(getPen());
+    painter->setBrush(getBrush());
     painter->drawRect(x, y, width, height);
     painter->end();
 
     QPainter *idText = new QPainter(device);
+    if(height == width)
+    {
+        idText->setFont(QFont("Times", 12, QFont::Bold));
+        idText->drawText(QPoint(x + 20, y + 40), "ID: 5");
+        idText->end();
+    }
+    else{
     idText->setFont(QFont("Times", 12, QFont::Bold));
     idText->drawText(QPoint(x + 20, y + 40), "ID: 4");
+    idText->end();
+    }
 }
 
 // move Function
