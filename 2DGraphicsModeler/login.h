@@ -30,7 +30,7 @@ private slots:
 
     void on_ExitLogin_clicked();
 
-    void on_lineEdit_Username_cursorPositionChanged(int arg1, int arg2);
+ //   void on_lineEdit_Username_cursorPositionChanged(int arg1, int arg2);
 
 private:
     Ui::login *ui;

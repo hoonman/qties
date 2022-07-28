@@ -49,6 +49,8 @@ MainWindow::MainWindow(QWidget *parent)
     this->Shapes = parse.readFile();
     ui->widget->setShape(Shapes);
 
+    //innitProperties
+    innitProperties();
 }
 
 MainWindow::~MainWindow()
@@ -222,3 +224,380 @@ void MainWindow::changedShape()
     this->index = varient.toInt();
     qInfo() << "Index looks like this: " << this->index;
 }
+
+void MainWindow::innitProperties()
+{
+    //Shape combobox
+    ui->ShapeComboBox->addItem("Line");
+    ui->ShapeComboBox->addItem("Polyline");
+    ui->ShapeComboBox->addItem("Polygon");
+    ui->ShapeComboBox->addItem("Rectangle");
+    ui->ShapeComboBox->addItem("Square");
+    ui->ShapeComboBox->addItem("Ellipse");
+    ui->ShapeComboBox->addItem("Circle");
+    ui->ShapeComboBox->addItem("Text");
+    //PenColors
+    ui->PenColorCB->addItem("white");
+    ui->PenColorCB->addItem("black");
+    ui->PenColorCB->addItem("red");
+    ui->PenColorCB->addItem("green");
+    ui->PenColorCB->addItem("blue");
+    ui->PenColorCB->addItem("cyan");
+    ui->PenColorCB->addItem("magenta");
+    ui->PenColorCB->addItem("yellow");
+    ui->PenColorCB->addItem("gray");
+    //PenStyle
+    ui->PenStyleCB->addItem("NoPen");
+    ui->PenStyleCB->addItem("SolidLine");
+    ui->PenStyleCB->addItem("DashLine");
+    ui->PenStyleCB->addItem("DotLine");
+    ui->PenStyleCB->addItem("DashDotLine");
+    ui->PenStyleCB->addItem("DashDotDotLine");
+    //PenCap
+    ui->PenCapCB->addItem("FlatCap");
+    ui->PenCapCB->addItem("SquareCap");
+    ui->PenCapCB->addItem("RoundCap");
+
+    //PenJoin
+    ui->PenJoinCB->addItem("MiterJoin");
+    ui->PenJoinCB->addItem("BevelJoin");
+    ui->PenJoinCB->addItem("RoundJoin");
+
+    //Brush color
+    ui->BrushColorCB->addItem("white");
+    ui->BrushColorCB->addItem("black");
+    ui->BrushColorCB->addItem("red");
+    ui->BrushColorCB->addItem("green");
+    ui->BrushColorCB->addItem("blue");
+    ui->BrushColorCB->addItem("cyan");
+    ui->BrushColorCB->addItem("magenta");
+    ui->BrushColorCB->addItem("yellow");
+    ui->BrushColorCB->addItem("gray");
+
+    //BrushStyle
+    ui->BrushStyleCB->addItem("SolidPattern");
+    ui->BrushStyleCB->addItem("HorPattern");
+    ui->BrushStyleCB->addItem("VerPattern");
+    ui->BrushStyleCB->addItem("NoBrush");
+
+    //TextColor
+    ui->TextColorCB->addItem("white");
+    ui->TextColorCB->addItem("black");
+    ui->TextColorCB->addItem("red");
+    ui->TextColorCB->addItem("green");
+    ui->TextColorCB->addItem("blue");
+    ui->TextColorCB->addItem("cyan");
+    ui->TextColorCB->addItem("magenta");
+    ui->TextColorCB->addItem("yellow");
+    ui->TextColorCB->addItem("gray");
+
+    //Text Alignment
+    ui->TextAlignCB->addItem("AlignLeft");
+    ui->TextAlignCB->addItem("AlignRight");
+    ui->TextAlignCB->addItem("AlignTop");
+    ui->TextAlignCB->addItem("AlignBottom");
+    ui->TextAlignCB->addItem("AlignCenter");
+    //FontFamily
+    ui->TextFontType->addItem("ComicSansMS");
+    ui->TextFontType->addItem("Courier");
+    ui->TextFontType->addItem("Helvetica");
+    ui->TextFontType->addItem("Times");
+    //Font Style
+    ui->TextStyle->addItem("StyleNormal");
+    ui->TextStyle->addItem("StyleItalic");
+    ui->TextStyle->addItem("StyleOblique");
+
+    ui->TextWeight->addItem("Thin");
+    ui->TextWeight->addItem("Light");
+    ui->TextWeight->addItem("Normal");
+    ui->TextWeight->addItem("Bold");
+}
+
+void MainWindow::on_ShapeComboBox_currentIndexChanged(int index)
+{
+    switch(index){
+     case 0:
+        this->allshape = "Line";
+        break;
+     case 1:
+        this->allshape = "Polyline";
+        break;
+     case 2:
+        this->allshape = "Polygon";
+        break;
+     case 3:
+        this->allshape = "Rectangle";
+        break;
+     case 4:
+        this->allshape = "Square";
+        break;
+     case 5:
+        this->allshape = "Ellipse";
+        break;
+     case 6:
+        this->allshape = "Circle";
+        break;
+     case 7:
+        this->allshape = "Text";
+        break;
+    }
+}
+
+
+void MainWindow::on_PenColorCB_currentIndexChanged(int index)
+{
+    switch(index){
+     case 0:
+        this->penColor = Qt::white;
+        break;
+     case 1:
+        this->penColor = Qt::black;
+        break;
+     case 2:
+        this->penColor = Qt::red;
+        break;
+     case 3:
+        this->penColor = Qt::green;
+        break;
+     case 4:
+        this->penColor = Qt::blue;
+        break;
+     case 5:
+        this->penColor = Qt::cyan;
+        break;
+     case 6:
+        this->penColor = Qt::magenta;
+        break;
+     case 7:
+        this->penColor = Qt::yellow;
+        break;
+     case 8:
+       this->penColor = Qt::gray;
+       break;
+    }
+}
+
+
+void MainWindow::on_PenStyleCB_currentIndexChanged(int index)
+{
+    switch(index){
+     case 0:
+        this->penStyle = Qt::NoPen;
+        break;
+     case 1:
+        this->penStyle = Qt::SolidLine;
+        break;
+     case 2:
+        this->penStyle = Qt::DashLine;
+        break;
+     case 3:
+        this->penStyle = Qt::DotLine;
+        break;
+     case 4:
+        this->penStyle = Qt::DashDotLine;
+        break;
+     case 5:
+        this->penStyle = Qt::DashDotDotLine;
+        break;
+    }
+}
+
+
+void MainWindow::on_PenCapCB_currentIndexChanged(int index)
+{
+    switch(index){
+     case 0:
+        this->penCap = Qt::FlatCap;
+        break;
+     case 1:
+        this->penCap = Qt::SquareCap;
+        break;
+     case 2:
+        this->penCap = Qt::RoundCap;
+        break;
+    }
+}
+
+
+void MainWindow::on_PenJoinCB_currentIndexChanged(int index)
+{
+    switch(index){
+     case 0:
+        this->penJoin = Qt::MiterJoin;
+        break;
+     case 1:
+        this->penJoin = Qt::BevelJoin;
+        break;
+     case 2:
+        this->penJoin = Qt::RoundJoin;
+        break;
+    }
+}
+
+
+void MainWindow::on_BrushColorCB_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->brushColor = Qt::white;
+       break;
+    case 1:
+       this->brushColor = Qt::black;
+       break;
+    case 2:
+       this->brushColor = Qt::red;
+       break;
+    case 3:
+       this->brushColor = Qt::green;
+       break;
+    case 4:
+       this->brushColor = Qt::blue;
+       break;
+    case 5:
+       this->brushColor = Qt::cyan;
+       break;
+    case 6:
+       this->brushColor = Qt::magenta;
+       break;
+    case 7:
+       this->brushColor = Qt::yellow;
+       break;
+    case 8:
+       this->brushColor = Qt::gray;
+      break;
+   }
+}
+
+
+void MainWindow::on_BrushStyleCB_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->brushStyle = Qt::SolidPattern;
+       break;
+    case 1:
+       this->brushStyle = Qt::HorPattern;
+       break;
+    case 2:
+       this->brushStyle = Qt::VerPattern;
+       break;
+    case 3:
+       this->brushStyle = Qt::NoBrush;
+       break;
+    }
+}
+
+void MainWindow::on_TextColorCB_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->textColor = Qt::white;
+       break;
+    case 1:
+       this->textColor = Qt::black;
+       break;
+    case 2:
+       this->textColor = Qt::red;
+       break;
+    case 3:
+       this->textColor = Qt::green;
+       break;
+    case 4:
+       this->textColor = Qt::blue;
+       break;
+    case 5:
+       this->textColor = Qt::cyan;
+       break;
+    case 6:
+       this->textColor = Qt::magenta;
+       break;
+    case 7:
+       this->textColor = Qt::yellow;
+       break;
+    case 8:
+       this->textColor = Qt::gray;
+      break;
+   }
+}
+
+
+
+
+void MainWindow::on_TextAlignCB_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->textAlign = Qt::AlignLeft;std::cout << textAlign << endl;
+       break;
+    case 1:
+       this->textAlign = Qt::AlignRight;std::cout << textAlign << endl;
+       break;
+    case 2:
+       this->textAlign = Qt::AlignTop;std::cout << textAlign << endl;
+       break;
+    case 3:
+       this->textAlign = Qt::AlignBottom;std::cout << textAlign << endl;
+       break;
+    case 4:
+       this->textAlign = Qt::AlignCenter;std::cout << textAlign << endl;
+       break;
+     }
+}
+
+
+
+
+
+void MainWindow::on_TextFontType_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->fontFamily = "Comic Sans MS";
+       break;
+    case 1:
+       this->fontFamily = "Courier";
+       break;
+    case 2:
+       this->fontFamily = "Helvetica";
+       break;
+    case 3:
+       this->fontFamily = "Times";
+       break;
+     }
+}
+
+
+void MainWindow::on_TextStyle_currentIndexChanged(int index)
+{
+    switch(index){
+    case 0:
+       this->fontStyle = QFont::StyleNormal; std::cout << fontStyle << endl;
+       break;
+    case 1:
+       this->fontStyle = QFont::StyleItalic; std::cout << fontStyle << endl;
+       break;
+    case 2:
+       this->fontStyle = QFont::StyleOblique; std::cout << fontStyle << endl;
+       break;
+     }
+}
+
+
+void MainWindow::on_TextWeight_currentIndexChanged(int index)
+{    switch(index){
+    case 0:
+       this->fontWeight = QFont::Thin; std::cout << fontWeight<< endl;
+       break;
+    case 1:
+       this->fontWeight = QFont::Light; std::cout << fontWeight << endl;
+       break;
+    case 2:
+       this->fontWeight = QFont::Normal; std::cout << fontWeight << endl;
+       break;
+    case 3:
+       this->fontWeight = QFont::Bold; std::cout << fontWeight << endl;
+       break;
+     }
+
+}
+
