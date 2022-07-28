@@ -40,11 +40,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Move</string>
      </attribute>
      <widget class="QComboBox" name="comboBox">
       <property name="geometry">
@@ -185,7 +185,7 @@
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
-      <string>Page</string>
+      <string>Add</string>
      </attribute>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
@@ -600,7 +600,7 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>390</y>
         <width>67</width>
         <height>31</height>
@@ -622,7 +622,7 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>410</y>
         <width>67</width>
         <height>31</height>
@@ -666,7 +666,7 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>430</y>
         <width>67</width>
         <height>31</height>
@@ -754,7 +754,7 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>450</y>
         <width>67</width>
         <height>31</height>
