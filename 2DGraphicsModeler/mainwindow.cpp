@@ -151,6 +151,7 @@ void MainWindow::on_pushButton_2_clicked()
 //    canvass->repaint();
 //    canvass->update();
     ui->widget->setAutoFillBackground(true);
+
     ui->widget->update();
 
 }

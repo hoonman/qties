@@ -38,15 +38,4 @@ void canvas::paintEvent(QPaintEvent *event)
 
 }
 
-void canvas::connector()
-{
-    erasePaint(NULL);
-}
 
-void canvas::erasePaint(QPaintEvent* event)
-{
-    const QRect &rect = event->rect();
-    QPainter painter(this);
-    painter.eraseRect(rect);
-    painter.setRenderHint(QPainter::Antialiasing);
-}

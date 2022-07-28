@@ -19,8 +19,7 @@ class canvas : public QWidget
 public:
     explicit canvas(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event) override;
-    void erasePaint(QPaintEvent *event);
-    void connector();
+
 signals:
 
     private:
