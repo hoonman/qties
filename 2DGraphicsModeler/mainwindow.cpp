@@ -28,6 +28,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Text");
     connect(ui->comboBox, &QComboBox::activated, this, &MainWindow::changedShape);
 
+    ui->spinBox_3->setMaximum(1500);
+    ui->spinBox_4->setMaximum(1500);
+    ui->spinBox_5->setMaximum(1500);
+    ui->spinBox_6->setMaximum(1500);
+    ui->spinBox_16->setMaximum(1500);
+    ui->spinBox_15->setMaximum(1500);
+    ui->spinBox_14->setMaximum(1500);
+    ui->spinBox_13->setMaximum(1500);
 /*
     if(Login->getUserIsAdmin() == false)
     {
