@@ -614,18 +614,18 @@ void MainWindow::on_add_clicked()
 
 void MainWindow::on_remove_clicked()
 {
-    /*
-    if(Login->getUserIsAdmin() == true)
-    {
+
+ //   if(Login->getUserIsAdmin() == true)
+   // {
         this->Shapes.pop_back();
         ui->widget->setShape(this->Shapes);
         ui->widget->update();
-    }
-    else
-    {
-        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-    }
-    */
+  //  }
+ //   else
+ //   {
+   //     QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+  //  }
+
 }
 
 
@@ -640,5 +640,69 @@ void MainWindow::on_spinBox_2_valueChanged(int arg1)
     {
         QMessageBox::information(this, "Enter a number", "Between -1 to 20");
     }
+}
+
+
+
+
+void MainWindow::on_spinBox_3_valueChanged(int arg1)
+{
+    x1 = arg1;std::cout << x1<< endl;
+}
+
+
+void MainWindow::on_spinBox_4_valueChanged(int arg1)
+{
+    y1 = arg1; std::cout << y1 << endl;
+}
+
+
+void MainWindow::on_spinBox_5_valueChanged(int arg1)
+{
+    x2 = arg1;std::cout << x2<< endl;
+}
+
+
+void MainWindow::on_spinBox_6_valueChanged(int arg1)
+{
+    y2 = arg1;std::cout << y2 << endl;
+}
+
+
+void MainWindow::on_spinBox_16_valueChanged(int arg1)
+{
+    x3 = arg1;std::cout << x3<< endl;
+}
+
+
+void MainWindow::on_spinBox_15_valueChanged(int arg1)
+{
+    y3 = arg1;std::cout << y3 << endl;
+}
+
+
+void MainWindow::on_spinBox_14_valueChanged(int arg1)
+{
+    x4 = arg1;std::cout << x4<< endl;
+}
+
+
+void MainWindow::on_spinBox_13_valueChanged(int arg1)
+{
+    y4 = arg1;std::cout << y4 << endl;
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    //SETS UP QPOINTS
+    this->qPoint1.setX(x1); this->qPoint1.setY(y1);
+    this->qPoint2.setX(x2); this->qPoint2.setY(y2);
+    this->qPoint3.setX(x3); this->qPoint3.setY(y3);
+    this->qPoint4.setX(x4); this->qPoint4.setY(y4);
+
+    //THIS IS WHERE YOU PASS THE SERIALIZER AND ALL THOSE VARIABLES
+
+
 }
 

@@ -100,6 +100,24 @@ private slots:
 
     void on_spinBox_2_valueChanged(int arg1);
 
+    void on_spinBox_3_valueChanged(int arg1);
+
+    void on_spinBox_4_valueChanged(int arg1);
+
+    void on_spinBox_5_valueChanged(int arg1);
+
+    void on_spinBox_6_valueChanged(int arg1);
+
+    void on_spinBox_16_valueChanged(int arg1);
+
+    void on_spinBox_15_valueChanged(int arg1);
+
+    void on_spinBox_14_valueChanged(int arg1);
+
+    void on_spinBox_13_valueChanged(int arg1);
+
+    void on_pushButton_clicked();
+
 private:
 
     Ui::MainWindow *ui;
@@ -119,7 +137,7 @@ private:
     vector<Shape*> Shapes;
     int index;
 
-
+    QPoint qPoint1, qPoint2 , qPoint3 , qPoint4;
 
     Qt::GlobalColor textColor;
     Qt::AlignmentFlag textAlign;
@@ -139,7 +157,8 @@ private:
     std::string allshape;
 //    Qt::GlobalColor textColor;
 
-
+    int x1, y1, x2, y2;
+    int x3, y3, x4, y4;
 
 };
 #endif // MAINWINDOW_H
