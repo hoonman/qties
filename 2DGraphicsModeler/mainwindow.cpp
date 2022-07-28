@@ -29,7 +29,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->comboBox, &QComboBox::activated, this, &MainWindow::changedShape);
 
 
-
 //    ui->plainTextEdit->insertPlainText("20");
 //    ui->plainTextEdit_2->insertPlainText("90");
 
@@ -128,6 +127,13 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_pushButton_clicked()
 {
     QMessageBox::information(this, "Title", ui->comboBox->currentText());
+    Line* tempLine = new Line;
+
+    tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
+    tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+    Shapes.push_back(tempLine);
+    ui->widget->setShape(Shapes);
+    ui->widget->update();
 }
 
 void MainWindow::on_pushButton_2_clicked()
