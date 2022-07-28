@@ -12,7 +12,6 @@
 #include "QFileDialog"
 #include "login.h"
 
-vector<Shape*>Shapes;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -30,8 +29,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     //ui->treeWidget->setColumnCount(2);
     Parser parse;
-    vector<Shape*> myShapes = parse.readFile();
-    ui->widget->setShape(myShapes);
+    Shapes = parse.readFile();
+    ui->widget->setShape(Shapes);
 
 }
 
@@ -40,22 +39,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-/*
-void MainWindow::openFile()
-{
-    parser2 file;
-    file.readFile();
-    shapeID = file.getShapeID();
-    shape = file.getShape();
-    point1 = file.getPoint1();
-    point2 = file.getPoint2();
-    point3 = file.getPoint3();
-    point4 = file.getPoint4();
-    penJoin = file.getPenJoinStyle();
-    //std::cout << penJoin << std::endl;
-    color = file.getColor();
-}
-*/
 void MainWindow::on_actionSave_All_triggered()
 {
 
@@ -141,21 +124,9 @@ void MainWindow::on_pushButton_clicked()
     QMessageBox::information(this, "Title", ui->comboBox->currentText());
 }
 
-
-
 void MainWindow::on_pushButton_2_clicked()
 {
-//    QPalette pal = QPalette();
-//    pal.setColor(QPalette::Window, Qt::gray);
-//    canvass->setAutoFillBackground(true);
-//    canvass->setPalette(pal);
-//    canvass->show();
-    //canvass->paintEvent(NULL);
-    //canvass->repaint();
-//    canvass->repaint();
-//    canvass->update();
     ui->widget->setAutoFillBackground(true);
-
     ui->widget->update();
 
 }
