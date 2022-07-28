@@ -578,7 +578,7 @@ void MainWindow::on_spinBox_valueChanged(int arg1)
     }
     else
     {
-        QMessageBox::information(this, "Enter a number", "between -1 to 50");
+        QMessageBox::information(this, "Enter a number", "Between -1 to 50");
     }
 
 }
@@ -626,5 +626,19 @@ void MainWindow::on_remove_clicked()
         QMessageBox::information(this, "Requires Admin", "User is not an admin.");
     }
     */
+}
+
+
+void MainWindow::on_spinBox_2_valueChanged(int arg1)
+{
+    if(arg1 <= 20 && arg1 > 0)
+    {
+        this->penWidth = arg1;
+        std::cout << penWidth << endl;
+    }
+    else
+    {
+        QMessageBox::information(this, "Enter a number", "Between -1 to 20");
+    }
 }
 

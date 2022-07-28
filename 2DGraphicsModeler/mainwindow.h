@@ -98,6 +98,8 @@ private slots:
 
     void on_remove_clicked();
 
+    void on_spinBox_2_valueChanged(int arg1);
+
 private:
 
     Ui::MainWindow *ui;
@@ -125,6 +127,7 @@ private:
     Qt::PenStyle penStyle;
     Qt::PenCapStyle penCap;
     Qt::PenJoinStyle penJoin;
+    int penWidth;
     //brush
     Qt::GlobalColor brushColor;
     Qt::BrushStyle brushStyle;
