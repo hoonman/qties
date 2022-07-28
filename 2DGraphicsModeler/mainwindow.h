@@ -54,11 +54,6 @@ private slots:
 
     void on_actionExit_triggered();
 
-    void on_pushButton_clicked();
-
-
-    void on_pushButton_2_clicked();
-
     void on_actionLogin_triggered();
 
 
@@ -98,6 +93,10 @@ private slots:
     void on_spinBox_valueChanged(int arg1);
 
     void on_lineEdit_textChanged(const QString &arg1);
+
+    void on_add_clicked();
+
+    void on_remove_clicked();
 
 private:
     Qt::GlobalColor textColor;

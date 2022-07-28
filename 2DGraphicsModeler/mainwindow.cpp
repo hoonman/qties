@@ -138,40 +138,6 @@ void MainWindow::on_actionExit_triggered()
 }
 
 
-void MainWindow::on_pushButton_clicked()
-{
-    if(Login->getUserIsAdmin() == true)
-    {
-        QMessageBox::information(this, "Title", ui->comboBox->currentText());
-        Line* tempLine = new Line;
-
-        tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
-        tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
-        Shapes.push_back(tempLine);
-        ui->widget->setShape(Shapes);
-        ui->widget->update();
-    }
-    else
-    {
-        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-    }
-}
-
-void MainWindow::on_pushButton_2_clicked()
-{
-    if(Login->getUserIsAdmin() == true)
-    {
-        this->Shapes.pop_back();
-        ui->widget->setShape(this->Shapes);
-        ui->widget->update();
-    }
-    else
-    {
-        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-    }
-}
-
-
 void MainWindow::on_moveButton_clicked()
 {
 
@@ -317,28 +283,28 @@ void MainWindow::on_ShapeComboBox_currentIndexChanged(int index)
 {
     switch(index){
      case 0:
-        this->allshape = "Line";
+        this->allshape = "Line"; std::cout << allshape << endl;
         break;
      case 1:
-        this->allshape = "Polyline";
+        this->allshape = "Polyline";std::cout << allshape << endl;
         break;
      case 2:
-        this->allshape = "Polygon";
+        this->allshape = "Polygon";std::cout << allshape << endl;
         break;
      case 3:
-        this->allshape = "Rectangle";
+        this->allshape = "Rectangle";std::cout << allshape << endl;
         break;
      case 4:
-        this->allshape = "Square";
+        this->allshape = "Square";std::cout << allshape << endl;
         break;
      case 5:
-        this->allshape = "Ellipse";
+        this->allshape = "Ellipse";std::cout << allshape << endl;
         break;
      case 6:
-        this->allshape = "Circle";
+        this->allshape = "Circle";std::cout << allshape << endl;
         break;
      case 7:
-        this->allshape = "Text";
+        this->allshape = "Text";std::cout << allshape << endl;
         break;
     }
 }
@@ -620,5 +586,44 @@ void MainWindow::on_spinBox_valueChanged(int arg1)
 void MainWindow::on_lineEdit_textChanged(const QString &arg1)
 {
     TextString = arg1; qDebug() << TextString << " ";
+}
+
+
+void MainWindow::on_add_clicked()
+{
+
+    if(Login->getUserIsAdmin() == true)
+    {
+        QMessageBox::information(this, "Title", ui->comboBox->currentText());
+        Line* tempLine = new Line;
+
+        tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
+        tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+        Shapes.push_back(tempLine);
+        ui->widget->setShape(Shapes);
+        ui->widget->update();
+    }
+    else
+    {
+        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+    }
+
+}
+
+
+void MainWindow::on_remove_clicked()
+{
+    /*
+    if(Login->getUserIsAdmin() == true)
+    {
+        this->Shapes.pop_back();
+        ui->widget->setShape(this->Shapes);
+        ui->widget->update();
+    }
+    else
+    {
+        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+    }
+    */
 }
 
