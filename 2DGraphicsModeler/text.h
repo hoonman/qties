@@ -14,7 +14,8 @@ public:
     // Constructor
     Text(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Text)
         : Shape{device, id, shape} {}
-
+    // Destructor
+    ~Text() override {delete painter;}
     // setText Function
     void setText(int x, int y, int length, int width, int flag, QString text);
 

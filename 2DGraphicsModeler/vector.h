@@ -36,6 +36,9 @@ public:
         currentSize = obj.currentSize;
         allocatedSize = obj.allocatedSize;
         arr = obj.arr;
+        obj.currentSize = 0;
+        obj.allocatedSize = 0;
+        obj.arr = nullptr;
     }
 
     // Copy Assignment
@@ -65,6 +68,9 @@ public:
         arr = std::move(obj.arr);
         currentSize = obj.currentSize;
         allocatedSize = obj.allocatedSize;
+        obj.currentSize = 0;
+        obj.allocatedSize = 0;
+        obj.arr = nullptr;
         }
         return *this;
     }

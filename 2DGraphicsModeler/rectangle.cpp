@@ -40,26 +40,25 @@ void myRectangle::setmyRectangle(const QPoint& point1, const QPoint& point2)
 // draw Function
 void myRectangle::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawRect(x, y, width, height);
-    painter->end();
 
-    QPainter *idText = new QPainter(device);
     if(height == width)
     {
         setID(5);
-        idText->setFont(QFont("Times", 12, QFont::Bold));
-        idText->drawText(QPoint(x + 20, y + 40), "ID: 5");
-        idText->end();
+        painter->setFont(QFont("Times", 12, QFont::Bold));
+        painter->drawText(QPoint(x + 20, y + 40), "ID: 5");
+        painter->save();
     }
     else{
         setID(4);
-        idText->setFont(QFont("Times", 12, QFont::Bold));
-        idText->drawText(QPoint(x + 20, y + 40), "ID: 4");
-        idText->end();
+        painter->setFont(QFont("Times", 12, QFont::Bold));
+        painter->drawText(QPoint(x + 20, y + 40), "ID: 4");
+        painter->save();
     }
+    painter->end();
 }
 
 // move Function

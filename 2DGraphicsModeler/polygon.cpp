@@ -24,18 +24,17 @@ void myPolygon::setmyPolygon(const QPoint &p1, const QPoint &p2)
 // draw Function
 void myPolygon::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     start = points.begin();
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawPolygon(start, points.size(), Qt::OddEvenFill);
-    painter->end();
 
     setID(3);
-    QPainter *idText = new QPainter(device);
-    idText->setFont(QFont("Times", 12, QFont::Bold));
-    idText->drawText(QPoint(points[0]), "ID: 3");
-    idText->end();
+    painter->setFont(QFont("Times", 12, QFont::Bold));
+    painter->drawText(QPoint(points[0].x() + 90, points[0].y()), "ID: 3");
+    painter->save();
+    painter->end();
 }
 
 // move Function

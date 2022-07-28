@@ -25,18 +25,17 @@ myPolyline& myPolyline::operator=(myPolyline& myPolyline) {
 // draw Function
 void myPolyline::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     start = points.begin();
     painter->setPen(getPen());
     painter->drawPolyline(start, points.size());
-    painter->end();
 
     setID(2);
-    QPainter *idText = new QPainter(device);
-    idText->setFont(QFont("Times", 12, QFont::Bold));
-    idText->drawText(QPoint(points[0]), "ID: 2");
-    idText->end();
 
+    painter->setFont(QFont("Times", 12, QFont::Bold));
+    painter->drawText(QPoint(points[0].x() + 10, points[0].y()), "ID: 2");
+    painter->save();
+    painter->end();
 }
 
 // move function

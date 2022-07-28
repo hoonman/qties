@@ -15,7 +15,7 @@ public:
         : Shape{device, id, shape} {}
 
     // Destructor
-    ~myPolygon() override {}
+    ~myPolygon() override {delete painter;}
 
     //copy constructor
         myPolygon(myPolygon& myPolygon);

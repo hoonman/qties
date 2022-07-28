@@ -14,20 +14,21 @@ void Text::setText(int x, int y, int width, int length, int AllignmentFlag, QStr
 
 void Text::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     QRect boundingRect(x, y, width, length);
     painter->setPen(getPen());
     painter->setFont(getFont());
     painter->drawText(x, y, width, length, AllignmentFlag, text, &boundingRect);
-    painter->end();
+
 //drawText(int x, int y, int width, int height, int flags, const QString &text, QRect *boundingRect = nullptr)
 
     //ID text
     setID(8);
-    QPainter *idText = new QPainter(device);
-    idText->setFont(QFont("Times", 12, QFont::Bold));
-    idText->drawText(QPoint(x + 80, y), "ID: 8");
-    idText->end();
+    painter->setFont(QFont("Times", 12, QFont::Bold));
+    painter->drawText(QPoint(x + 80, y), "ID: 8");
+    painter->save();
+    painter->end();
+
 }
 
 // move function

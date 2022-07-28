@@ -24,7 +24,7 @@ void canvas::paintEvent(QPaintEvent *event)
 {
 
 
-    for(int i = 0; i < myShapes.size(); i++)
+    for(auto i = 0; i < myShapes.size(); ++i)
     {
         myShapes[i]->draw(this);
     }

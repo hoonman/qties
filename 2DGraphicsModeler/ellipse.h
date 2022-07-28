@@ -16,7 +16,7 @@ public:
         : Shape{device, id, shape} {}
 
     // Destructor
-    ~myEllipse() override {}
+    ~myEllipse() override {delete painter;}
 
     //copy constructor
     myEllipse(const myEllipse& myEllipse);

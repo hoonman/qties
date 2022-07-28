@@ -22,7 +22,7 @@ public:
 
 
     // Destructor
-    ~Line() override {}
+    ~Line() override {delete painter;}
 
     //copy constructor
     Line(const Line& line);

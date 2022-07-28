@@ -16,7 +16,7 @@ public:
         : Shape{device, id, shape} {}
 
     // Destructor
-    ~myPolyline() override {}
+    ~myPolyline() override {delete painter;}
 
     //copy constructor
         myPolyline(myPolyline& myPolyline);
@@ -46,7 +46,7 @@ public:
 
 private:
     vector<QPoint> points;
-    QPoint *start;
+    QPoint *start{nullptr};
 };
 
 #endif // myPolyline_H

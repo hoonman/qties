@@ -26,18 +26,17 @@ void Line::setLine(const QPoint &p1, const QPoint &p2)
 // draw Function
 void Line::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->drawLine(Point1, Point2);
-    painter->end();
 
     //Id text
     setID(1);
-    QPainter *idText = new QPainter(device);
-    idText->setFont(QFont("Times", 12, QFont::Bold));
-    idText->drawText(QPoint(Point2), "ID: 1");
-    idText->end();
 
+    painter->setFont(QFont("Times", 12, QFont::Bold));
+    painter->drawText(QPoint(Point2), "ID: 1");
+    painter->save();
+    painter->end();
 
 }
 

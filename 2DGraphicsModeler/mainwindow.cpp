@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //ui->treeWidget->setColumnCount(2);
     Parser parse;
-    Shapes = parse.readFile();
+    this->Shapes = parse.readFile();
     ui->widget->setShape(Shapes);
 
 }

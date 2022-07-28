@@ -27,28 +27,27 @@ void myEllipse::setmyEllipse(const QPoint &p1, int x, int y)
 // draw Function
 void myEllipse::draw(QPaintDevice* device)
 {
-    painter = new QPainter(device);
+    painter->begin(device);
     painter->setPen(getPen());
     painter->setBrush(getBrush());
     painter->drawEllipse(point1, xAxis, yAxis);
-    painter->end();
 
-    QPainter *idText = new QPainter(device);
+
     if(yAxis == xAxis)
     {
         setID(7);
-        idText->setFont(QFont("Times", 12, QFont::Bold));
-        idText->drawText(QPoint(point1.x() - 20 , point1.y() - 20 ), "ID: 7");
-        idText->end();
+        painter->setFont(QFont("Times", 12, QFont::Bold));
+        painter->drawText(QPoint(point1.x() - 20 , point1.y() - 20 ), "ID: 7");
+        painter->save();
     }
     else
     {
         setID(6);
-        idText->setFont(QFont("Times", 12, QFont::Bold));
-        idText->drawText(QPoint(point1.x() - 20 , point1.y() - 20 ), "ID: 6");
-        idText->end();
+        painter->setFont(QFont("Times", 12, QFont::Bold));
+        painter->drawText(QPoint(point1.x() - 20 , point1.y() - 20 ), "ID: 6");
+        painter->save();
     }
-
+    painter->end();
 
 }
 

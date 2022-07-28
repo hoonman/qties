@@ -18,7 +18,7 @@ public:
 
     enum class ShapeType {Initial, Line, Polyline, Polygon, Rectangle, Ellipse, Text};
     // Constructor
-    Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Initial){};
+    Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Initial){painter = new QPainter;};
 
 
     // Destructor

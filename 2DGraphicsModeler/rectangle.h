@@ -15,7 +15,7 @@ public:
         : Shape{device, id, ShapeType::Rectangle} {}
 
     // Destructor
-    ~myRectangle() override {}
+    ~myRectangle() override {delete painter;}
 
     //copy constructor
     myRectangle(const myRectangle& myRectangle);
