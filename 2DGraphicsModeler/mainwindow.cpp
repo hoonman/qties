@@ -138,3 +138,20 @@ void MainWindow::on_pushButton_clicked()
 }
 
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+//    QPalette pal = QPalette();
+//    pal.setColor(QPalette::Window, Qt::gray);
+//    canvass->setAutoFillBackground(true);
+//    canvass->setPalette(pal);
+//    canvass->show();
+    //canvass->paintEvent(NULL);
+    //canvass->repaint();
+//    canvass->repaint();
+//    canvass->update();
+    ui->widget->setAutoFillBackground(true);
+    ui->widget->update();
+
+}
+

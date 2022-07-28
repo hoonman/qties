@@ -14,7 +14,7 @@
 
 class login;
 class AboutUs;
-
+class canvas;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -55,6 +55,8 @@ private slots:
     void on_pushButton_clicked();
 
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
@@ -72,5 +74,6 @@ private:
     Qt::PenStyle penStyle;
     Qt::PenCapStyle penCap;
     Qt::PenJoinStyle penJoin;
+    canvas *canvass;
 };
 #endif // MAINWINDOW_H

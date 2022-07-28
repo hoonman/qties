@@ -23,15 +23,30 @@ void canvas::paintEvent(QPaintEvent *event)
 {
 
     Parser parse;
-    std::cout << endl << "paint event";
     vector<Shape*> myShapes = parse.readFile();
     //parse.readFile();
-    std::cout << endl << endl << "CRASHING HERE OR THERE";
     for(int i = 0; i < myShapes.size(); i++)
     {
         myShapes[i]->draw(this);
     }
 
-    std::cout << endl << endl << "CRASHING HERE OR THERE";
+//    const QRect &rect = event->rect();
+//    QPainter painter(this);
+//    painter.eraseRect(rect);
+//    painter.setRenderHint(QPainter::Antialiasing);
+    //drawLine(painter, rect);
 
+}
+
+void canvas::connector()
+{
+    erasePaint(NULL);
+}
+
+void canvas::erasePaint(QPaintEvent* event)
+{
+    const QRect &rect = event->rect();
+    QPainter painter(this);
+    painter.eraseRect(rect);
+    painter.setRenderHint(QPainter::Antialiasing);
 }
