@@ -95,6 +95,10 @@ private slots:
 
     void on_TextWeight_currentIndexChanged(int index);
 
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_lineEdit_textChanged(const QString &arg1);
+
 private:
     Qt::GlobalColor textColor;
     Qt::AlignmentFlag textAlign;

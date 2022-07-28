@@ -601,3 +601,24 @@ void MainWindow::on_TextWeight_currentIndexChanged(int index)
 
 }
 
+
+void MainWindow::on_spinBox_valueChanged(int arg1)
+{
+    if(arg1 <= 50 && arg1 > -1)
+    {
+        this->textPointsize = arg1;
+        std::cout << textPointsize << endl;
+    }
+    else
+    {
+        QMessageBox::information(this, "Enter a number", "between -1 to 50");
+    }
+
+}
+
+
+void MainWindow::on_lineEdit_textChanged(const QString &arg1)
+{
+    TextString = arg1; qDebug() << TextString << " ";
+}
+
