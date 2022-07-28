@@ -40,17 +40,14 @@ void myPolygon::draw(QPaintDevice* device)
 // move Function
 void myPolygon::move(vector<int> dimensions)
 {
-    for (int i = 0; i < dimensions.size(); i++)
-    {
-        if (i % 2 != 0)
-        {
-            points[i].setX(dimensions[i]);
-        }
-        else
-        {
-            points[i].setY(dimensions[i]);
-        }
-    }
+    points[0].setX(dimensions[0]);
+    points[0].setY(dimensions[1]);
+    points[1].setX(dimensions[2]);
+    points[1].setY(dimensions[3]);
+    points[2].setX(dimensions[4]);
+    points[2].setY(dimensions[5]);
+    points[3].setX(dimensions[6]);
+    points[3].setY(dimensions[7]);
 }
 
 // perimeter Function

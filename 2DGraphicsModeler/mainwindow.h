@@ -57,7 +57,7 @@ private slots:
     void on_actionLogin_triggered();
 
 
-    void on_moveButton_clicked();
+    //void on_moveButton_clicked();
 
     void selectLine();
     void changedShape();
@@ -94,7 +94,6 @@ private slots:
 
     void on_lineEdit_textChanged(const QString &arg1);
 
-    void on_add_clicked();
 
     void on_remove_clicked();
 
@@ -118,6 +117,17 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_moveShape_clicked();
+
+
+    void on_x1Move_valueChanged(int arg1){x1 = arg1;}
+    void on_x2Move_valueChanged(int arg1){x2 = arg1;}
+    void on_x3Move_valueChanged(int arg1){x3 = arg1;}
+    void on_x4Move_valueChanged(int arg1){x4 = arg1;}
+    void on_y1Move_valueChanged(int arg1){y1 = arg1;}
+    void on_y2Move_valueChanged(int arg1){y2 = arg1;}
+    void on_y3Move_valueChanged(int arg1){y3 = arg1;}
+    void on_y4Move_valueChanged(int arg1){y4 = arg1;}
 private:
 
     Ui::MainWindow *ui;

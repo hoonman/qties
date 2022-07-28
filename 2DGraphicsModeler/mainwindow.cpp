@@ -52,7 +52,15 @@ MainWindow::MainWindow(QWidget *parent)
     */
 //    ui->plainTextEdit->insertPlainText("20");
 //    ui->plainTextEdit_2->insertPlainText("90");
+    ui->x1Move->setMaximum(1500);
+    ui->x2Move->setMaximum(1500);
+    ui->x3Move->setMaximum(1500);
+    ui->x4Move->setMaximum(1500);
 
+    ui->y1Move->setMaximum(1500);
+    ui->y2Move->setMaximum(1500);
+    ui->y3Move->setMaximum(1500);
+    ui->y4Move->setMaximum(1500);
     //ui->treeWidget->setColumnCount(2);
     Parser parse;
     this->Shapes = parse.readFile();
@@ -147,41 +155,41 @@ void MainWindow::on_actionExit_triggered()
 }
 
 
-void MainWindow::on_moveButton_clicked()
-{
+//void MainWindow::on_moveButton_clicked()
+//{
 
- //       if(Login->getUserIsAdmin() == true)
- //       {
-            ui->moveButton->setEnabled(true);
-            QString string;
-            QString string2;
+// //       if(Login->getUserIsAdmin() == true)
+// //       {
+//            ui->moveButton->setEnabled(true);
+//            QString string;
+//            QString string2;
 
-            string = ui->plainTextEdit->toPlainText();
-            string2 = ui->plainTextEdit_2->toPlainText();
-
-
-            int coordinate;
-            int coordinate2, coordinate3, coordinate4;
-
-            coordinate = string.toInt();
-            coordinate2 = string2.toInt();
-            vector<int> coords;
-
-            coords.push_back(coordinate);
-            coords.push_back(coordinate2);
-
-            Shapes[index]->move(coords);
-            qInfo() << "from string: " << string;
-
-            ui->widget->update();
-  //      }
-  //      else
-  //      {
-  //          QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-  //     }
+//            string = ui->plainTextEdit->toPlainText();
+//            string2 = ui->plainTextEdit_2->toPlainText();
 
 
-}
+//            int coordinate;
+//            int coordinate2, coordinate3, coordinate4;
+
+//            coordinate = string.toInt();
+//            coordinate2 = string2.toInt();
+//            vector<int> coords;
+
+//            coords.push_back(coordinate);
+//            coords.push_back(coordinate2);
+
+//            Shapes[index]->move(coords);
+//            qInfo() << "from string: " << string;
+
+//            ui->widget->update();
+//  //      }
+//  //      else
+//  //      {
+//  //          QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+//  //     }
+
+
+//}
 
 void MainWindow::selectLine()
 {
@@ -598,26 +606,26 @@ void MainWindow::on_lineEdit_textChanged(const QString &arg1)
 }
 
 
-void MainWindow::on_add_clicked()
-{
+//void MainWindow::on_add_clicked()
+//{
 
- //   if(Login->getUserIsAdmin() == true)
- //   {
-        QMessageBox::information(this, "Title", ui->comboBox->currentText());
-        Line* tempLine = new Line;
+// //   if(Login->getUserIsAdmin() == true)
+// //   {
+//        QMessageBox::information(this, "Title", ui->comboBox->currentText());
+//        Line* tempLine = new Line;
 
-        tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
-        tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
-        Shapes.push_back(tempLine);
-        ui->widget->setShape(Shapes);
-        ui->widget->update();
- //   }
- //   else
- //   {
-  //      QMessageBox::information(this, "Requires Admin", "User is not an admin.");
- //   }
+//        tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
+//        tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+//        Shapes.push_back(tempLine);
+//        ui->widget->setShape(Shapes);
+//        ui->widget->update();
+// //   }
+// //   else
+// //   {
+//  //      QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+// //   }
 
-}
+//}
 
 
 void MainWindow::on_remove_clicked()
@@ -784,5 +792,35 @@ void MainWindow::on_pushButton_clicked()
         ui->spinBox_15->clear();
         ui->spinBox_14->clear();
         ui->spinBox_13->clear();
+}
+
+void MainWindow::on_moveShape_clicked()
+{
+    ui->moveShape->setEnabled(true);
+//    QString string;
+//    QString string2;
+
+//    string = ui->plainTextEdit->toPlainText();
+//    string2 = ui->plainTextEdit_2->toPlainText();
+
+//    int coordinate;
+//    int coordinate2, coordinate3, coordinate4;
+
+//    coordinate = string.toInt();
+//    coordinate2 = string2.toInt();
+    vector<int> coords;
+
+    coords.push_back(x1);
+    coords.push_back(y1);
+    coords.push_back(x2);
+    coords.push_back(y2);
+    coords.push_back(x3);
+    coords.push_back(y3);
+    coords.push_back(x4);
+    coords.push_back(y4);
+
+    Shapes[index]->move(coords);
+
+    ui->widget->update();
 }
 

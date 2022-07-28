@@ -46,128 +46,10 @@
      <attribute name="title">
       <string>Tab 1</string>
      </attribute>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>21</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>x:</string>
-      </property>
-     </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>30</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>21</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>y:</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="moveButton">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>30</y>
-        <width>71</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Move</string>
-      </property>
-     </widget>
-     <widget class="QPlainTextEdit" name="x2">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>70</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>63</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>x2:</string>
-      </property>
-     </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_2">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>50</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>90</y>
-        <width>63</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>y2:</string>
-      </property>
-     </widget>
-     <widget class="QPlainTextEdit" name="y2">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>90</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="add">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>50</y>
-        <width>71</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Add</string>
-      </property>
-     </widget>
      <widget class="QComboBox" name="comboBox">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>10</x>
         <y>10</y>
         <width>151</width>
         <height>21</height>
@@ -177,15 +59,128 @@
      <widget class="QPushButton" name="remove">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>70</y>
+        <x>100</x>
+        <y>169</y>
         <width>71</width>
-        <height>20</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string>Remove</string>
       </property>
+     </widget>
+     <widget class="QPushButton" name="moveShape">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>156</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Point1:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="x1Move"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="y1Move"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>156</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>Point2:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="x2Move"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="y2Move"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>156</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Point3:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="x3Move"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="y3Move"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>156</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>Point4:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="x4Move"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="y4Move"/>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
@@ -602,13 +597,13 @@
        <string>Add/Save</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>70</x>
         <y>390</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -624,13 +619,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>70</x>
         <y>410</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -646,13 +641,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>130</x>
         <y>410</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -668,13 +663,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>70</x>
         <y>430</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -690,13 +685,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>130</x>
         <y>430</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -712,13 +707,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>130</x>
         <y>450</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -734,13 +729,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>130</x>
         <y>390</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -756,13 +751,13 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>70</x>
         <y>450</y>
-        <width>56</width>
-        <height>27</height>
+        <width>67</width>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -787,7 +782,7 @@
      <x>0</x>
      <y>0</y>
      <width>1283</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
