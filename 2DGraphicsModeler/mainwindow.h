@@ -11,6 +11,8 @@
 #include <QMouseEvent>
 #include <QtCore>
 #include <QtGui>
+#include "vector.h"
+#include "Shape.h"
 
 class login;
 class AboutUs;
@@ -78,6 +80,6 @@ private:
     Qt::PenStyle penStyle;
     Qt::PenCapStyle penCap;
     Qt::PenJoinStyle penJoin;
-    canvas *canvass;
+    vector<Shape*> Shapes;
 };
 #endif // MAINWINDOW_H

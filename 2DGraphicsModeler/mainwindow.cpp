@@ -29,9 +29,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Text");
 
     //ui->treeWidget->setColumnCount(2);
-
-
-
+    Parser parse;
+    vector<Shape*> myShapes = parse.readFile();
+    ui->widget->setShape(myShapes);
 
 }
 

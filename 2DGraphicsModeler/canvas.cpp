@@ -22,9 +22,9 @@ canvas::canvas(QWidget *parent)
 void canvas::paintEvent(QPaintEvent *event)
 {
 
-    Parser parse;
-    vector<Shape*> myShapes = parse.readFile();
-    //parse.readFile();
+//    Parser parse;
+//    vector<Shape*> myShapes = parse.readFile();
+//    //parse.readFile();
     for(int i = 0; i < myShapes.size(); i++)
     {
         myShapes[i]->draw(this);

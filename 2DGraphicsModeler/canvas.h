@@ -19,11 +19,12 @@ class canvas : public QWidget
 public:
     explicit canvas(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event) override;
-
+    void setShape(vector<Shape*> shapes) {myShapes = shapes;}
 signals:
 
     private:
     vector<Shape*> myShapes;
+
 
 };
 
