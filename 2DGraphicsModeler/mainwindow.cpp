@@ -126,8 +126,11 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->widget->setAutoFillBackground(true);
-    ui->widget->update();
+
+    Shapes.pop_back();
+    ui->widget->setShape(Shapes);
+    //ui->widget->setAutoFillBackground(true);
+    ui->widget->update(); // calls paintEvent
 
 }
 
