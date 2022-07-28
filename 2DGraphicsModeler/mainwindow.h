@@ -61,7 +61,6 @@ private slots:
 
     void on_actionLogin_triggered();
 
-    void on_actionReLogin_triggered();
 
 private:
     Ui::MainWindow *ui;
