@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Text");
     connect(ui->comboBox, &QComboBox::activated, this, &MainWindow::changedShape);
 
-
+/*
     if(Login->getUserIsAdmin() == false)
     {
         ui->moveButton->setEnabled(false);
@@ -41,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
         ui->add->setEnabled(true);
         ui->remove->setEnabled(true);
     }
+    */
 //    ui->plainTextEdit->insertPlainText("20");
 //    ui->plainTextEdit_2->insertPlainText("90");
 
@@ -141,8 +142,8 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_moveButton_clicked()
 {
 
-        if(Login->getUserIsAdmin() == true)
-        {
+ //       if(Login->getUserIsAdmin() == true)
+ //       {
             ui->moveButton->setEnabled(true);
             QString string;
             QString string2;
@@ -165,11 +166,11 @@ void MainWindow::on_moveButton_clicked()
             qInfo() << "from string: " << string;
 
             ui->widget->update();
-        }
-        else
-        {
-            QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-        }
+  //      }
+  //      else
+  //      {
+  //          QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+  //     }
 
 
 }
@@ -592,8 +593,8 @@ void MainWindow::on_lineEdit_textChanged(const QString &arg1)
 void MainWindow::on_add_clicked()
 {
 
-    if(Login->getUserIsAdmin() == true)
-    {
+ //   if(Login->getUserIsAdmin() == true)
+ //   {
         QMessageBox::information(this, "Title", ui->comboBox->currentText());
         Line* tempLine = new Line;
 
@@ -602,11 +603,11 @@ void MainWindow::on_add_clicked()
         Shapes.push_back(tempLine);
         ui->widget->setShape(Shapes);
         ui->widget->update();
-    }
-    else
-    {
-        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
-    }
+ //   }
+ //   else
+ //   {
+  //      QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+ //   }
 
 }
 

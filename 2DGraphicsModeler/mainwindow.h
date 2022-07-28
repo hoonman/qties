@@ -99,8 +99,7 @@ private slots:
     void on_remove_clicked();
 
 private:
-    Qt::GlobalColor textColor;
-    Qt::AlignmentFlag textAlign;
+
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
     AboutUs *aboutUs;
@@ -118,6 +117,10 @@ private:
     vector<Shape*> Shapes;
     int index;
 
+
+
+    Qt::GlobalColor textColor;
+    Qt::AlignmentFlag textAlign;
     Qt::GlobalColor penColor;
     Qt::PenStyle penStyle;
     Qt::PenCapStyle penCap;
