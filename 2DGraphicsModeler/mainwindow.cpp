@@ -22,10 +22,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Polyline");
     ui->comboBox->addItem("Polygon");
     ui->comboBox->addItem("Rectangle");
-    ui->comboBox->addItem("Ellipse");
     ui->comboBox->addItem("Square");
+    ui->comboBox->addItem("Ellipse");
     ui->comboBox->addItem("Circle");
     ui->comboBox->addItem("Text");
+    connect(ui->comboBox, &QComboBox::activated, this, &MainWindow::changedShape);
+
+
+
+//    ui->plainTextEdit->insertPlainText("20");
+//    ui->plainTextEdit_2->insertPlainText("90");
 
     //ui->treeWidget->setColumnCount(2);
     Parser parse;
@@ -132,3 +138,45 @@ void MainWindow::on_pushButton_2_clicked()
 
 }
 
+
+void MainWindow::on_moveButton_clicked()
+{
+    QString string;
+    QString string2;
+
+    string = ui->plainTextEdit->toPlainText();
+    string2 = ui->plainTextEdit_2->toPlainText();
+
+
+    int coordinate;
+    int coordinate2, coordinate3, coordinate4;
+
+    coordinate = string.toInt();
+    coordinate2 = string2.toInt();
+    vector<int> coords;
+
+    coords.push_back(coordinate);
+    coords.push_back(coordinate2);
+
+    Shapes[index]->move(coords);
+    qInfo() << "from string: " << string;
+
+    ui->widget->update();
+}
+
+void MainWindow::selectLine()
+{
+    this->index = 0;
+}
+
+void MainWindow::changedShape()
+{
+    QVariant varient;
+    //varient = ui->comboBox->itemData(ui->comboBox->currentIndex());
+    varient = ui->comboBox->currentIndex();
+    qInfo() << "Varient data: " << varient.data();
+    qInfo() << "Varient looks like this: " << varient;
+
+    this->index = varient.toInt();
+    qInfo() << "Index looks like this: " << this->index;
+}

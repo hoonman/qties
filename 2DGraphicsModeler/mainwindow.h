@@ -62,6 +62,11 @@ private slots:
     void on_actionLogin_triggered();
 
 
+    void on_moveButton_clicked();
+
+    void selectLine();
+    void changedShape();
+
 private:
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
@@ -80,5 +85,6 @@ private:
     Qt::PenCapStyle penCap;
     Qt::PenJoinStyle penJoin;
     vector<Shape*> Shapes;
+    int index;
 };
 #endif // MAINWINDOW_H

@@ -115,16 +115,7 @@ void Parser::readLine(std::ifstream& myFile)
         myFile.ignore();
         getline(myFile, penJoinStyle, '\n');
         qtJStyle = convertPenJoinStyle(penJoinStyle);
-        std::cout << mycolor << endl;
-        std::cout << penWidth << endl;
-        std::cout << penStyle << endl;
-        std::cout << penCap << endl;
-        std::cout << penJoinStyle << endl;
 
-        std::cout << qtGColor << endl;
-        std::cout << qtPStyle << endl;
-        std::cout << qtPCStyle << endl;
-        std::cout << qtJStyle << endl;
 
         Line* tempLine = new Line;
         tempLine->setLine(point1, point2);
@@ -192,16 +183,7 @@ void Parser::readPolyline(std::ifstream& myFile)
         //getline(myFile, penJoinStyle, '/n');
         qtJStyle = convertPenJoinStyle(penJoinStyle);
 
-        std::cout << color << endl;
-        std::cout << penWidth << endl;
-        std::cout << penStyle << endl;
-        std::cout << penCap << endl;
-        std::cout << penJoinStyle << endl;
 
-        std::cout << qtGColor << endl;
-        std::cout << qtPStyle << endl;
-        std::cout << qtPCStyle << endl;
-        std::cout << qtJStyle << endl;
         myPolyline* tempPoly = new myPolyline;
         tempPoly->setmyPolyline(point1, point2);
         tempPoly->setmyPolyline(point3, point4);
@@ -285,19 +267,7 @@ void Parser::readPolygon(std::ifstream& myFile)
         myFile.ignore();
         getline(myFile, brushStyle, '\n');
         qtBstyle = convertBrushStyle(brushStyle);
-        std::cout << color << endl;
-        std::cout << penWidth << endl;
-        std::cout << penStyle << endl;
-        std::cout << penCap << endl;
-        std::cout << penJoinStyle << endl;
 
-        std::cout << qtGColor << endl;
-        std::cout << qtPStyle << endl;
-        std::cout << qtPCStyle << endl;
-        std::cout << qtJStyle << endl;
-
-        std::cout << qtBcolor << endl;
-        std::cout << qtBstyle << endl;
 
 
         myPolygon* tempPolygon = new myPolygon;
@@ -646,12 +616,6 @@ void Parser::readText(std::ifstream& myFile)
         getline(myFile, fontWeight, '\n');
         getline(myFile, blank, '\n');
         qtfontWeight = convertWeight(fontWeight);
-        std::cout << textString << endl;
-        std::cout << Textcolor << endl;
-        std::cout << textAllignment << endl;
-        std::cout << textFont << endl;
-        std::cout << fontStyle << endl;
-        std::cout << fontWeight << endl;
 
 
         Text* tempText = new Text;
