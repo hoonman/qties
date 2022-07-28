@@ -34,6 +34,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit_Password;
     QPushButton *pushButton_Login;
+    QPushButton *ExitLogin;
 
     void setupUi(QWidget *login)
     {
@@ -85,6 +86,9 @@ public:
 
         verticalLayout->addWidget(pushButton_Login);
 
+        ExitLogin = new QPushButton(groupBox);
+        ExitLogin->setObjectName(QString::fromUtf8("ExitLogin"));
+        ExitLogin->setGeometry(QRect(220, 0, 31, 24));
 
         retranslateUi(login);
 
@@ -98,6 +102,7 @@ public:
         label->setText(QCoreApplication::translate("login", "Username", nullptr));
         label_2->setText(QCoreApplication::translate("login", "Password", nullptr));
         pushButton_Login->setText(QCoreApplication::translate("login", "Login", nullptr));
+        ExitLogin->setText(QCoreApplication::translate("login", "X", nullptr));
     } // retranslateUi
 
 };

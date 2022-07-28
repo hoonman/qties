@@ -76,6 +76,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="ExitLogin">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

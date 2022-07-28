@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2DModelerApplication",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication-Debug-07e0f1421fe372838115.json",
+					"name" : "2DModelerApplication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication_autogen-Debug-f32ea2fa3eb80c0d0086.json",
+					"name" : "2DModelerApplication_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2DModelerApplication_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2DModelerApplication_autogen_timestamp_deps-Debug-ae1652d4dccce40826e1.json",
+					"name" : "2DModelerApplication_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

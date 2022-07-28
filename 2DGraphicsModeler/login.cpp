@@ -44,3 +44,9 @@ void login::on_pushButton_Login_clicked()
         }
 }
 
+
+void login::on_ExitLogin_clicked()
+{
+    close();
+}
+

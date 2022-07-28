@@ -29,6 +29,18 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->comboBox, &QComboBox::activated, this, &MainWindow::changedShape);
 
 
+    if(Login->getUserIsAdmin() == false)
+    {
+        ui->moveButton->setEnabled(false);
+        ui->add->setEnabled(false);
+        ui->remove->setEnabled(false);
+    }
+    else
+    {
+        ui->moveButton->setEnabled(true);
+        ui->add->setEnabled(true);
+        ui->remove->setEnabled(true);
+    }
 //    ui->plainTextEdit->insertPlainText("20");
 //    ui->plainTextEdit_2->insertPlainText("90");
 
@@ -126,48 +138,72 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QMessageBox::information(this, "Title", ui->comboBox->currentText());
-    Line* tempLine = new Line;
+    if(Login->getUserIsAdmin() == true)
+    {
+        QMessageBox::information(this, "Title", ui->comboBox->currentText());
+        Line* tempLine = new Line;
 
-    tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
-    tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
-    Shapes.push_back(tempLine);
-    ui->widget->setShape(Shapes);
-    ui->widget->update();
+        tempLine->setLine(QPoint(10, 10), QPoint(30, 10));
+        tempLine->setPen(Qt::blue, 2, Qt::DashDotLine, Qt::FlatCap, Qt::MiterJoin);
+        Shapes.push_back(tempLine);
+        ui->widget->setShape(Shapes);
+        ui->widget->update();
+    }
+    else
+    {
+        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+    }
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    this->Shapes.pop_back();
-    ui->widget->setShape(this->Shapes);
-    ui->widget->update();
-
+    if(Login->getUserIsAdmin() == true)
+    {
+        this->Shapes.pop_back();
+        ui->widget->setShape(this->Shapes);
+        ui->widget->update();
+    }
+    else
+    {
+        QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+    }
 }
 
 
 void MainWindow::on_moveButton_clicked()
 {
-    QString string;
-    QString string2;
 
-    string = ui->plainTextEdit->toPlainText();
-    string2 = ui->plainTextEdit_2->toPlainText();
+        if(Login->getUserIsAdmin() == true)
+        {
+            ui->moveButton->setEnabled(true);
+            QString string;
+            QString string2;
+
+            string = ui->plainTextEdit->toPlainText();
+            string2 = ui->plainTextEdit_2->toPlainText();
 
 
-    int coordinate;
-    int coordinate2, coordinate3, coordinate4;
+            int coordinate;
+            int coordinate2, coordinate3, coordinate4;
 
-    coordinate = string.toInt();
-    coordinate2 = string2.toInt();
-    vector<int> coords;
+            coordinate = string.toInt();
+            coordinate2 = string2.toInt();
+            vector<int> coords;
 
-    coords.push_back(coordinate);
-    coords.push_back(coordinate2);
+            coords.push_back(coordinate);
+            coords.push_back(coordinate2);
 
-    Shapes[index]->move(coords);
-    qInfo() << "from string: " << string;
+            Shapes[index]->move(coords);
+            qInfo() << "from string: " << string;
 
-    ui->widget->update();
+            ui->widget->update();
+        }
+        else
+        {
+            QMessageBox::information(this, "Requires Admin", "User is not an admin.");
+        }
+
+
 }
 
 void MainWindow::selectLine()
