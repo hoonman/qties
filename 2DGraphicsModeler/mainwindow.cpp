@@ -116,13 +116,17 @@ void MainWindow::on_actionContact_Us_triggered()
     aboutUs->show();
 }
 
+void MainWindow::on_actionLogin_triggered()
+{
+    Login = new login(this);
+    Login->show();
+}
 
 void MainWindow::on_actionLogout_triggered()
 {
-    //Login = new login(this);
-    //Login->show();
-    //this->hide();
-
+    bool powers = false;
+    Login->setUserIsAdmin(powers);
+    QMessageBox::information(this, "Logout", "Successfully Logged Out!");
 }
 
 
@@ -155,4 +159,5 @@ void MainWindow::on_pushButton_2_clicked()
     ui->widget->update();
 
 }
+
 

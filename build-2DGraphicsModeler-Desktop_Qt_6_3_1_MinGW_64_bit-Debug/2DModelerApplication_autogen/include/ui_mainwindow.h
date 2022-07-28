@@ -40,8 +40,9 @@ public:
     QAction *actionPolyline;
     QAction *actionSelected_Shape;
     QAction *actionContact_Us;
-    QAction *actionLogout;
     QAction *actionExit;
+    QAction *actionLogin;
+    QAction *actionLogout;
     QWidget *centralwidget;
     canvas *widget;
     QPushButton *pushButton;
@@ -58,6 +59,7 @@ public:
     QMenu *menuRemove;
     QMenu *menuHelp;
     QMenu *menuExit;
+    QMenu *menuLogin_Logout;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -86,10 +88,12 @@ public:
         actionSelected_Shape->setObjectName(QString::fromUtf8("actionSelected_Shape"));
         actionContact_Us = new QAction(MainWindow);
         actionContact_Us->setObjectName(QString::fromUtf8("actionContact_Us"));
-        actionLogout = new QAction(MainWindow);
-        actionLogout->setObjectName(QString::fromUtf8("actionLogout"));
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName(QString::fromUtf8("actionExit"));
+        actionLogin = new QAction(MainWindow);
+        actionLogin->setObjectName(QString::fromUtf8("actionLogin"));
+        actionLogout = new QAction(MainWindow);
+        actionLogout->setObjectName(QString::fromUtf8("actionLogout"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         widget = new canvas(centralwidget);
@@ -126,7 +130,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1283, 25));
+        menubar->setGeometry(QRect(0, 0, 1283, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuAdd = new QMenu(menubar);
@@ -137,6 +141,8 @@ public:
         menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
         menuExit = new QMenu(menubar);
         menuExit->setObjectName(QString::fromUtf8("menuExit"));
+        menuLogin_Logout = new QMenu(menubar);
+        menuLogin_Logout->setObjectName(QString::fromUtf8("menuLogin_Logout"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -146,6 +152,7 @@ public:
         menubar->addAction(menuAdd->menuAction());
         menubar->addAction(menuRemove->menuAction());
         menubar->addAction(menuHelp->menuAction());
+        menubar->addAction(menuLogin_Logout->menuAction());
         menubar->addAction(menuExit->menuAction());
         menuFile->addAction(actionSave_All);
         menuFile->addAction(actionLoad);
@@ -157,8 +164,9 @@ public:
         menuAdd->addAction(actionPolyline);
         menuRemove->addAction(actionSelected_Shape);
         menuHelp->addAction(actionContact_Us);
-        menuExit->addAction(actionLogout);
         menuExit->addAction(actionExit);
+        menuLogin_Logout->addAction(actionLogin);
+        menuLogin_Logout->addAction(actionLogout);
 
         retranslateUi(MainWindow);
 
@@ -178,8 +186,9 @@ public:
         actionPolyline->setText(QCoreApplication::translate("MainWindow", "Polyline", nullptr));
         actionSelected_Shape->setText(QCoreApplication::translate("MainWindow", "Selected Shape", nullptr));
         actionContact_Us->setText(QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
-        actionLogout->setText(QCoreApplication::translate("MainWindow", "Logout", nullptr));
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        actionLogin->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
+        actionLogout->setText(QCoreApplication::translate("MainWindow", "Logout", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Modify", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "x:", nullptr));
@@ -189,6 +198,7 @@ public:
         menuRemove->setTitle(QCoreApplication::translate("MainWindow", "Remove", nullptr));
         menuHelp->setTitle(QCoreApplication::translate("MainWindow", "Help", nullptr));
         menuExit->setTitle(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        menuLogin_Logout->setTitle(QCoreApplication::translate("MainWindow", "Login/Logout", nullptr));
     } // retranslateUi
 
 };

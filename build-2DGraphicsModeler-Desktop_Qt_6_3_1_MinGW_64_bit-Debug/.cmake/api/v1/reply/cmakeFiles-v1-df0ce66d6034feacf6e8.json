@@ -20,7 +20,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake"
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -269,7 +269,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -343,7 +343,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -422,7 +422,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -1437,8 +1437,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
-		"source" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/2DGraphicsModeler"
+		"build" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler"
 	},
 	"version" : 
 	{

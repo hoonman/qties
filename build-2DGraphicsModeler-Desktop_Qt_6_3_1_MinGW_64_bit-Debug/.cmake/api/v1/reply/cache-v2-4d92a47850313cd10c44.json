@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
+			"value" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "2DModelerApplication_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/2DGraphicsModeler"
+			"value" : "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
+			"value" : "c:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/2DGraphicsModeler"
+			"value" : "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",

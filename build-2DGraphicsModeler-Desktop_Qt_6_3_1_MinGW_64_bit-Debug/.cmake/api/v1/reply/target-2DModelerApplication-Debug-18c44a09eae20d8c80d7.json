@@ -317,14 +317,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
+					"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug"
 				},
 				{
-					"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/2DGraphicsModeler"
+					"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include"
+					"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include"
 				},
 				{
 					"backtrace" : 13,
@@ -545,7 +545,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/mocs_compilation.cpp",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -725,31 +725,31 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_mainwindow.h",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_login.h",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_login.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_aboutus.h",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/include/ui_aboutus.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp.rule",
+			"path" : "C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

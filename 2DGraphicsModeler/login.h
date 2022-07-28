@@ -22,6 +22,7 @@ public:
     bool getShutDownWindow(){return shutDownWindow;}
      //void setUpMain(MainWindow &w){mainwindow = w;}
      //const void showMain(){mainwindow.show();}
+    void setUserIsAdmin(bool powers) {userIsAdmin = powers;}
 
 private slots:
     void on_pushButton_Login_clicked();

@@ -1,5 +1,5 @@
-C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_aboutus.cpp: C:/Users/jh020/OneDrive/Desktop/reborn3/qties/2DGraphicsModeler/aboutus.h \
-  C:/Users/jh020/OneDrive/Desktop/reborn3/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
+C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/EWIEGA46WW/moc_aboutus.cpp: C:/Users/Brian/Documents/CS1C_Project/qties/2DGraphicsModeler/aboutus.h \
+  C:/Users/Brian/Documents/CS1C_Project/qties/build-2DGraphicsModeler-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/2DModelerApplication_autogen/moc_predefs.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.3.1/mingw_64/include/QtCore/qarraydata.h \

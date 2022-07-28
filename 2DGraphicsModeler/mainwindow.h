@@ -57,6 +57,10 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_actionLogin_triggered();
+
+    void on_actionReLogin_triggered();
+
 private:
     Ui::MainWindow *ui;
  //   void paintEvent(QPaintEvent *event) override;
