@@ -710,7 +710,79 @@ void MainWindow::on_pushButton_clicked()
     this->qPoint4.setX(x4); this->qPoint4.setY(y4);
 
     //THIS IS WHERE YOU PASS THE SERIALIZER AND ALL THOSE VARIABLES
+    if(allshape == "Line")
+    {
+      Line* tempLine = new Line;
+      tempLine->setLine(qPoint1, qPoint2);
+      tempLine->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+      this->Shapes.push_back(tempLine);
+    }
+    else if(allshape =="Polyline")
+    {
+      myPolyline* tempPoly = new myPolyline;
+      tempPoly->setmyPolyline(qPoint1, qPoint2);
+      tempPoly->setmyPolyline(qPoint3, qPoint4);
+      tempPoly->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+      this->Shapes.push_back(tempPoly);
+    }
+    else if(allshape =="Polygon")
+    {
+        myPolygon* tempPolygon = new myPolygon;
+        tempPolygon->setmyPolygon(qPoint1, qPoint2);
+        tempPolygon->setmyPolygon(qPoint3, qPoint4);
+        tempPolygon->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+        tempPolygon->setBrush(brushColor, brushStyle);
+              this->Shapes.push_back(tempPolygon);
+    }
+    else if(allshape =="Rectangle")
+    {
+        myRectangle* tempRect = new myRectangle;
+        tempRect->setmyRectangle(qPoint1, qPoint2);
+        tempRect->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+        tempRect->setBrush(brushColor, brushStyle);
+              this->Shapes.push_back(tempRect);
+    }
+    else if(allshape =="Square")
+    {
+        myRectangle* tempSquare = new myRectangle;
+        tempSquare->setmyRectangle(qPoint1, qPoint2);
+        tempSquare->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+        tempSquare->setBrush(brushColor, brushStyle);
+        this->Shapes.push_back(tempSquare);
+    }
+    else if(allshape =="Ellipse")
+    {
+        myEllipse* tempEllipse = new myEllipse;
+        tempEllipse->setmyEllipse(qPoint1, x1, y1);
+        tempEllipse->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+        tempEllipse->setBrush(brushColor, brushStyle);
+                this->Shapes.push_back(tempEllipse);
+    }
+    else if(allshape =="Circle")
+    {
+        myEllipse* tempCircle = new myEllipse;
+        tempCircle->setmyEllipse(qPoint1, x1, y1);
+        tempCircle->setPen(penColor, penWidth, penStyle, penCap, penJoin);
+        tempCircle->setBrush(brushColor, brushStyle);
+        this->Shapes.push_back(tempCircle);
+    }
+    else if(allshape =="Text")
+    {
+        Text* tempText = new Text;
+        tempText->setText(x1, y1, x2, y2, textAlign, TextString);
+        tempText->setFont(textColor, textPointsize, fontFamily, fontStyle, fontWeight);
+        this->Shapes.push_back(tempText);
+    };
 
-
+        ui->widget->setShape(Shapes);
+        ui->widget->update();
+        ui->spinBox_3->clear();
+        ui->spinBox_4->clear();
+        ui->spinBox_5->clear();
+        ui->spinBox_6->clear();
+        ui->spinBox_16->clear();
+        ui->spinBox_15->clear();
+        ui->spinBox_14->clear();
+        ui->spinBox_13->clear();
 }
 
