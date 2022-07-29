@@ -68,10 +68,10 @@ The following **required** functionality is complete:
 ![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/admin_permissions.gif)
 
 # Moving Shapes
-![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/moving_shapes.gif)
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/moving_shapes.gif)
 
 # Adding Shapes
-![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/adding_shape.gif)
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/adding_shape.gif)
 
 # Removing Shapes
-![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/removing_shapes.gif)
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/removing_shapes.gif)
