@@ -55,7 +55,7 @@ private slots:
 
     void on_actionExit_triggered();
 
-    void on_actionLogin_triggered();
+    //void on_actionLogin_triggered();
 
 
     //void on_moveButton_clicked();
@@ -129,6 +129,8 @@ private slots:
     void on_y2Move_valueChanged(int arg1){y2 = arg1;}
     void on_y3Move_valueChanged(int arg1){y3 = arg1;}
     void on_y4Move_valueChanged(int arg1){y4 = arg1;}
+    void on_actionLogin_triggered();
+
 private:
 
     Ui::MainWindow *ui;

@@ -135,11 +135,10 @@ void MainWindow::on_actionContact_Us_triggered()
     aboutUs->show();
 }
 
-void MainWindow::on_actionLogin_triggered()
-{
-    Login = new login(this);
-    Login->show();
-}
+//void MainWindow::on_actionLogin_triggered()
+//{
+
+//}
 
 void MainWindow::on_actionLogout_triggered()
 {
@@ -907,5 +906,15 @@ void MainWindow::on_moveShape_clicked()
     Shapes[index]->move(coords);
 
     ui->widget->update();
+}
+
+
+void MainWindow::on_actionLogin_triggered()
+{
+    MainWindow::hide();
+
+    Login = new login();
+    Login->show();
+    std::cout << std::endl << "HELLO\n";
 }
 

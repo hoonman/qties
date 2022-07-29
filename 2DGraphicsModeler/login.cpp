@@ -25,6 +25,7 @@ void login::on_pushButton_Login_clicked()
 
             QMessageBox::information(this, "Login", "Welcome Back!");
             close();
+            mainwindow = new MainWindow();
 
 
             if(username == "Admin" && password == "Password")
@@ -32,10 +33,7 @@ void login::on_pushButton_Login_clicked()
                 userIsAdmin = true;
             }
 
-//            shutDownWindow = true;
-
-//            mainwindow = new MainWindow(this);
-//            mainwindow->show();
+            mainwindow->show();
 
         }
         else

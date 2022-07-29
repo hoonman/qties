@@ -23,7 +23,7 @@ public:
      //void setUpMain(MainWindow &w){mainwindow = w;}
      //const void showMain(){mainwindow.show();}
     void setUserIsAdmin(bool powers) {userIsAdmin = powers;}
- //   bool getUserIsAdmin() {return userIsAdmin;}
+    bool getUserIsAdmin() {return userIsAdmin;}
 
 private slots:
     void on_pushButton_Login_clicked();
