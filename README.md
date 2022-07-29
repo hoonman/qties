@@ -48,25 +48,14 @@ Potential customers will be looking for a 2D Graphics rendering library which ca
 
 The following **required** functionality is complete:
 
-* [x] This is a checkbox
-* [x] 
-* [x] 
-* [x] 
-* [x] 
-* [x] 
-* [x] 
+* [x] Admin can access changing shapes
+* [x] Vector class implementation
+* [x] Read shapes from a parser
+* [x] Add a shape
+* [x] Remove a shape
+* [x] Move a shape
+* [x] Saving a shape
 
-The following **optional** features are implemented:
-
-* [x] User Interface Implementation
-* [x] 
-* [x] 
-* [x] 
-* [x] 
-* [x] 
-* [x] 
-* [ ] 
-* [ ] 
 
 ## Gifs to show functionalities:
 # Login Screen
