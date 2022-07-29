@@ -142,8 +142,10 @@ void MainWindow::on_actionContact_Us_triggered()
 
 void MainWindow::on_actionLogout_triggered()
 {
-    bool powers = false;
-    Login->setUserIsAdmin(powers);
+    //bool powers = false;
+    //Login->setUserIsAdmin(powers);
+    //Login->setUserIsAdmin(false);
+    userIsAdmin = false;
     QMessageBox::information(this, "Logout", "Successfully Logged Out!");
 }
 

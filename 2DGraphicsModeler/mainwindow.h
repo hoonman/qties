@@ -30,7 +30,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void setAdmin(bool settingAdmin){userIsAdmin = settingAdmin;}
+
+    bool isAdmin(bool userIsAdmin){return this->userIsAdmin;}
+
 private slots:
+
     void on_actionSave_All_triggered();
 
     void on_actionLoad_triggered();
@@ -139,6 +144,8 @@ private:
     login *Login;
     Serializer serializer;
 
+    bool userIsAdmin;
+
 //    void openFile();
     std::string item;
     std::string text;
@@ -149,7 +156,7 @@ private:
     int width;
 
     vector<Shape*> Shapes;
-    int index;
+    int index = 0;
 
     QPoint qPoint1, qPoint2 , qPoint3 , qPoint4;
 

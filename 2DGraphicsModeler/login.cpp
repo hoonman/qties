@@ -32,7 +32,7 @@ void login::on_pushButton_Login_clicked()
             {
                 userIsAdmin = true;
             }
-
+            mainwindow->setAdmin(userIsAdmin);
             mainwindow->show();
 
         }
