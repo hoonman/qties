@@ -36,24 +36,6 @@ public:
 
 private slots:
 
-    void on_actionSave_All_triggered();
-
-    void on_actionLoad_triggered();
-
-    void on_actionText_triggered();
-
-    void on_actionLine_triggered();
-
-    void on_actionRectangle_triggered();
-
-    void on_actionElipse_triggered();
-
-    void on_actionPolygon_triggered();
-
-    void on_actionPolyline_triggered();
-
-    void on_actionSelected_Shape_triggered();
-
     void on_actionContact_Us_triggered();
 
     void on_actionLogout_triggered();

@@ -36,20 +36,20 @@ MainWindow::MainWindow(QWidget *parent)
     ui->spinBox_15->setMaximum(1500);
     ui->spinBox_14->setMaximum(1500);
     ui->spinBox_13->setMaximum(1500);
-/*
-    if(Login->getUserIsAdmin() == false)
+
+    if(userIsAdmin)
     {
-        ui->moveButton->setEnabled(false);
-        ui->add->setEnabled(false);
-        ui->remove->setEnabled(false);
+        //ui->moveButton->setEnabled(false);
+        //ui->add->setEnabled(false);
+        //ui->remove->setEnabled(false);
     }
     else
     {
-        ui->moveButton->setEnabled(true);
-        ui->add->setEnabled(true);
-        ui->remove->setEnabled(true);
+        //ui->moveButton->setEnabled(true);
+        //ui->add->setEnabled(true);
+        //ui->remove->setEnabled(true);
     }
-    */
+
 //    ui->plainTextEdit->insertPlainText("20");
 //    ui->plainTextEdit_2->insertPlainText("90");
     ui->x1Move->setMaximum(1500);
@@ -68,6 +68,55 @@ MainWindow::MainWindow(QWidget *parent)
 
     //innitProperties
     innitProperties();
+
+    if(!userIsAdmin == true | userIsAdmin == NULL)
+    {
+        userIsAdmin = false;
+    }
+
+    if(userIsAdmin == false)
+    {
+        ui->x2Move->setEnabled(false);
+        ui->y2Move->setEnabled(false);
+        ui->x3Move->setEnabled(false);
+        ui->y3Move->setEnabled(false);
+        ui->x4Move->setEnabled(false);
+        ui->y4Move->setEnabled(false);
+        ui->x1Move->setEnabled(false);
+        ui->y1Move->setEnabled(false);
+        ui->moveShape->setEnabled(false);
+        ui->remove->setEnabled(false);
+
+        ui->BrushColorCB->setEnabled(false);
+        ui->BrushStyleCB->setEnabled(false);
+        ui->PenCapCB->setEnabled(false);
+        ui->PenColorCB->setEnabled(false);
+        ui->PenJoinCB->setEnabled(false);
+        ui->PenStyleCB->setEnabled(false);
+        ui->ShapeComboBox->setEnabled(false);
+        ui->TextAlignCB->setEnabled(false);
+
+        ui->TextColorCB->setEnabled(false);
+        ui->TextFontType->setEnabled(false);
+        ui->TextStyle->setEnabled(false);
+        ui->TextWeight->setEnabled(false);
+
+        ui->spinBox_3->setEnabled(false);
+        ui->spinBox_4->setEnabled(false);
+        ui->spinBox_5->setEnabled(false);
+        ui->spinBox_6->setEnabled(false);
+        ;
+        ui->spinBox_13->setEnabled(false);
+        ui->spinBox_14->setEnabled(false);
+        ui->spinBox_15->setEnabled(false);
+        ui->spinBox_16->setEnabled(false);
+        ui->pushButton->setEnabled(false);
+
+        ui->spinBox->setEnabled(false);
+        ui->spinBox_2->setEnabled(false);
+        ui->comboBox->setEnabled(false);
+        ui->lineEdit->setEnabled(false);
+    }
 }
 
 MainWindow::~MainWindow()
@@ -75,58 +124,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_actionSave_All_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionLoad_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionText_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionLine_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionRectangle_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionElipse_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionPolygon_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionPolyline_triggered()
-{
-
-}
-
-
-void MainWindow::on_actionSelected_Shape_triggered()
-{
-
-}
 
 
 void MainWindow::on_actionContact_Us_triggered()
@@ -147,6 +144,49 @@ void MainWindow::on_actionLogout_triggered()
     //Login->setUserIsAdmin(false);
     userIsAdmin = false;
     QMessageBox::information(this, "Logout", "Successfully Logged Out!");
+    //ui->remove->setEnabled(false);
+    //ui->label_29->setEnabled(false);
+    ui->x2Move->setEnabled(false);
+    ui->y2Move->setEnabled(false);
+    ui->x3Move->setEnabled(false);
+    ui->y3Move->setEnabled(false);
+    ui->x4Move->setEnabled(false);
+    ui->y4Move->setEnabled(false);
+    ui->x1Move->setEnabled(false);
+    ui->y1Move->setEnabled(false);
+    ui->moveShape->setEnabled(false);
+    ui->remove->setEnabled(false);
+
+    ui->BrushColorCB->setEnabled(false);
+    ui->BrushStyleCB->setEnabled(false);
+    ui->PenCapCB->setEnabled(false);
+    ui->PenColorCB->setEnabled(false);
+    ui->PenJoinCB->setEnabled(false);
+    ui->PenStyleCB->setEnabled(false);
+    ui->ShapeComboBox->setEnabled(false);
+    ui->TextAlignCB->setEnabled(false);
+
+    ui->TextColorCB->setEnabled(false);
+    ui->TextFontType->setEnabled(false);
+    ui->TextStyle->setEnabled(false);
+    ui->TextWeight->setEnabled(false);
+
+    ui->spinBox_3->setEnabled(false);
+    ui->spinBox_4->setEnabled(false);
+    ui->spinBox_5->setEnabled(false);
+    ui->spinBox_6->setEnabled(false);
+    ;
+    ui->spinBox_13->setEnabled(false);
+    ui->spinBox_14->setEnabled(false);
+    ui->spinBox_15->setEnabled(false);
+    ui->spinBox_16->setEnabled(false);
+    ui->pushButton->setEnabled(false);
+
+    ui->spinBox->setEnabled(false);
+    ui->spinBox_2->setEnabled(false);
+    ui->comboBox->setEnabled(false);
+    ui->lineEdit->setEnabled(false);
+
 }
 
 
