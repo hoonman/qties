@@ -69,10 +69,14 @@ MainWindow::MainWindow(QWidget *parent)
     //innitProperties
     innitProperties();
 
-    if(!userIsAdmin == true | userIsAdmin == NULL)
-    {
-        userIsAdmin = false;
-    }
+    //if(userIsAdmin == NULL)
+    //{
+    //    userIsAdmin = false;
+    //}
+    //else
+    //{
+        //userIsAdmin = true;
+    //}
 
     if(userIsAdmin == false)
     {

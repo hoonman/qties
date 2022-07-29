@@ -126,7 +126,7 @@ private:
     login *Login;
     Serializer serializer;
 
-    bool userIsAdmin;
+    bool userIsAdmin = false;
 
 //    void openFile();
     std::string item;

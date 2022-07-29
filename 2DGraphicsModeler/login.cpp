@@ -27,6 +27,7 @@ void login::on_pushButton_Login_clicked()
             close();
             mainwindow = new MainWindow();
 
+            userIsAdmin = false;
 
             if(username == "Admin" && password == "Password")
             {
