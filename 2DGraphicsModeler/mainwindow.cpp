@@ -911,10 +911,9 @@ void MainWindow::on_moveShape_clicked()
 
 void MainWindow::on_actionLogin_triggered()
 {
-    MainWindow::hide();
+    MainWindow::close();
 
     Login = new login();
     Login->show();
-    std::cout << std::endl << "HELLO\n";
 }
 

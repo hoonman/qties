@@ -19,7 +19,7 @@ class login : public QWidget
 public:
     login(QWidget *parent = nullptr);
     ~login();
-    bool getShutDownWindow(){return shutDownWindow;}
+    //bool getShutDownWindow(){return shutDownWindow;}
      //void setUpMain(MainWindow &w){mainwindow = w;}
      //const void showMain(){mainwindow.show();}
     void setUserIsAdmin(bool powers) {userIsAdmin = powers;}
@@ -36,6 +36,6 @@ private:
     Ui::login *ui;
     MainWindow *mainwindow;
     bool userIsAdmin;
-    bool shutDownWindow;
+    //bool shutDownWindow;
 };
 #endif // LOGIN_H
