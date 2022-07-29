@@ -8,15 +8,31 @@
 #include <iostream>
 #include <cstring>
 
+//!  A vector class
+/*!
+ *  implement as a dynamic container to store shapes
+ */
+
 template <typename OBJECT_TYPE>
 class vector
 {
 public:
+    //! Default constructor
+    /*!
+     *  Initialized currentSize, allocatedSize, and arr.
+     */
     vector() : currentSize(0), allocatedSize(1), arr(new OBJECT_TYPE[1]){};
-    //alternative depends on size
+
+    //! Nondefault constructor
+    /*!
+     *  \param s initialized currentSIze to s
+     */
     vector(size_t s) : currentSize{s}, allocatedSize(1), arr{new OBJECT_TYPE[1]}{};
 
-    // Copy Constructor
+    //! Copy constructor
+    /*!
+     *  \param &obj copy the data and store data into &obj
+     */
     vector(const vector &obj)
     {
         currentSize = obj.currentSize;
@@ -30,18 +46,22 @@ public:
         temp = nullptr;
     }
 
-    // Move Constructor
+    //! Move constructor
+    /*!
+     *  \param obj will move the data into &&obj
+     */
     vector(vector&& obj) noexcept
     {
         currentSize = obj.currentSize;
         allocatedSize = obj.allocatedSize;
         arr = obj.arr;
-        obj.currentSize = 0;
-        obj.allocatedSize = 0;
-        obj.arr = nullptr;
     }
 
-    // Copy Assignment
+    //! Copy assignement
+    /*!
+     *  \param &obj copy the data in the shape object into &obj
+        \return *this
+     */
     vector& operator=(const vector& obj)
     {
         if(this != &obj)
@@ -58,8 +78,11 @@ public:
         }
         return *this;
     }
-
-    // Move assignemnt
+    //! Move assignement
+    /*!
+     *  \param &&obj copy the data in the shape object into &obj
+     *  \return *this
+     */
     vector& operator=(vector&& obj) noexcept
     {
         if(this != & obj)
@@ -68,15 +91,20 @@ public:
         arr = std::move(obj.arr);
         currentSize = obj.currentSize;
         allocatedSize = obj.allocatedSize;
-        obj.currentSize = 0;
-        obj.allocatedSize = 0;
-        obj.arr = nullptr;
         }
         return *this;
     }
 
+    //! destructor
+    /*!
+     *  delete arr
+     */
     ~vector() { delete[] arr; };
 
+    //! A function that will push the element and add a new obj in it
+    /*!
+     *  \param obj the object that will be add in
+     */
     void push_back(const OBJECT_TYPE obj)
     {
         if (currentSize == allocatedSize)
@@ -91,6 +119,10 @@ public:
         currentSize++;
     }
 
+    //! A function that will pop the element
+    /*!
+     *
+     */
     void pop_back()
     {
         if (currentSize > 0)
@@ -99,27 +131,49 @@ public:
         }
     }
 
+    //! A function that will tell the current size of the element
+    /*!
+     * \return currentSize
+     */
     size_t size() const
     {
         return currentSize;
     }
 
+    //! A function
+    /*!
+     * \param const size_t index
+     * \return arr[index]
+     */
     OBJECT_TYPE operator[](const size_t index) const
     {
         return arr[index];
     }
 
+    //! A function
+    /*!
+     * \param const size_t index
+     * \return arr[index]
+     */
     OBJECT_TYPE &operator[](const size_t index)
     {
         return arr[index];
     }
 
+    //! A function that will return the obj that's in the first element
+    /*!
+     * \return &arr[0]
+     */
     OBJECT_TYPE* begin()
     {
         return &arr[0];
 
     }
 
+    //! A function that will return the obj that's in the last element
+    /*!
+     * \return &arr[allocatedSize];
+     */
     OBJECT_TYPE* end()
     {
         return &arr[allocatedSize];

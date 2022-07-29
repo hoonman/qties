@@ -35,36 +35,128 @@ using std::streamsize;
 using std::endl;
 
 
+//!  A Parser class
 class Parser
 {
 
-    public:
-        Parser(){}
-        ~Parser(){}
-        vector<Shape*> readFile();
-        void readLine(std::ifstream& infile);
-        void readPolyline(std::ifstream& infile);
-        void readPolygon(std::ifstream& infile);
-        void readRectangle(std::ifstream& infile);
-        void readSquare(std::ifstream& infile);
-        void readEllipse(std::ifstream& infile);
-        void readCircle(std::ifstream& infile);
-        void readText(std::ifstream& infile);
+public:
+    //! Default constructor
+    /*!
+    *  empty constructor
+    */
+    Parser(){}
+    //! Destructor
+    /*!
+    *  does nothing
+    */
+    ~Parser(){}
+    //! A function that will read tne file
+    /*!
+    * \return vector of Shapes pointer
+    */
+    vector<Shape*> readFile();
+    //! A function that will read the line.
+    /*!
+     * \param ifstream& infile
+     */
+    void readLine(std::ifstream& infile);
+    //! A function that will read the polyline.
+    /*!
+     * \param ifstream& infile
+     */
+    void readPolyline(std::ifstream& infile);
+    //! A function that will read the polygon.
+    /*!
+     * \param ifstream& infile
+     */
+    void readPolygon(std::ifstream& infile);
+    //! A function that will read the rectangle.
+    /*!
+     * \param ifstream& infile
+     */
+    void readRectangle(std::ifstream& infile);
+    //! A function that will read the square.
+    /*!
+     * \param ifstream& infile
+     */
+    void readSquare(std::ifstream& infile);
+    //! A function that will read the Ellipse.
+    /*!
+     * \param ifstream& infile
+     */
+    void readEllipse(std::ifstream& infile);
+    //! A function that will read the circle.
+    /*!
+     * \param ifstream& infile
+     */
+    void readCircle(std::ifstream& infile);
+    //! A function that will read the text.
+    /*!
+     * \param ifstream& infile
+     */
+    void readText(std::ifstream& infile);
 
 
-
-        Qt::GlobalColor convertPenColor(string incolor);
-        Qt::PenStyle convertPenStyle(string pStyle);
-        Qt::PenJoinStyle convertPenJoinStyle(string pJStyle);
-        Qt::PenCapStyle convertPenCapStyle(string pCStyle);
-
-        Qt::GlobalColor converBrushColor(string brushColor);
-        Qt::BrushStyle convertBrushStyle(string bStyle);
-
-        Qt::AlignmentFlag convertAlignment(string allign);
-        Qt::GlobalColor converTextColor(string textcolor);
-        QFont::Style convertStyle(string style);
-        QFont::Weight convertWeight(string weight);
+    //! A function that will convert string pen color to Qt::GlobalColor
+    /*!
+     * \param string incolor
+     * \return vector of Shapes pointer
+     */
+    Qt::GlobalColor convertPenColor(string incolor);
+    //! A function that will convert string pStyle string to Qt::PenStyle
+    /*!
+     * \param string pStyle
+     * \return Qt::PenStyle variable
+     */
+    Qt::PenStyle convertPenStyle(string pStyle);
+    //! A function that will convert string pJStyle to Qt::PenJoinStyle
+    /*!
+     * \param string pJStyle
+     * \return Qt::PenJoinStyle
+     */
+    Qt::PenJoinStyle convertPenJoinStyle(string pJStyle);
+    //! A function that will convert string pCStyle to Qt::PenCapStyle
+    /*!
+     * \param string pCStyle
+     * \return Qt::PenCapStyle
+     */
+    Qt::PenCapStyle convertPenCapStyle(string pCStyle);
+    //! A function that will convert string brushColor to Qt::GlobalColor
+    /*!
+     * \param string brushColor
+     * \return Qt::GlobalColor
+     */
+    Qt::GlobalColor converBrushColor(string brushColor);
+    //! A function that will convert string bStyle
+    /*!
+     * \param string bStyle
+     * \return Qt::BrushStyle
+     */
+    Qt::BrushStyle convertBrushStyle(string bStyle);
+    //! A function that will convert string allign to Qt::AlignmentFlag
+    /*!
+     * \param string allign
+     * \return Qt::AlignmentFlag
+     */
+    Qt::AlignmentFlag convertAlignment(string allign);
+    //! A function that will convert string textColor to Qt::GlobalColor
+    /*!
+     * \param string textColor
+     * \return Qt::GlobalColor
+     */
+    Qt::GlobalColor converTextColor(string textcolor);
+    //! A function that will convert string style
+    /*!
+     * \param string style
+     * \return QFont::Weight
+     */
+    QFont::Style convertStyle(string style);
+    //! A function that will convert weight
+    /*!
+     * \param string weight
+     * \return QFont::Weight
+     */
+    QFont::Weight convertWeight(string weight);
 
 
     private:

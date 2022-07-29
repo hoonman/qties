@@ -9,42 +9,76 @@
 #include <QPoint>
 #include "mainwindow.h"
 
+//!  A Line class inherit from the class shape
+/*!
+ *  represent a Line object
+ */
 class Line : public Shape
 {
 public:
 
-    // Constructor
+    //! Default constructor
+    /*!
+     *  \param *device initialized to nullptr
+     *  \param id initialized to -1
+     *  \param shape initialized to enum Line
+     *  \sa enum class ShapeType
+     */
     Line(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::Line)
         : Shape{device, id, shape} {}
 
-    //New derive member
-    //Needs Qpoint objects passed - So pass QPoint(x-coord, y-coord) to p1 and QPoint(x-coord, y-coord) to p2
+    //! override the destructor
+    /*!
+     *  perform nothing
+     */
+    ~Line() override {}
 
-
-    // Destructor
-    ~Line() override {delete painter;}
-
-    //copy constructor
+    //! Copy constructor
+    /*!
+     *  \param &line copy the data from the &line and store into the line object
+     */
     Line(const Line& line);
 
-    //copy assignment
+    //! Copy assignement
+    /*!
+     *  \param &line copy the data in the &line and store into the line object
+        \return *this
+     */
     virtual Line& operator=(const Line& line);
 
-    // setLine Function
+    //! A function that will set the line
+    /*!
+     * \param &p1 the coordinate where the line start
+     * \param &p2 the coordinate where the line end
+     */
     void setLine(const QPoint &p1, const QPoint &p2);
 
-    // Overridden Functions
 
-    // draw function
+    //! override the draw function
+    /*!
+     * draw the line and output the line's id
+     * \param device
+     */
     void draw(QPaintDevice* device) override;
 
-    // move function
+    //! override the move function
+    /*!
+     * move the line to the new coordinate
+     * \param vector<int>
+     */
     void move(vector<int>) override;
 
-    // perimeter function
+    //! override the perimeter function
+    /*!
+     * calculate the perimeter of the line
+     * \return periter the perimeter of the line
+     */
     double perimeter() override;
 
-    // area function
+    //! override the area function
+    /*!
+     * \return 0 since the line has no area, return 0
+     */
     double area() override;
 
 private:

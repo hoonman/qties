@@ -13,13 +13,32 @@
 #include "storage.h"
 
 
+//!  A canvas class inherit from the class QWidget
 class canvas : public QWidget
 {
     Q_OBJECT
 public:
+
+    //! Default constructor
+    /*!
+     *  \param *parent initialized to nullptr
+     */
     explicit canvas(QWidget *parent = nullptr);
+
+    //! override the paintEvent function
+    /*!
+     * draw the shape that passed in
+     * \param *event
+     */
     void paintEvent(QPaintEvent *event) override;
+
+    //! A setShape function
+    /*!
+     * set up the shape that passed in
+     * \param shapes will be set into myShapes
+     */
     void setShape(vector<Shape*> shapes) {myShapes = shapes;}
+
 signals:
 
     private:
