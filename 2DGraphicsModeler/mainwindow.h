@@ -34,6 +34,8 @@ public:
 
     bool isAdmin(bool userIsAdmin){return this->userIsAdmin;}
 
+    void updateStuff(bool isAdmin);
+
 private slots:
 
     void on_actionContact_Us_triggered();
@@ -126,7 +128,7 @@ private:
     login *Login;
     Serializer serializer;
 
-    bool userIsAdmin = false;
+    bool userIsAdmin;
 
 //    void openFile();
     std::string item;

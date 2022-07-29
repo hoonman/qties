@@ -77,7 +77,6 @@ MainWindow::MainWindow(QWidget *parent)
     //{
         //userIsAdmin = true;
     //}
-
     if(userIsAdmin == false)
     {
         ui->x2Move->setEnabled(false);
@@ -121,6 +120,9 @@ MainWindow::MainWindow(QWidget *parent)
         ui->comboBox->setEnabled(false);
         ui->lineEdit->setEnabled(false);
     }
+
+
+
 }
 
 MainWindow::~MainWindow()
@@ -128,6 +130,136 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::updateStuff(bool isAdmin)
+{
+    if(isAdmin == true)
+    {
+        ui->x2Move->setEnabled(true);
+        ui->y2Move->setEnabled(true);
+        ui->x3Move->setEnabled(true);
+        ui->y3Move->setEnabled(true);
+        ui->x4Move->setEnabled(true);
+        ui->y4Move->setEnabled(true);
+        ui->x1Move->setEnabled(true);
+        ui->y1Move->setEnabled(true);
+        ui->moveShape->setEnabled(true);
+        ui->remove->setEnabled(true);
+
+        ui->BrushColorCB->setEnabled(true);
+        ui->BrushStyleCB->setEnabled(true);
+        ui->PenCapCB->setEnabled(true);
+        ui->PenColorCB->setEnabled(true);
+        ui->PenJoinCB->setEnabled(true);
+        ui->PenStyleCB->setEnabled(true);
+        ui->ShapeComboBox->setEnabled(true);
+        ui->TextAlignCB->setEnabled(true);
+
+        ui->TextColorCB->setEnabled(true);
+        ui->TextFontType->setEnabled(true);
+        ui->TextStyle->setEnabled(true);
+        ui->TextWeight->setEnabled(true);
+
+        ui->spinBox_3->setEnabled(true);
+        ui->spinBox_4->setEnabled(true);
+        ui->spinBox_5->setEnabled(true);
+        ui->spinBox_6->setEnabled(true);
+        ;
+        ui->spinBox_13->setEnabled(true);
+        ui->spinBox_14->setEnabled(true);
+        ui->spinBox_15->setEnabled(true);
+        ui->spinBox_16->setEnabled(true);
+        ui->pushButton->setEnabled(true);
+
+        ui->spinBox->setEnabled(true);
+        ui->spinBox_2->setEnabled(true);
+        ui->comboBox->setEnabled(true);
+        ui->lineEdit->setEnabled(true);
+
+        ui->x2Move->update();
+        ui->y2Move->update();
+        ui->x3Move->update();
+        ui->y3Move->update();
+
+        ui->x4Move->update();
+        ui->y4Move->update();
+        ui->x1Move->update();
+        ui->y1Move->update();
+        ui->moveShape->update();
+        ui->remove->update();
+
+        ui->BrushColorCB->update();
+        ui->BrushStyleCB->update();
+        ui->PenCapCB->update();
+        ui->PenColorCB->update();
+        ui->PenJoinCB->update();
+        ui->PenStyleCB->update();
+        ui->ShapeComboBox->update();
+        ui->TextAlignCB->update();
+
+        ui->TextColorCB->update();
+        ui->TextFontType->update();
+        ui->TextStyle->update();
+        ui->TextWeight->update();
+
+        ui->spinBox_3->update();
+        ui->spinBox_4->update();
+        ui->spinBox_5->update();
+        ui->spinBox_6->update();
+        ;
+        ui->spinBox_13->update();
+        ui->spinBox_14->update();
+        ui->spinBox_15->update();
+        ui->spinBox_16->update();
+        ui->pushButton->update();
+
+        ui->spinBox->update();
+        ui->spinBox_2->update();
+        ui->comboBox->update();
+        ui->lineEdit->update();
+    }else
+    {
+        ui->x2Move->setEnabled(false);
+        ui->y2Move->setEnabled(false);
+        ui->x3Move->setEnabled(false);
+        ui->y3Move->setEnabled(false);
+        ui->x4Move->setEnabled(false);
+        ui->y4Move->setEnabled(false);
+        ui->x1Move->setEnabled(false);
+        ui->y1Move->setEnabled(false);
+        ui->moveShape->setEnabled(false);
+        ui->remove->setEnabled(false);
+
+        ui->BrushColorCB->setEnabled(false);
+        ui->BrushStyleCB->setEnabled(false);
+        ui->PenCapCB->setEnabled(false);
+        ui->PenColorCB->setEnabled(false);
+        ui->PenJoinCB->setEnabled(false);
+        ui->PenStyleCB->setEnabled(false);
+        ui->ShapeComboBox->setEnabled(false);
+        ui->TextAlignCB->setEnabled(false);
+
+        ui->TextColorCB->setEnabled(false);
+        ui->TextFontType->setEnabled(false);
+        ui->TextStyle->setEnabled(false);
+        ui->TextWeight->setEnabled(false);
+
+        ui->spinBox_3->setEnabled(false);
+        ui->spinBox_4->setEnabled(false);
+        ui->spinBox_5->setEnabled(false);
+        ui->spinBox_6->setEnabled(false);
+        ;
+        ui->spinBox_13->setEnabled(false);
+        ui->spinBox_14->setEnabled(false);
+        ui->spinBox_15->setEnabled(false);
+        ui->spinBox_16->setEnabled(false);
+        ui->pushButton->setEnabled(false);
+
+        ui->spinBox->setEnabled(false);
+        ui->spinBox_2->setEnabled(false);
+        ui->comboBox->setEnabled(false);
+        ui->lineEdit->setEnabled(false);
+    }
+}
 
 
 void MainWindow::on_actionContact_Us_triggered()
