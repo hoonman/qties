@@ -13,6 +13,7 @@
 #include <QtGui>
 #include "vector.h"
 #include "Shape.h"
+#include "serializer.h"
 
 class login;
 class AboutUs;
@@ -134,6 +135,7 @@ private:
  //   void paintEvent(QPaintEvent *event) override;
     AboutUs *aboutUs;
     login *Login;
+    Serializer serializer;
 
 //    void openFile();
     std::string item;

@@ -724,6 +724,15 @@ void MainWindow::on_pushButton_clicked()
       tempLine->setLine(qPoint1, qPoint2);
       tempLine->setPen(penColor, penWidth, penStyle, penCap, penJoin);
       this->Shapes.push_back(tempLine);
+
+      serializer.serializeLine(qPoint1,
+                              qPoint2,
+                              penColor,
+                              penWidth,
+                              penStyle,
+                              penCap,
+                              penJoin);
+
     }
     else if(allshape =="Polyline")
     {
@@ -732,6 +741,16 @@ void MainWindow::on_pushButton_clicked()
       tempPoly->setmyPolyline(qPoint3, qPoint4);
       tempPoly->setPen(penColor, penWidth, penStyle, penCap, penJoin);
       this->Shapes.push_back(tempPoly);
+
+      serializer.serializePolyline( qPoint1,
+                                    qPoint2,
+                                    qPoint3,
+                                    qPoint4,
+                                    penColor,
+                                    penWidth,
+                                    penStyle,
+                                    penCap,
+                                    penJoin);
     }
     else if(allshape =="Polygon")
     {
@@ -741,6 +760,18 @@ void MainWindow::on_pushButton_clicked()
         tempPolygon->setPen(penColor, penWidth, penStyle, penCap, penJoin);
         tempPolygon->setBrush(brushColor, brushStyle);
               this->Shapes.push_back(tempPolygon);
+
+        serializer.serializePolygon(qPoint1,
+                               qPoint2,
+                               qPoint3,
+                               qPoint4,
+                               penColor,
+                               penWidth,
+                               penStyle,
+                               penCap,
+                               penJoin,
+                               brushColor,
+                               brushStyle);
     }
     else if(allshape =="Rectangle")
     {
@@ -749,6 +780,16 @@ void MainWindow::on_pushButton_clicked()
         tempRect->setPen(penColor, penWidth, penStyle, penCap, penJoin);
         tempRect->setBrush(brushColor, brushStyle);
               this->Shapes.push_back(tempRect);
+
+        serializer.serializeRectangle(qPoint1,
+                                 qPoint2,
+                                 penColor,
+                                 penWidth,
+                                 penStyle,
+                                 penCap,
+                                 penJoin,
+                                 brushColor,
+                                 brushStyle);
     }
     else if(allshape =="Square")
     {
@@ -757,6 +798,16 @@ void MainWindow::on_pushButton_clicked()
         tempSquare->setPen(penColor, penWidth, penStyle, penCap, penJoin);
         tempSquare->setBrush(brushColor, brushStyle);
         this->Shapes.push_back(tempSquare);
+
+        serializer.serializeSquare( qPoint1,
+                              qPoint2,
+                              penColor,
+                              penWidth,
+                              penStyle,
+                              penCap,
+                              penJoin,
+                              brushColor,
+                              brushStyle);
     }
     else if(allshape =="Ellipse")
     {
@@ -765,6 +816,17 @@ void MainWindow::on_pushButton_clicked()
         tempEllipse->setPen(penColor, penWidth, penStyle, penCap, penJoin);
         tempEllipse->setBrush(brushColor, brushStyle);
                 this->Shapes.push_back(tempEllipse);
+
+        serializer.serializeElipse( qPoint1,
+                                    x2,
+                                    y2,
+                                    penColor,
+                                    penWidth,
+                                    penStyle,
+                                    penCap,
+                                    penJoin,
+                                    brushColor,
+                                    brushStyle);
     }
     else if(allshape =="Circle")
     {
@@ -773,6 +835,17 @@ void MainWindow::on_pushButton_clicked()
         tempCircle->setPen(penColor, penWidth, penStyle, penCap, penJoin);
         tempCircle->setBrush(brushColor, brushStyle);
         this->Shapes.push_back(tempCircle);
+
+        serializer.serializeCircle( qPoint1,
+                                    x2,
+                                    y2,
+                                    penColor,
+                                    penWidth,
+                                    penStyle,
+                                    penCap,
+                                    penJoin,
+                                    brushColor,
+                                    brushStyle);
     }
     else if(allshape =="Text")
     {
@@ -780,6 +853,18 @@ void MainWindow::on_pushButton_clicked()
         tempText->setText(x1, y1, x2, y2, textAlign, TextString);
         tempText->setFont(textColor, textPointsize, fontFamily, fontStyle, fontWeight);
         this->Shapes.push_back(tempText);
+
+        serializer.serializeText( x1,
+                                  y1,
+                                  x2,
+                                  y2,
+                                  textAlign,
+                                  TextString,
+                                  textColor,
+                                  textPointsize,
+                                  fontFamily,
+                                  fontStyle,
+                                  fontWeight);
     };
 
         ui->widget->setShape(Shapes);

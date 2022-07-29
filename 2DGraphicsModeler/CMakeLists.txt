@@ -47,6 +47,7 @@ set(PROJECT_SOURCES
         canvas.cpp
         storage.h
         storage.cpp
+	serializer.h
 	serializer.cpp
 
 )
