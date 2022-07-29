@@ -60,3 +60,18 @@ The following **required** functionality is complete:
 ## Gifs to show functionalities:
 # Login Screen
 ![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/login_screen.gif)
+
+# Guest - No permission
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/guest_no_permission.gif)
+
+# Admin - can access add/move/remove shapes
+![](https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/admin_permissions.gif)
+
+# Moving Shapes
+![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/moving_shapes.gif)
+
+# Adding Shapes
+![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/adding_shape.gif)
+
+# Removing Shapes
+![] (https://github.com/hoonman/qties/blob/main/miscFolder/gif_files/removing_shapes.gif)
